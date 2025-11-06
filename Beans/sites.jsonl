@@ -1,0 +1,20 @@
+{"name": "Put This On", "domain": "putthison.com", "urls": ["https://putthison.com/category/style/", "https://putthison.com/category/outfits/"], "delay": 1.0, "priority": 10, "active": true}
+{"name": "Gentleman's Gazette", "domain": "gentlemansgazette.com", "urls": ["https://www.gentlemansgazette.com/wardrobe/", "https://www.gentlemansgazette.com/style/"], "delay": 1.0, "priority": 9, "active": false, "notes": "Cloudflare blocked"}
+{"name": "He Spoke Style", "domain": "hespokestyle.com", "urls": ["https://hespokestyle.com/category/style-guides/"], "delay": 1.0, "priority": 9, "active": false, "notes": "Cloudflare blocked"}
+{"name": "Permanent Style", "domain": "permanentstyle.com", "urls": ["https://www.permanentstyle.com/articles/"], "delay": 1.0, "priority": 9, "active": true}
+{"name": "Real Men Real Style", "domain": "realmenrealstyle.com", "urls": ["https://www.realmenrealstyle.com/mens-style-blog/"], "delay": 1.0, "priority": 8, "active": true}
+{"name": "Dappered", "domain": "dappered.com", "urls": ["https://dappered.com/style/", "https://dappered.com/archives/"], "delay": 1.0, "priority": 8, "active": true}
+{"name": "Bespoke Unit", "domain": "bespokeunit.com", "urls": ["https://bespokeunit.com/style-guides/", "https://bespokeunit.com/color-coordination/"], "delay": 1.0, "priority": 8, "active": true}
+{"name": "The Modest Man", "domain": "themodestman.com", "urls": ["https://www.themodestman.com/style-guides/", "https://www.themodestman.com/how-to-wear/"], "delay": 1.0, "priority": 7, "active": true}
+{"name": "Super Summit", "domain": "supersummit.com", "urls": ["https://supersummit.com/business-casual/", "https://supersummit.com/dress-codes/"], "delay": 1.0, "priority": 7, "active": true}
+{"name": "Ivy Style", "domain": "ivystyle.com", "urls": ["https://www.ivystyle.com/articles/"], "delay": 1.0, "priority": 7, "active": true}
+{"name": "Die, Workwear!", "domain": "dieworkwear.com", "urls": ["https://dieworkwear.com/"], "delay": 1.5, "priority": 8, "active": true}
+{"name": "Primer Magazine", "domain": "primermagazine.com", "urls": ["https://www.primermagazine.com/style/"], "delay": 1.0, "priority": 6, "active": true}
+{"name": "The Art of Manliness", "domain": "artofmanliness.com", "urls": ["https://www.artofmanliness.com/style/"], "delay": 1.0, "priority": 6, "active": true}
+{"name": "Style Girlfriend", "domain": "stylegirlfriend.com", "urls": ["https://stylegirlfriend.com/category/mens-style/"], "delay": 1.0, "priority": 6, "active": true}
+{"name": "The Rake", "domain": "therake.com", "urls": ["https://therake.com/stories/style/"], "delay": 1.5, "priority": 7, "active": true}
+{"name": "Sartorial Notes", "domain": "sartorialnotes.com", "urls": ["https://sartorialnotes.com/"], "delay": 1.0, "priority": 6, "active": true}
+{"name": "A Suitable Wardrobe", "domain": "asuitablewardrobe.com", "urls": ["https://asuitablewardrobe.com/blog/"], "delay": 1.0, "priority": 6, "active": true}
+{"name": "The London Lounge", "domain": "thelondonlounge.net", "urls": ["https://thelondonlounge.net/"], "delay": 1.5, "priority": 6, "active": true}
+{"name": "Rooke's Notes", "domain": "rookesnotes.com", "urls": ["https://rookesnotes.com/category/style/"], "delay": 1.0, "priority": 6, "active": true}
+{"name": "StyleForum", "domain": "styleforum.net", "urls": ["https://www.styleforum.net/blogs/"], "delay": 1.5, "priority": 7, "active": true}
