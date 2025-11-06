@@ -1,0 +1,321 @@
+{
+  "title": "GeneralMenswearRule",
+  "type": "object",
+  "required": [
+    "id",
+    "polarity",
+    "claim",
+    "category",
+    "strength",
+    "context",
+    "garment_slots",
+    "evidence",
+    "confidence",
+    "consensus",
+    "sources",
+    "rationale",
+    "exceptions",
+    "metadata"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "description": "Stable UUID or hash." },
+
+    "polarity": {
+      "type": "string",
+      "enum": ["positive", "negative", "nuanced", "neutral", "conditional"],
+      "description": "positive = recommended; negative = avoid; nuanced = context dependent; neutral = no strong recommendation; conditional = applies under specific conditions."
+    },
+
+    "claim": {
+      "type": "string",
+      "minLength": 8,
+      "description": "Short, plain-English rule (e.g., 'Show 0.5–1.0 cm of shirt cuff with a tailored jacket')."
+    },
+
+    "category": {
+      "type": "string",
+      "enum": [
+        "fit",
+        "color",
+        "coordination",
+        "dress_code",
+        "proportion",
+        "fabric_material",
+        "seasonality",
+        "grooming",
+        "footwear",
+        "accessories",
+        "etiquette",
+        "maintenance"
+      ]
+    },
+
+    "strength": {
+      "type": "string",
+      "enum": ["absolute", "mandatory", "guideline", "suggestion", "opinion"],
+      "description": "How prescriptive the rule is."
+    },
+
+    "context": {
+      "type": "object",
+      "required": ["dress_code_level", "setting"],
+      "additionalProperties": false,
+      "properties": {
+        "dress_code_level": {
+          "type": "string",
+          "enum": [
+            "white_tie",
+            "black_tie",
+            "black_tie_optional",
+            "black_tie_creative",
+            "cocktail",
+            "lounge_suit",
+            "business_formal",
+            "business_casual",
+            "smart_casual",
+            "casual",
+            "athleisure",
+            "streetwear",
+            "resort"
+          ],
+          "description": "Standardized ladder from formal to casual."
+        },
+        "setting": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "work",
+              "interview",
+              "wedding",
+              "funeral",
+              "date",
+              "nightlife",
+              "outdoor_event",
+              "travel",
+              "everyday"
+            ]
+          }
+        },
+        "season": {
+          "type": "string",
+          "enum": ["spring", "summer", "fall", "winter", "all_seasons"],
+          "default": "all_seasons"
+        },
+        "climate": {
+          "type": "string",
+          "enum": ["hot", "warm", "mild", "cool", "cold"],
+          "description": "Broad thermal band to keep it model-simple."
+        },
+        "region": {
+          "type": "string",
+          "enum": ["US", "UK", "EU", "JP", "Global"],
+          "default": "Global"
+        },
+        "body_type": {
+          "type": "string",
+          "enum": ["inverted_triangle", "rectangular", "triangle", "trapezoid", "oval"],
+          "description": "Body shape the rule applies to."
+        },
+        "age_group": {
+          "type": "string",
+          "enum": ["teen", "young_adult", "adult", "middle_aged", "senior"],
+          "description": "Age group the rule applies to."
+        },
+        "temporal_relevance": {
+          "type": "string",
+          "enum": ["timeless", "seasonal", "trend", "era_specific"],
+          "description": "Whether this is a lasting rule or a current/trend-bound one."
+        }
+      }
+    },
+
+    "garment_slots": {
+      "type": "array",
+      "description": "Concrete slots help small models ground decisions.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["slot", "examples"],
+        "additionalProperties": false,
+        "properties": {
+          "slot": {
+            "type": "string",
+            "enum": [
+              "top",
+              "midlayer",
+              "outerwear",
+              "legwear",
+              "footwear",
+              "neckwear",
+              "headwear",
+              "handwear",
+              "eyewear",
+              "bag",
+              "jewelry",
+              "accessories",
+              "underlayer"
+            ]
+          },
+          "examples": {
+            "type": "array",
+            "maxItems": 3,
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+
+    "color_pattern": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "primary": { "type": "string" },
+        "secondary": { "type": "string" },
+        "pattern_tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "solid",
+              "stripe",
+              "check",
+              "plaid",
+              "houndstooth",
+              "herringbone",
+              "dot",
+              "graphic",
+              "logo",
+              "camo"
+            ]
+          }
+        },
+        "color_family": {
+          "type": "string",
+          "enum": ["adjacent", "monochromatic", "triadic", "complementary"],
+          "description": "Color relationship scheme."
+        },
+        "contrast_level": {
+          "type": "string",
+          "enum": ["low", "medium", "high"],
+          "description": "Contrast between primary and secondary."
+        }
+      }
+    },
+
+    "exceptions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "When it’s okay to break the rule."
+    },
+
+    "rationale": {
+      "type": "string",
+      "minLength": 8,
+      "description": "Why this usually works (fit optics, proportion balance, etiquette, etc.)."
+    },
+
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["quote", "stance", "source_ref", "author_credibility"],
+        "additionalProperties": false,
+        "properties": {
+          "quote": { "type": "string" },
+          "stance": { "type": "string", "enum": ["support", "oppose", "neutral"] },
+          "source_ref": {
+            "type": "string",
+            "description": "e.g., reddit:POSTID/COMMENTID or URL fragment"
+          },
+          "author_credibility": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string" },
+              "affiliation": { "type": "string" },
+              "expertise": { "type": "string" },
+              "social_media_links": {
+                "type": "array",
+                "items": { "type": "string", "format": "uri" }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "confidence": {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "description": "Model's self-rated confidence in claim after reading evidence."
+    },
+
+    "confidence_rationale": {
+      "type": "string",
+      "description": "Short explanation for the confidence score."
+    },
+
+    "consensus": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "support_count": { "type": "integer", "minimum": 0 },
+        "oppose_count": { "type": "integer", "minimum": 0 },
+        "consensus_level": {
+          "type": "string",
+          "enum": ["weak", "mixed", "moderate", "strong"]
+        },
+        "consensus_score": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "Quantitative measure of community agreement."
+        }
+      }
+    },
+
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["permalink"],
+        "additionalProperties": false,
+        "properties": {
+          "site": { "type": "string", "description": "e.g., reddit, forum, blog, magazine" },
+          "source_type": {
+            "type": "string",
+            "enum": ["blog", "forum", "magazine", "book", "expert", "community", "brand_guideline"]
+          },
+          "author": { "type": "string" },
+          "publication_date": { "type": "string", "format": "date" },
+          "post_id": { "type": "string" },
+          "comment_id": { "type": "string" },
+          "permalink": { "type": "string", "format": "uri" },
+          "credibility_score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 10,
+            "description": "Source authority rating (10 = highest)."
+          }
+        }
+      }
+    },
+
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "creation_timestamp": { "type": "string", "format": "date-time" },
+        "update_timestamp": { "type": "string", "format": "date-time" },
+        "reviewed_by": { "type": "string" },
+        "version_information": { "type": "string" }
+      }
+    }
+  }
+}
