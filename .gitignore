@@ -1,0 +1,36 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.venv/
+venv/
+.env
+.env.*
+
+# Backup files and patches
+*_BACKUP/
+*_backup/
+*.backup
+*.bak
+*.patch
+*.txt.patch
+*_patch.txt
+
+# Generated data and backups
+data/*.backup
+data/emergency_save_*.json
+
+# Large data files (>50MB)
+Data Analysis/data/fashion_rules.json
+Data Analysis/data/reddit_fashion_*.json
+data/reddit_fashion_data.json
+
+# Local configuration containing credentials
+config/config.ini
+config/*.secret.ini
+
+# IDE project files
+.idea/
+.vscode/
