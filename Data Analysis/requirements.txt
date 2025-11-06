@@ -1,0 +1,7 @@
+psycopg2-binary
+pandas
+sqlalchemy
+pyspellchecker
+sentence-transformers
+scikit-learn
+language-tool-python
