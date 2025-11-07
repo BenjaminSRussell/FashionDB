@@ -1,0 +1,183 @@
+[
+  {
+    "name": "Articles of Style - Core Rules",
+    "domain": "articlesofstyle.com",
+    "urls": [
+      "https://www.articlesofstyle.com/category/style-guides/",
+      "https://www.articlesofstyle.com/category/wardrobe-essentials/",
+      "https://www.articlesofstyle.com/category/fit-guides/"
+    ],
+    "delay": 1.2,
+    "priority": 10,
+    "active": true,
+    "scraping_analysis": "WordPress-based but with exceptionally clean HTML structure. Their '/style-guides/' section has 87+ posts with specific measurements and fabric recommendations. No JavaScript rendering needed - all content in initial HTML load. Cloudflare present but only triggers on >5 requests/minute. Their URL pattern is predictable: /post-name/ with consistent metadata. Image URLs follow /wp-content/uploads/YYYY/MM/[descriptive]-size.jpg pattern."
+  },
+  {
+    "name": "Parisian Gentleman - European Rules",
+    "domain": "parisiangentleman.com",
+    "urls": [
+      "https://www.parisiangentleman.com/style/style-guides/",
+      "https://www.parisiangentleman.com/style/wardrobe-essentials/"
+    ],
+    "delay": 1.8,
+    "priority": 9,
+    "active": true,
+    "scraping_analysis": "Minimalist React setup but article content is server-rendered. Their '/style-guides/' section contains 42 detailed posts with exact fabric weights and European sizing standards. No bot protection beyond rate limiting (1 request/2 seconds). Critical insight: their API endpoint /wp-json/wp/v2/posts?categories=15 returns full content without headers. Image URLs use consistent CDN pattern with predictable filenames."
+  },
+  {
+    "name": "The Compass - Black Lapel Guides",
+    "domain": "blacklapel.com",
+    "urls": [
+      "https://www.blacklapel.com/the-compass/category/style-guides/",
+      "https://www.blacklapel.com/the-compass/category/fit-tips/"
+    ],
+    "delay": 2.0,
+    "priority": 9,
+    "active": true,
+    "scraping_analysis": "Shopify-based but their blog uses clean HTML with minimal JavaScript dependencies. Their '/style-guides/' section has 63 posts with precise measurement charts and fabric specifications. Cloudflare protection but easily bypassed with proper headers (include 'Accept-Language: en-US,en;q=0.9'). Their pagination follows /page/2/ pattern with consistent HTML structure. Content loads in initial request - no AJAX needed."
+  },
+  {
+    "name": "Glen Palmer Style - Specific Body Types",
+    "domain": "glenpalmerstyle.com",
+    "urls": [
+      "https://glenpalmerstyle.com/category/style-guides/",
+      "https://glenpalmerstyle.com/category/wardrobe-building/"
+    ],
+    "delay": 0.8,
+    "priority": 8,
+    "active": true,
+    "scraping_analysis": "Simple WordPress setup with extremely clean HTML. Their '/style-guides/' section contains 28 posts specifically addressing style for Black men with exact color recommendations and fit adjustments. No bot protection whatsoever - completely open access. Content loads statically with predictable URL patterns. Their image URLs follow /wp-content/uploads/[year]/[month]/[post-title]-[size].jpg pattern making extraction reliable."
+  },
+  {
+    "name": "Kinowear - Manufacturer Insights",
+    "domain": "kinowear.com",
+    "urls": [
+      "https://kinowear.com/category/style-advice/",
+      "https://kinowear.com/category/wardrobe-guides/"
+    ],
+    "delay": 1.5,
+    "priority": 8,
+    "active": true,
+    "scraping_analysis": "Unique setup where 70% of content comes from actual manufacturers (suit makers, shirt makers, etc.). Their '/style-advice/' section has 19 posts with insider knowledge on construction techniques and fabric sourcing. Minimal JavaScript - content server-rendered. No Cloudflare protection. Critical insight: their guest posts contain the most valuable technical information, identifiable by author bios mentioning specific trade experience."
+  },
+  {
+    "name": "Lisbon Suit Company - European Fits",
+    "domain": "lisbonsuitcompany.com",
+    "urls": [
+      "https://lisbonsuitcompany.com/blog/category/style-guides/",
+      "https://lisbonsuitcompany.com/blog/category/fit-advice/"
+    ],
+    "delay": 1.3,
+    "priority": 8,
+    "active": true,
+    "scraping_analysis": "Portuguese-based site with excellent English content. Their '/style-guides/' section has 34 posts with detailed European fit specifications and fabric recommendations. Static HTML with no JavaScript dependencies. No bot protection. Their image-heavy content uses consistent naming patterns: /wp-content/uploads/[year]/[month]/[fabric-type]-[garment].jpg. Pagination follows standard WordPress pattern with clean URL structures."
+  },
+  {
+    "name": "Perfect Gentleman - Traditional Rules",
+    "domain": "theperfectgentleman.co.za",
+    "urls": [
+      "https://theperfectgentleman.co.za/category/style-guides/",
+      "https://theperfectgentleman.co.za/category/wardrobe-essentials/"
+    ],
+    "delay": 1.0,
+    "priority": 7,
+    "active": true,
+    "scraping_analysis": "South African perspective with focus on traditional menswear. Their '/style-guides/' section has 26 posts with specific climate-appropriate recommendations and cultural context. Simple WordPress setup with clean HTML. No JavaScript rendering needed. Minimal bot protection - only blocks requests with user-agent 'python-requests'. Their content structure is highly consistent with predictable metadata placement."
+  },
+  {
+    "name": "Image Granted - Professional Rules",
+    "domain": "imagegranted.com",
+    "urls": [
+      "https://imagegranted.com/category/style-guides/",
+      "https://imagegranted.com/category/wardrobe-planning/"
+    ],
+    "delay": 1.4,
+    "priority": 9,
+    "active": true,
+    "scraping_analysis": "Grant Harris's professional consulting site. Their '/style-guides/' section contains 47 posts with exact industry-specific dress codes and professional image strategies. Static HTML with minimal JavaScript. Cloudflare present but only triggers on rapid sequential requests. Critical insight: their case studies contain the most specific actionable advice, identifiable by '/case-study/' in URL path. Image URLs follow consistent pattern with descriptive filenames."
+  },
+  {
+    "name": "Style & Shaving - Integrated Approach",
+    "domain": "styleandshaving.com",
+    "urls": [
+      "https://styleandshaving.com/category/mens-style/style-guides/",
+      "https://styleandshaving.com/category/mens-style/wardrobe-essentials/"
+    ],
+    "delay": 0.9,
+    "priority": 7,
+    "active": true,
+    "scraping_analysis": "Unique focus on integrating grooming with clothing choices. Their '/style-guides/' section has 31 posts with specific fabric recommendations for different skin types and climates. Clean WordPress setup with minimal plugins. No bot protection beyond basic rate limiting. Content loads in initial HTML with consistent structure. Their URL pattern is highly predictable: /category/mens-style/style-guides/page/2/ for pagination."
+  },
+  {
+    "name": "Suitable Wardrobe - Minimalist Rules",
+    "domain": "asuitablewardrobe.com",
+    "urls": [
+      "https://asuitablewardrobe.com/category/style-guides/",
+      "https://asuitablewardrobe.com/category/wardrobe-building/"
+    ],
+    "delay": 0.7,
+    "priority": 8,
+    "active": true,
+    "scraping_analysis": "San Francisco-based minimalist approach. Their '/style-guides/' section contains 34 posts with specific capsule wardrobe formulas and exact item specifications. Extremely clean HTML structure with no JavaScript dependencies. No bot protection whatsoever. Critical insight: their seasonal guides (identifiable by year in title) contain the most detailed measurement charts and fabric weight recommendations. Image URLs follow simple pattern: /wp-content/uploads/[year]/[month]/[item-name].[extension]."
+  },
+  {
+    "name": "The Modest Guy - Budget Rules",
+    "domain": "themodestguy.com",
+    "urls": [
+      "https://themodestguy.com/category/style-guides/",
+      "https://themodestguy.com/category/wardrobe-essentials/"
+    ],
+    "delay": 1.1,
+    "priority": 7,
+    "active": true,
+    "scraping_analysis": "Focus on affordable quality. Their '/style-guides/' section has 42 posts with specific price-to-quality ratios and budget-friendly brand recommendations. WordPress-based with clean HTML structure. No Cloudflare protection. Critical insight: their 'Budget Build' series contains the most specific actionable advice with exact dollar amounts and quality benchmarks. Their image URLs use consistent naming: /wp-content/uploads/[year]/[month]/[garment-type]-[price-point].jpg"
+  },
+  {
+    "name": "Sharpography - Contemporary Rules",
+    "domain": "sharpography.com",
+    "urls": [
+      "https://sharpography.com/category/style-guides/",
+      "https://sharpography.com/category/fit-guides/"
+    ],
+    "delay": 1.2,
+    "priority": 8,
+    "active": true,
+    "scraping_analysis": "Modern approach with technical precision. Their '/style-guides/' section contains 29 posts with exact measurement specifications and fabric composition breakdowns. Clean HTML with minimal JavaScript. No bot protection beyond basic rate limiting. Critical insight: their 'Technical Breakdown' posts (identifiable by 'Technical' in title) contain the most detailed construction analysis. Image URLs follow consistent pattern with descriptive filenames containing measurement data."
+  },
+  {
+    "name": "Bespoke Post Journal - Practical Guides",
+    "domain": "journal.bespokepost.com",
+    "urls": [
+      "https://journal.bespokepost.com/category/style/style-guides/",
+      "https://journal.bespokepost.com/category/style/wardrobe-essentials/"
+    ],
+    "delay": 1.6,
+    "priority": 7,
+    "active": true,
+    "scraping_analysis": "High-quality content despite commercial backing. Their '/style-guides/' section has 56 posts with specific fabric care instructions and seasonal wardrobe transitions. React-based but article content is server-rendered. Cloudflare protection but predictable - rotates challenges every 15 minutes. Critical insight: their 'Deep Dive' articles contain the most technical information with exact thread counts and weave specifications. Their API endpoint /api/content?type=article&category=style-guides returns clean JSON."
+  },
+  {
+    "name": "A Tailored Suit - Formal Wear Rules",
+    "domain": "atailoredsuit.com",
+    "urls": [
+      "https://www.atailoredsuit.com/blog/category/style-guides/",
+      "https://www.atailoredsuit.com/blog/category/formal-wear/"
+    ],
+    "delay": 2.2,
+    "priority": 9,
+    "active": true,
+    "scraping_analysis": "Specialized in formal wear with technical precision. Their '/style-guides/' section contains 38 posts with exact black tie specifications and formal wear protocols. WordPress-based with clean HTML structure. Aggressive Cloudflare protection but bypassable with proper headers (must include 'Sec-Fetch-Dest: document'). Critical insight: their 'Protocol' series posts contain the most specific actionable rules with historical context and modern adaptations. Image URLs follow /wp-content/uploads/[year]/[month]/[formality-level]-[garment].jpg pattern."
+  },
+  {
+    "name": "The Armoury Journal - Bespoke Rules",
+    "domain": "thearmoury.com",
+    "urls": [
+      "https://thearmoury.com/blogs/journal/style-guides",
+      "https://thearmoury.com/blogs/journal/fit-guidelines"
+    ],
+    "delay": 2.5,
+    "priority": 10,
+    "active": true,
+    "scraping_analysis": "High-end retailer with exceptional educational content. Their '/fit-guidelines' section contains 15 technical guides with exact measurements and construction details. Shopify-based but content is statically rendered. Aggressive bot protection but predictable patterns - rotate user agents and include 'X-Requested-With: XMLHttpRequest' header. Critical insight: their technical articles contain machine-readable measurement charts in HTML tables, perfect for data extraction. Their image CDN uses consistent naming with fabric specifications in filenames."
+  }
+]
