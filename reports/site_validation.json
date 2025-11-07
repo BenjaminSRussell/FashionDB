@@ -1,0 +1,427 @@
+[
+  {
+    "name": "Articles of Style - Core Rules",
+    "domain": "articlesofstyle.com",
+    "priority": 10,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://www.articlesofstyle.com/category/style-guides/",
+      "No post URLs found in https://www.articlesofstyle.com/category/wardrobe-essentials/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Parisian Gentleman - European Rules",
+    "domain": "parisiangentleman.com",
+    "priority": 9,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://www.parisiangentleman.com/style/style-guides/",
+      "No post URLs found in https://www.parisiangentleman.com/style/wardrobe-essentials/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "The Compass - Black Lapel Guides",
+    "domain": "blacklapel.com",
+    "priority": 9,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://www.blacklapel.com/the-compass/category/style-guides/",
+      "No post URLs found in https://www.blacklapel.com/the-compass/category/fit-tips/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Glen Palmer Style - Specific Body Types",
+    "domain": "glenpalmerstyle.com",
+    "priority": 8,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://glenpalmerstyle.com/category/style-guides/",
+      "No post URLs found in https://glenpalmerstyle.com/category/wardrobe-building/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Kinowear - Manufacturer Insights",
+    "domain": "kinowear.com",
+    "priority": 8,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://kinowear.com/category/style-advice/",
+      "No post URLs found in https://kinowear.com/category/wardrobe-guides/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Lisbon Suit Company - European Fits",
+    "domain": "lisbonsuitcompany.com",
+    "priority": 8,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://lisbonsuitcompany.com/blog/category/style-guides/",
+      "No post URLs found in https://lisbonsuitcompany.com/blog/category/fit-advice/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Perfect Gentleman - Traditional Rules",
+    "domain": "theperfectgentleman.co.za",
+    "priority": 7,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://theperfectgentleman.co.za/category/style-guides/",
+      "No post URLs found in https://theperfectgentleman.co.za/category/wardrobe-essentials/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Image Granted - Professional Rules",
+    "domain": "imagegranted.com",
+    "priority": 9,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://imagegranted.com/category/style-guides/",
+      "No post URLs found in https://imagegranted.com/category/wardrobe-planning/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Style & Shaving - Integrated Approach",
+    "domain": "styleandshaving.com",
+    "priority": 7,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://styleandshaving.com/category/mens-style/style-guides/",
+      "No post URLs found in https://styleandshaving.com/category/mens-style/wardrobe-essentials/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Suitable Wardrobe - Minimalist Rules",
+    "domain": "asuitablewardrobe.com",
+    "priority": 8,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://asuitablewardrobe.com/category/style-guides/",
+      "No post URLs found in https://asuitablewardrobe.com/category/wardrobe-building/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "The Modest Guy - Budget Rules",
+    "domain": "themodestguy.com",
+    "priority": 7,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://themodestguy.com/category/style-guides/",
+      "No post URLs found in https://themodestguy.com/category/wardrobe-essentials/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Sharpography - Contemporary Rules",
+    "domain": "sharpography.com",
+    "priority": 8,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://sharpography.com/category/style-guides/",
+      "No post URLs found in https://sharpography.com/category/fit-guides/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Bespoke Post Journal - Practical Guides",
+    "domain": "journal.bespokepost.com",
+    "priority": 7,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://journal.bespokepost.com/category/style/style-guides/",
+      "No post URLs found in https://journal.bespokepost.com/category/style/wardrobe-essentials/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "A Tailored Suit - Formal Wear Rules",
+    "domain": "atailoredsuit.com",
+    "priority": 9,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://www.atailoredsuit.com/blog/category/style-guides/",
+      "No post URLs found in https://www.atailoredsuit.com/blog/category/formal-wear/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "The Armoury Journal - Bespoke Rules",
+    "domain": "thearmoury.com",
+    "priority": 10,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://thearmoury.com/blogs/journal/style-guides",
+      "No post URLs found in https://thearmoury.com/blogs/journal/fit-guidelines"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Sartorial Notes - European Perspective",
+    "domain": "sartorialnotes.com",
+    "priority": 8,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://sartorialnotes.com/category/style-guides/",
+      "No post URLs found in https://sartorialnotes.com/category/wardrobe-basics/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Die, Workwear! - Professional Rules",
+    "domain": "dieworkwear.com",
+    "priority": 9,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://dieworkwear.com/category/style-guides/",
+      "No post URLs found in https://dieworkwear.com/category/workwear-style/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "The Dandy Project - Modern Formality",
+    "domain": "thedandyproject.com",
+    "priority": 7,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://thedandyproject.com/category/style-guides/",
+      "No post URLs found in https://thedandyproject.com/category/formal-wear/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Mens Fashion Magazine - Technical Guides",
+    "domain": "mensfashionmagazine.com",
+    "priority": 7,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://mensfashionmagazine.com/category/style-guides/",
+      "No post URLs found in https://mensfashionmagazine.com/category/fit-advice/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Kinoti Style - Color Theory",
+    "domain": "kinotistyle.com",
+    "priority": 8,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://kinotistyle.com/category/color-theory/",
+      "No post URLs found in https://kinotistyle.com/category/style-guides/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Tie Bar Blog - Accessory Rules",
+    "domain": "the.tiebar.com",
+    "priority": 6,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://the.tiebar.com/blogs/blog/style-guides",
+      "No post URLs found in https://the.tiebar.com/blogs/blog/wardrobe-essentials"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Brooks Brothers Journal - Heritage Rules",
+    "domain": "brooksbrothers.com",
+    "priority": 8,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://www.brooksbrothers.com/journal/style-guides/",
+      "No post URLs found in https://www.brooksbrothers.com/journal/wardrobe-essentials/"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "Suitsupply Journal - European Fit",
+    "domain": "suitsupply.com",
+    "priority": 9,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://suitsupply.com/us/journal/style-guides",
+      "No post URLs found in https://suitsupply.com/us/journal/fit-guidelines"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "No Man Walks Alone - Curated Rules",
+    "domain": "nomanwalksalone.com",
+    "priority": 9,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://nomanwalksalone.com/blogs/journal/style-guides",
+      "No post URLs found in https://nomanwalksalone.com/blogs/journal/wardrobe-building"
+    ],
+    "sample_posts": []
+  },
+  {
+    "name": "The Rake - Modern Classics",
+    "domain": "therake.com",
+    "priority": 10,
+    "test_status": "failed",
+    "category_pages_tested": 2,
+    "category_pages_accessible": 0,
+    "post_urls_found": 0,
+    "posts_scraped": 0,
+    "posts_failed": 0,
+    "avg_content_length": 0,
+    "errors": [
+      "No post URLs found in https://therake.com/stories/style/style-guides/",
+      "No post URLs found in https://therake.com/stories/style/rules-of-style/"
+    ],
+    "sample_posts": []
+  }
+]

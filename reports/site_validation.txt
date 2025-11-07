@@ -1,0 +1,361 @@
+================================================================================
+SITE VALIDATION REPORT
+================================================================================
+Test Date: 2025-11-07 01:02:42
+Sites Tested: 25
+
+SUMMARY
+--------------------------------------------------------------------------------
+Successful sites: 0 (0.0%)
+Partial success: 0 (0.0%)
+Failed sites: 25 (100.0%)
+Total posts scraped: 0
+Total posts failed: 0
+
+FAILED SITES (Requires Custom Scraper)
+--------------------------------------------------------------------------------
+Name                                          Error
+--------------------------------------------------------------------------------
+Articles of Style - Core Rules                No post URLs found in https://
+Parisian Gentleman - European Rules           No post URLs found in https://
+The Compass - Black Lapel Guides              No post URLs found in https://
+Glen Palmer Style - Specific Body Types       No post URLs found in https://
+Kinowear - Manufacturer Insights              No post URLs found in https://
+Lisbon Suit Company - European Fits           No post URLs found in https://
+Perfect Gentleman - Traditional Rules         No post URLs found in https://
+Image Granted - Professional Rules            No post URLs found in https://
+Style & Shaving - Integrated Approach         No post URLs found in https://
+Suitable Wardrobe - Minimalist Rules          No post URLs found in https://
+The Modest Guy - Budget Rules                 No post URLs found in https://
+Sharpography - Contemporary Rules             No post URLs found in https://
+Bespoke Post Journal - Practical Guides       No post URLs found in https://
+A Tailored Suit - Formal Wear Rules           No post URLs found in https://
+The Armoury Journal - Bespoke Rules           No post URLs found in https://
+Sartorial Notes - European Perspective        No post URLs found in https://
+Die, Workwear! - Professional Rules           No post URLs found in https://
+The Dandy Project - Modern Formality          No post URLs found in https://
+Mens Fashion Magazine - Technical Guides      No post URLs found in https://
+Kinoti Style - Color Theory                   No post URLs found in https://
+Tie Bar Blog - Accessory Rules                No post URLs found in https://
+Brooks Brothers Journal - Heritage Rules      No post URLs found in https://
+Suitsupply Journal - European Fit             No post URLs found in https://
+No Man Walks Alone - Curated Rules            No post URLs found in https://
+The Rake - Modern Classics                    No post URLs found in https://
+
+DETAILED RESULTS BY SITE
+--------------------------------------------------------------------------------
+
+✗ Articles of Style - Core Rules (articlesofstyle.com)
+   Priority: 10
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://www.articlesofstyle.com/category/style-guides/
+     - No post URLs found in https://www.articlesofstyle.com/category/wardrobe-essentials/
+
+✗ The Armoury Journal - Bespoke Rules (thearmoury.com)
+   Priority: 10
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://thearmoury.com/blogs/journal/style-guides
+     - No post URLs found in https://thearmoury.com/blogs/journal/fit-guidelines
+
+✗ The Rake - Modern Classics (therake.com)
+   Priority: 10
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://therake.com/stories/style/style-guides/
+     - No post URLs found in https://therake.com/stories/style/rules-of-style/
+
+✗ Parisian Gentleman - European Rules (parisiangentleman.com)
+   Priority: 9
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://www.parisiangentleman.com/style/style-guides/
+     - No post URLs found in https://www.parisiangentleman.com/style/wardrobe-essentials/
+
+✗ The Compass - Black Lapel Guides (blacklapel.com)
+   Priority: 9
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://www.blacklapel.com/the-compass/category/style-guides/
+     - No post URLs found in https://www.blacklapel.com/the-compass/category/fit-tips/
+
+✗ Image Granted - Professional Rules (imagegranted.com)
+   Priority: 9
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://imagegranted.com/category/style-guides/
+     - No post URLs found in https://imagegranted.com/category/wardrobe-planning/
+
+✗ A Tailored Suit - Formal Wear Rules (atailoredsuit.com)
+   Priority: 9
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://www.atailoredsuit.com/blog/category/style-guides/
+     - No post URLs found in https://www.atailoredsuit.com/blog/category/formal-wear/
+
+✗ Die, Workwear! - Professional Rules (dieworkwear.com)
+   Priority: 9
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://dieworkwear.com/category/style-guides/
+     - No post URLs found in https://dieworkwear.com/category/workwear-style/
+
+✗ Suitsupply Journal - European Fit (suitsupply.com)
+   Priority: 9
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://suitsupply.com/us/journal/style-guides
+     - No post URLs found in https://suitsupply.com/us/journal/fit-guidelines
+
+✗ No Man Walks Alone - Curated Rules (nomanwalksalone.com)
+   Priority: 9
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://nomanwalksalone.com/blogs/journal/style-guides
+     - No post URLs found in https://nomanwalksalone.com/blogs/journal/wardrobe-building
+
+✗ Glen Palmer Style - Specific Body Types (glenpalmerstyle.com)
+   Priority: 8
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://glenpalmerstyle.com/category/style-guides/
+     - No post URLs found in https://glenpalmerstyle.com/category/wardrobe-building/
+
+✗ Kinowear - Manufacturer Insights (kinowear.com)
+   Priority: 8
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://kinowear.com/category/style-advice/
+     - No post URLs found in https://kinowear.com/category/wardrobe-guides/
+
+✗ Lisbon Suit Company - European Fits (lisbonsuitcompany.com)
+   Priority: 8
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://lisbonsuitcompany.com/blog/category/style-guides/
+     - No post URLs found in https://lisbonsuitcompany.com/blog/category/fit-advice/
+
+✗ Suitable Wardrobe - Minimalist Rules (asuitablewardrobe.com)
+   Priority: 8
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://asuitablewardrobe.com/category/style-guides/
+     - No post URLs found in https://asuitablewardrobe.com/category/wardrobe-building/
+
+✗ Sharpography - Contemporary Rules (sharpography.com)
+   Priority: 8
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://sharpography.com/category/style-guides/
+     - No post URLs found in https://sharpography.com/category/fit-guides/
+
+✗ Sartorial Notes - European Perspective (sartorialnotes.com)
+   Priority: 8
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://sartorialnotes.com/category/style-guides/
+     - No post URLs found in https://sartorialnotes.com/category/wardrobe-basics/
+
+✗ Kinoti Style - Color Theory (kinotistyle.com)
+   Priority: 8
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://kinotistyle.com/category/color-theory/
+     - No post URLs found in https://kinotistyle.com/category/style-guides/
+
+✗ Brooks Brothers Journal - Heritage Rules (brooksbrothers.com)
+   Priority: 8
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://www.brooksbrothers.com/journal/style-guides/
+     - No post URLs found in https://www.brooksbrothers.com/journal/wardrobe-essentials/
+
+✗ Perfect Gentleman - Traditional Rules (theperfectgentleman.co.za)
+   Priority: 7
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://theperfectgentleman.co.za/category/style-guides/
+     - No post URLs found in https://theperfectgentleman.co.za/category/wardrobe-essentials/
+
+✗ Style & Shaving - Integrated Approach (styleandshaving.com)
+   Priority: 7
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://styleandshaving.com/category/mens-style/style-guides/
+     - No post URLs found in https://styleandshaving.com/category/mens-style/wardrobe-essentials/
+
+✗ The Modest Guy - Budget Rules (themodestguy.com)
+   Priority: 7
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://themodestguy.com/category/style-guides/
+     - No post URLs found in https://themodestguy.com/category/wardrobe-essentials/
+
+✗ Bespoke Post Journal - Practical Guides (journal.bespokepost.com)
+   Priority: 7
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://journal.bespokepost.com/category/style/style-guides/
+     - No post URLs found in https://journal.bespokepost.com/category/style/wardrobe-essentials/
+
+✗ The Dandy Project - Modern Formality (thedandyproject.com)
+   Priority: 7
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://thedandyproject.com/category/style-guides/
+     - No post URLs found in https://thedandyproject.com/category/formal-wear/
+
+✗ Mens Fashion Magazine - Technical Guides (mensfashionmagazine.com)
+   Priority: 7
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://mensfashionmagazine.com/category/style-guides/
+     - No post URLs found in https://mensfashionmagazine.com/category/fit-advice/
+
+✗ Tie Bar Blog - Accessory Rules (the.tiebar.com)
+   Priority: 6
+   Status: FAILED
+   Categories tested: 2
+   Categories accessible: 0
+   Post URLs found: 0
+   Posts scraped: 0
+   Posts failed: 0
+   Errors:
+     - No post URLs found in https://the.tiebar.com/blogs/blog/style-guides
+     - No post URLs found in https://the.tiebar.com/blogs/blog/wardrobe-essentials
+
+================================================================================
+
+RECOMMENDATIONS
+--------------------------------------------------------------------------------
+✗ Many sites failing - review scraper configuration
+
+25 sites need custom scrapers:
+  - articlesofstyle.com
+  - parisiangentleman.com
+  - blacklapel.com
+  - glenpalmerstyle.com
+  - kinowear.com
+
+================================================================================
