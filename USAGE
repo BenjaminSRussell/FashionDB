@@ -1,0 +1,33 @@
+QUICK START
+===========
+
+SCRAPE URLs:
+python3 tools/scrape_to_json.py data/batch_5_specific_expert_articles.json
+
+VALIDATE:
+python3 tools/validate_json.py
+
+CHECK URL RULES:
+python3 tools/url_rules_manager.py
+
+DATA FILES
+==========
+data/scraped_articles.json - All scraped articles
+data/validation_metrics.json - Quality scores
+data/url_scraping_rules.json - Per-URL rules (18 sites)
+data/chromium_required_sites.json - Sites needing browser (5 sites)
+
+URL BATCHES
+===========
+data/batch_5_specific_expert_articles.json - 30 URLs
+data/batch_6_expert_articles.json - 43 URLs
+data/batch_7_expert_articles.json - 48 URLs
+
+CODE
+====
+4 files, 349 lines total
+
+tools/scrape_to_json.py - 117 lines
+tools/validate_json.py - 90 lines
+tools/url_rules_manager.py - 90 lines
+tools/scraping_config.py - 38 lines
