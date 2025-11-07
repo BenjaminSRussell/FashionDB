@@ -1,33 +1,38 @@
 QUICK START
 ===========
 
-SCRAPE URLs:
+1. SCRAPE ARTICLES
 python3 tools/scrape_to_json.py data/batch_5_specific_expert_articles.json
+  -> Saves to data/scraped_articles.json
 
-VALIDATE:
-python3 tools/validate_json.py
+2. DEEP ANALYSIS (extract rules & patterns)
+python3 tools/deep_analyze.py
+  -> Saves to data/deep_analysis.json
+  -> Extracts: rules, garments, materials, colors, outfit combos, prices
 
-CHECK URL RULES:
+3. URL DISCOVERY (generate search queries)
+python3 tools/discover_urls.py
+  -> Saves to data/url_discovery_config.json
+  -> 34 queries, 12 topics, 25 sites
+
+4. CHECK URL RULES
 python3 tools/url_rules_manager.py
+  -> Shows 18 configured sites
+  -> Chromium requirements
 
-DATA FILES
-==========
-data/scraped_articles.json - All scraped articles
-data/validation_metrics.json - Quality scores
-data/url_scraping_rules.json - Per-URL rules (18 sites)
-data/chromium_required_sites.json - Sites needing browser (5 sites)
+CURRENT DATA
+============
+91 articles scraped
+543 fashion rules extracted
+9.81 fashion density (mentions/100 words)
+13 high quality articles (70+ score)
+40 articles with 5+ rules
 
-URL BATCHES
+TOP SOURCES
 ===========
-data/batch_5_specific_expert_articles.json - 30 URLs
-data/batch_6_expert_articles.json - 43 URLs
-data/batch_7_expert_articles.json - 48 URLs
-
-CODE
-====
-4 files, 349 lines total
-
-tools/scrape_to_json.py - 117 lines
-tools/validate_json.py - 90 lines
-tools/url_rules_manager.py - 90 lines
-tools/scraping_config.py - 38 lines
+gentlemansgazette.com - 20 rules/article
+effortlessgent.com - 20 rules/article
+putthison.com - 20 rules/article
+primermagazine.com - 20 rules/article
+dappered.com - 20 rules/article
+denimhunters.com - 18 rules/article

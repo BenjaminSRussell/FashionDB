@@ -1,41 +1,40 @@
-DATA STORAGE (JSON Only)
-=========================
+DATA STORAGE
+============
 
-MAIN DATA
----------
+ARTICLES (91 scraped)
+----------------------
 data/scraped_articles.json
-  - All scraped articles
-  - Format: {"articles": [{id, url, domain, title, body, word_count, scraped_at}, ...], "metadata": {...}}
+  - 91 articles from expert sources
+  - Format: {articles: [{id, url, domain, title, body, word_count}, ...]}
+  - Total: 543 rules extracted, 9.81 fashion density
 
-data/validation_metrics.json
-  - Quality metrics for all articles
-  - Format: {"articles": [{...article, quality_score, fashion_terms, truncated}, ...], "summary": {...}}
+DEEP ANALYSIS
+-------------
+data/deep_analysis.json
+  - Per-article analysis with rules, patterns, mentions
+  - 543 total fashion rules extracted
+  - Garment/material/color/style mentions counted
+  - Outfit combinations extracted
+  - Quality scores 0-100
 
 CONFIGURATION
 -------------
 data/url_scraping_rules.json
-  - Per-URL/domain scraping rules
-  - Success rates, selectors, rate limits
-  - Categories: simple_scraping, javascript_required, cloudflare_protected
+  - 18 sites configured with success rates
+  - Per-URL selectors, rate limits, categories
 
 data/chromium_required_sites.json
-  - Sites needing browser automation (5 sites)
-  - Tools: playwright, selenium, undetected-chromedriver
+  - 5 sites needing browser automation
 
-BATCHES (URL Collections)
---------------------------
-data/batch_5_specific_expert_articles.json
-data/batch_6_expert_articles.json
-data/batch_7_expert_articles.json
-  - URL lists to scrape
+data/url_discovery_config.json
+  - 34 search queries across 12 topic categories
+  - 25 fashion sites targeted
+  - URL scoring/filtering rules
 
 TOOLS
 -----
-tools/scrape_to_json.py <batch_file.json>
-  - Scrape URLs, save to data/scraped_articles.json
-
-tools/validate_json.py
-  - Validate articles, save to data/validation_metrics.json
-
-tools/url_rules_manager.py
-  - Check URL rules and requirements
+tools/scrape_to_json.py - Scrape URLs to JSON
+tools/deep_analyze.py - Extract rules, patterns, mentions
+tools/discover_urls.py - Generate URL discovery strategies
+tools/validate_json.py - Basic validation
+tools/url_rules_manager.py - Check URL rules
