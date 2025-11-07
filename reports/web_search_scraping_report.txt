@@ -2,51 +2,49 @@
 WEB SEARCH SCRAPING REPORT
 Independent Fashion Advice Articles (No Reddit Bias)
 ================================================================================
-Date: 2025-11-07 02:15:55
+Date: 2025-11-07 03:13:59
 
 SUMMARY
 --------------------------------------------------------------------------------
-Total URLs attempted: 47
-Successful scrapes: 30
-Failed scrapes: 17
-Success rate: 63.8%
+Total URLs attempted: 30
+Successful scrapes: 16
+Failed scrapes: 14
+Success rate: 53.3%
 
 BY TOPIC
 ================================================================================
 Topic                                         Success    Failed     Rate
 --------------------------------------------------------------------------------
-General Fashion Guides 2024-2025              6          4          60.0%
-Suit Fitting and Measurements                 7          3          70.0%
-Wardrobe Essentials and Basics                7          3          70.0%
-Dress Shoes Guide                             3          4          42.9%
-Color Coordination and Matching               7          3          70.0%
+Denim and Jeans Guide                         5          5          50.0%
+Leather Jacket Style Guide                    4          6          40.0%
+Watch Style Guide                             7          3          70.0%
 
 ================================================================================
 
 DATABASE STATISTICS
 --------------------------------------------------------------------------------
-Total articles in database: 31
-Average article length: 11,217 characters
+Total articles in database: 47
+Average article length: 11,103 characters
 
 Top 10 sources:
-  blog_realmenrealstyle.com: 3
+  blog_realmenrealstyle.com: 7
   blog_askandyaboutclothes.com: 3
   blog_oliverwicks.com: 2
+  blog_mensfashioner.com: 2
   blog_hockerty.com: 2
   blog_valentinacalzaturefirenze.com: 1
+  blog_timex.com: 1
+  blog_thetrendspotter.net: 1
   blog_themodestman.com: 1
   blog_themanual.com: 1
-  blog_thedarkknot.com: 1
-  blog_taelor.style: 1
-  blog_putthison.com: 1
 
 ================================================================================
 
 CONCLUSION
 --------------------------------------------------------------------------------
-✓ Scraped 30 independent fashion advice articles
+✓ Scraped 16 independent fashion advice articles
 ✓ No Reddit bias - discovered via web search
 ✓ Diverse topics covered: fashion guides, suits, wardrobe, shoes, colors
-✓ Average 11,217 characters per article
+✓ Average 11,103 characters per article
 
 ================================================================================

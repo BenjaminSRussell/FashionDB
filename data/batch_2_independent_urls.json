@@ -1,0 +1,56 @@
+{
+  "summary": {
+    "total_urls": 30,
+    "discovery_method": "targeted_web_search_batch_2",
+    "discovery_date": "2025-11-07",
+    "quality": "high - direct article URLs only",
+    "bias": "independent - no Reddit source"
+  },
+  "topics": [
+    {
+      "topic": "Denim and Jeans Guide",
+      "urls": [
+        "https://denimhunters.com/jeans-fit-guide-for-men/",
+        "https://mensfashioner.com/articles/ultimate-guide-to-mens-jeans",
+        "https://www.realmenrealstyle.com/jeans-for-body-type/",
+        "https://www.mottandbow.com/blogs/mens-style/jeans-fit-guide-for-men",
+        "https://www.esquire.com/style/mens-fashion/advice/g1108/how-to-buy-jeans/",
+        "https://www.johnlewis.com/content/mens-jeans-buying-guide",
+        "https://www.guess.com/us/en/men/apparel/jeans-and-denim/fit-guide/",
+        "https://www.levi.com/US/en_US/features/men-jeans",
+        "https://www.joesjeans.com/pages/men-s-denim-fit-guide",
+        "https://www.realmenrealstyle.com/how-to-buy-jeans-chart/"
+      ]
+    },
+    {
+      "topic": "Leather Jacket Style Guide",
+      "urls": [
+        "https://buffalojackson.com/blogs/insight/what-to-wear-with-a-leather-jacket",
+        "https://www.realmenrealstyle.com/leather-jacket-middle-aged/",
+        "https://www.esquire.com/style/mens-fashion/a64308588/what-to-wear-with-leather-jacket/",
+        "https://vonbaer.com/blogs/blog/mens-leather-jackets",
+        "https://www.efurs.co/blog-en/how-to-style-a-mens-leather-jacket-the-ultimate-style-guide",
+        "https://nextluxury.com/mens-style-and-fashion/how-to-wear-a-leather-jacket-for-men/",
+        "https://www.mrporter.com/en-us/journal/fashion/guide-how-to-wear-leather-jacket-biker-1412236",
+        "https://www.fjackets.com/pages/what-to-wear-under-a-leather-jacket.html",
+        "https://www.thetrendspotter.net/how-to-wear-a-leather-jacket/",
+        "https://www.stylesofman.com/leather-jacket-outfits-for-men/"
+      ]
+    },
+    {
+      "topic": "Watch Style Guide",
+      "urls": [
+        "https://www.artofmanliness.com/style/accessories/mans-guide-wristwatches-choose-watch/",
+        "https://www.houseofsilva.com/blog/a-guide-to-choosing-the-perfect-mens-watch",
+        "https://www.trendhim.com/articles/283/how-to-wear-a-men-s-watch-with-style",
+        "https://www.realmenrealstyle.com/wear-watch-with-style/",
+        "https://timex.com/blogs/the-timex-blog/mens-guide-choosing-the-right-watch-style",
+        "https://www.danielwellington.com/blogs/user-guides/the-different-types-of-watches-for-men",
+        "https://mensfashioner.com/articles/how-to-wear-mens-watches",
+        "https://www.suitsexpert.com/blog/watch-types-for-men/",
+        "https://www.gentlemansgazette.com/11-rules-of-the-watch/",
+        "https://swankybadger.com/blogs/lifestyle/best-types-mens-watches"
+      ]
+    }
+  ]
+}
