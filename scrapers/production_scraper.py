@@ -16,8 +16,6 @@ from urllib.parse import urlparse
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from scrapers.base_scraper import BaseScraper, ScrapedContent
-from scrapers.styleforum_scraper import StyleForumScraper
-from scrapers.putthison_scraper import PutThisOnScraper
 
 
 class EnhancedBlogScraper(BaseScraper):
