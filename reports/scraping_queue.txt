@@ -1,0 +1,44 @@
+================================================================================
+SCRAPING QUEUE REPORT
+================================================================================
+
+SUMMARY
+--------------------------------------------------------------------------------
+Curated sites: 15
+Reddit-discovered sites: 7
+Total sources: 22
+Total URLs to scrape: 193
+
+CURATED SITES (Priority)
+--------------------------------------------------------------------------------
+Priority   Name                                     URLs
+--------------------------------------------------------------------------------
+10         Articles of Style - Core Rules           3
+10         The Armoury Journal - Bespoke Rules      2
+9          Parisian Gentleman - European Rules      2
+9          The Compass - Black Lapel Guides         2
+9          Image Granted - Professional Rules       2
+9          A Tailored Suit - Formal Wear Rules      2
+8          Glen Palmer Style - Specific Body Types  2
+8          Kinowear - Manufacturer Insights         2
+8          Lisbon Suit Company - European Fits      2
+8          Suitable Wardrobe - Minimalist Rules     2
+8          Sharpography - Contemporary Rules        2
+7          Perfect Gentleman - Traditional Rules    2
+7          Style & Shaving - Integrated Approach    2
+7          The Modest Guy - Budget Rules            2
+7          Bespoke Post Journal - Practical Guides  2
+
+REDDIT-DISCOVERED SITES
+--------------------------------------------------------------------------------
+Domain                                   URLs       Mentions
+--------------------------------------------------------------------------------
+putthison.com                            50         66
+styleforum.net                           50         53
+dappered.com                             25         25
+streetxsprezza.wordpress.com             21         24
+medium.com                               7          8
+nstarleather.wordpress.com               5          7
+theshoesnobblog.com                      4          4
+
+================================================================================
