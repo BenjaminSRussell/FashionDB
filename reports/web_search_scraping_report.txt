@@ -1,0 +1,52 @@
+================================================================================
+WEB SEARCH SCRAPING REPORT
+Independent Fashion Advice Articles (No Reddit Bias)
+================================================================================
+Date: 2025-11-07 02:09:58
+
+SUMMARY
+--------------------------------------------------------------------------------
+Total URLs attempted: 47
+Successful scrapes: 29
+Failed scrapes: 18
+Success rate: 61.7%
+
+BY TOPIC
+================================================================================
+Topic                                         Success    Failed     Rate
+--------------------------------------------------------------------------------
+General Fashion Guides 2024-2025              4          6          40.0%
+Suit Fitting and Measurements                 7          3          70.0%
+Wardrobe Essentials and Basics                7          3          70.0%
+Dress Shoes Guide                             4          3          57.1%
+Color Coordination and Matching               7          3          70.0%
+
+================================================================================
+
+DATABASE STATISTICS
+--------------------------------------------------------------------------------
+Total articles in database: 29
+Average article length: 11,560 characters
+
+Top 10 sources:
+  blog_realmenrealstyle.com: 3
+  blog_askandyaboutclothes.com: 3
+  blog_oliverwicks.com: 2
+  blog_hockerty.com: 2
+  blog_valentinacalzaturefirenze.com: 1
+  blog_themodestman.com: 1
+  blog_themanual.com: 1
+  blog_thedarkknot.com: 1
+  blog_putthison.com: 1
+  blog_nimble-made.com: 1
+
+================================================================================
+
+CONCLUSION
+--------------------------------------------------------------------------------
+✓ Scraped 29 independent fashion advice articles
+✓ No Reddit bias - discovered via web search
+✓ Diverse topics covered: fashion guides, suits, wardrobe, shoes, colors
+✓ Average 11,560 characters per article
+
+================================================================================
