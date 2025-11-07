@@ -1,0 +1,41 @@
+DATA STORAGE (JSON Only)
+=========================
+
+MAIN DATA
+---------
+data/scraped_articles.json
+  - All scraped articles
+  - Format: {"articles": [{id, url, domain, title, body, word_count, scraped_at}, ...], "metadata": {...}}
+
+data/validation_metrics.json
+  - Quality metrics for all articles
+  - Format: {"articles": [{...article, quality_score, fashion_terms, truncated}, ...], "summary": {...}}
+
+CONFIGURATION
+-------------
+data/url_scraping_rules.json
+  - Per-URL/domain scraping rules
+  - Success rates, selectors, rate limits
+  - Categories: simple_scraping, javascript_required, cloudflare_protected
+
+data/chromium_required_sites.json
+  - Sites needing browser automation (5 sites)
+  - Tools: playwright, selenium, undetected-chromedriver
+
+BATCHES (URL Collections)
+--------------------------
+data/batch_5_specific_expert_articles.json
+data/batch_6_expert_articles.json
+data/batch_7_expert_articles.json
+  - URL lists to scrape
+
+TOOLS
+-----
+tools/scrape_to_json.py <batch_file.json>
+  - Scrape URLs, save to data/scraped_articles.json
+
+tools/validate_json.py
+  - Validate articles, save to data/validation_metrics.json
+
+tools/url_rules_manager.py
+  - Check URL rules and requirements
