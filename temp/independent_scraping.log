@@ -1,0 +1,99 @@
+================================================================================
+WEB SEARCH SCRAPING - Independent Fashion Advice URLs
+================================================================================
+Input: /home/user/FashionDB/data/web_search_discovered_urls.json
+Database: /home/user/FashionDB/data/independent_content.db
+================================================================================
+Loaded 50 URLs from 5 topics
+
+
+======================================================================
+[1/5] General Fashion Guides 2024-2025
+URLs: 10
+======================================================================
+
+[1/10] https://www.fashionbeans.com/...
+      Scraping: https://www.fashionbeans.com/
+  [!] Fetch failed (attempt 1/3): 403 Client Error: Forbidden for url: https://www.fashionbeans.com/
+  [!] Fetch failed (attempt 2/3): 403 Client Error: Forbidden for url: https://www.fashionbeans.com/
+  [!] Fetch failed (attempt 3/3): 403 Client Error: Forbidden for url: https://www.fashionbeans.com/
+    ✗ Insufficient content
+
+[2/10] https://fashna.com/25-best-mens-fashion-trends-to-know-in-20...
+      Scraping: https://fashna.com/25-best-mens-fashion-trends-to-know-in-2024/
+        ✓ Extracted: 13355 chars
+    ✓ 25 Best men’s fashion trends to know in 2024... (13354 chars)
+
+[3/10] https://westwoodhart.com/blogs/westwood-hart/mens-common-sty...
+      Scraping: https://westwoodhart.com/blogs/westwood-hart/mens-common-style-mistakes-a-guide-to-better-dressing-in-2025
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://westwoodhart.com/blogs/westwood-hart/mens-common-style-mistakes-a-guide-to-better-dressing-in-2025
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://westwoodhart.com/blogs/westwood-hart/mens-common-style-mistakes-a-guide-to-better-dressing-in-2025
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://westwoodhart.com/blogs/westwood-hart/mens-common-style-mistakes-a-guide-to-better-dressing-in-2025
+    ✗ Insufficient content
+
+[4/10] https://www.percivalclo.com/blogs/style-guides/guide-to-2025...
+      Scraping: https://www.percivalclo.com/blogs/style-guides/guide-to-2025-menswear-trends
+        [!] No content found
+    ✗ Insufficient content
+
+[5/10] https://madvikingbeard.com/blogs/the-viking-blog/mens-style-...
+      Scraping: https://madvikingbeard.com/blogs/the-viking-blog/mens-style-guide
+        ✓ Extracted: 20685 chars
+    ✓ The Ultimate Men's Style Guide for 2024... (20685 chars)
+
+[6/10] https://www.menshealth.com/style/...
+      Scraping: https://www.menshealth.com/style/
+        [!] No content found
+    ✗ Insufficient content
+
+[7/10] https://taelor.style/blogs/mens-style/fashion-trends-for-men...
+      Scraping: https://taelor.style/blogs/mens-style/fashion-trends-for-men
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://taelor.style/blogs/mens-style/fashion-trends-for-men
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://taelor.style/blogs/mens-style/fashion-trends-for-men
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://taelor.style/blogs/mens-style/fashion-trends-for-men
+    ✗ Insufficient content
+
+[8/10] https://303magazine.com/2025/01/mens-guide-to-glowing-up-in-...
+      Scraping: https://303magazine.com/2025/01/mens-guide-to-glowing-up-in-2025/
+        ✓ Extracted: 4535 chars
+    ✓ Men’s Guide To Glowing Up In 2025... (4533 chars)
+
+[9/10] https://aklasu.co/blogs/journal/style-tips-for-men...
+      Scraping: https://aklasu.co/blogs/journal/style-tips-for-men
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://aklasu.co/blogs/journal/style-tips-for-men
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://aklasu.co/blogs/journal/style-tips-for-men
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://aklasu.co/blogs/journal/style-tips-for-men
+    ✗ Insufficient content
+
+[10/10] https://www.themodestman.com/mens-style-rules-2025/...
+      Scraping: https://www.themodestman.com/mens-style-rules-2025/
+        ✓ Extracted: 4838 chars
+    ✓ 13 Style Rules for Men Who Want to Dress to Win in 2025... (4838 chars)
+
+======================================================================
+[2/5] Suit Fitting and Measurements
+URLs: 10
+======================================================================
+
+[1/10] https://www.leonardsilver.com/pages/measure-yourself-guide...
+      Scraping: https://www.leonardsilver.com/pages/measure-yourself-guide
+        ✓ Extracted: 430 chars
+    ✓ The Complete Guide On How To Measure For A Suit... (430 chars)
+
+[2/10] https://blog.lanieri.com/en/take-measurements-mens-suit/...
+      Scraping: https://blog.lanieri.com/en/take-measurements-mens-suit/
+        ✓ Extracted: 5992 chars
+    ✓ How to take measurements for a men’s suit... (5992 chars)
+
+[3/10] https://www.hockerty.com/en-us/blog/how-to-measure-for-a-sui...
+      Scraping: https://www.hockerty.com/en-us/blog/how-to-measure-for-a-suit
+        ✓ Extracted: 4412 chars
+    ✓ How to Measure for a Suit [Take Men Body Measurements]... (4411 chars)
+
+[4/10] https://atailoredsuit.com/your-measurements-tailored-suit.ht...
+      Scraping: https://atailoredsuit.com/your-measurements-tailored-suit.html
+        ✓ Extracted: 11129 chars
+    ✓ Your Measurements... (11129 chars)
+
+[5/10] https://www.culwell.com/blogs/how-to-measure-a-suit...
+      Scraping: https://www.culwell.com/blogs/how-to-measure-a-suit
