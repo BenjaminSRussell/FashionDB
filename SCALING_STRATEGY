@@ -1,0 +1,84 @@
+MASSIVE DATA SCALING STRATEGY
+=============================
+
+CURRENT STATUS
+--------------
+91 articles scraped (927KB)
+543 fashion rules extracted
+9.81 fashion density (mentions/100 words)
+Deep analysis complete (1.1MB)
+Total: ~2MB data
+
+FOCUS: FASHION RULES AND DOS AND DONTS
+---------------------------------------
+Extracted rule types:
+- always/must rules
+- never/avoid rules
+- how_to guides
+- when_to advice
+- pair_with combinations
+- color_match rules
+- fit guidelines
+
+URL DISCOVERY TOOLS CREATED
+----------------------------
+1. tools/massive_discovery.py
+   - 174 search queries
+   - 42 fashion sites targeted
+   - Focus: "dos and donts", "rules", "style mistakes"
+   - Query types: rule_search, site_rules, site_howto, site_fit, topic_rules
+
+2. tools/discover_urls.py
+   - 12 topic categories
+   - 25 fashion sites
+   - URL pattern matching
+   - Scoring algorithm (0-100)
+
+CHALLENGE: URL DISCOVERY
+-------------------------
+Cannot guess URLs - most fail with 404/403 errors.
+Need REAL URLs from:
+- Google/Bing search API (execute 174 queries)
+- Site sitemaps (XML parsing)
+- Web crawling (follow links from known pages)
+- Reddit/forum scraping (r/malefashionadvice)
+
+TO REACH GB-SCALE (500x current size)
+--------------------------------------
+Need ~45,000 articles (vs current 91)
+
+Options:
+1. SEARCH API integration
+   - Execute massive_discovery.py queries via search API
+   - Extract top 20 URLs per query = 3,480 URLs
+   - Repeat with variations = 10,000+ URLs
+
+2. SITEMAP crawling
+   - Parse XML sitemaps from 42 fashion sites
+   - Filter for rule/guide content
+   - Automated discovery
+
+3. WEB CRAWLING
+   - Start from known good URLs
+   - Follow internal links
+   - Depth-first search
+   - Respect robots.txt
+
+4. REDDIT data
+   - Scrape r/malefashionadvice links
+   - Extract cited URLs
+   - Community-validated content
+
+NEXT STEPS
+----------
+User must choose approach:
+- Integrate search API?
+- Build sitemap parser?
+- Create web crawler?
+- Use existing URL database?
+
+DETERMINISTIC & REPLICABLE: YES
+- Fixed retry logic (3 attempts)
+- Consistent delays (1-2s)
+- JSON storage with timestamps
+- Deep analysis reproduces same results

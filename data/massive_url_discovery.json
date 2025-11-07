@@ -1,0 +1,921 @@
+{
+  "total_queries": 174,
+  "focus": "FASHION RULES AND DOS AND DONTS",
+  "target_sites": 42,
+  "sites": [
+    "putthison.com",
+    "ivy-style.com",
+    "dappered.com",
+    "stitchdown.com",
+    "primermagazine.com",
+    "hespokestyle.com",
+    "permanentstyle.com",
+    "effortlessgent.com",
+    "gentlemansgazette.com",
+    "denimhunters.com",
+    "heddels.com",
+    "highsnobiety.com",
+    "valetmag.com",
+    "artofmanliness.com",
+    "realmenrealstyle.com",
+    "fashionbeans.com",
+    "thetrendspotter.net",
+    "themodestman.com",
+    "mensfashioner.com",
+    "thedarkknot.com",
+    "blacklapel.com",
+    "propercloth.com",
+    "bespokeedge.com",
+    "manofmany.com",
+    "dmarge.com",
+    "gq.com",
+    "esquire.com",
+    "menshealth.com",
+    "askmen.com",
+    "complex.com",
+    "insidehook.com",
+    "gear-patrol.com",
+    "uncrate.com",
+    "coolmaterial.com",
+    "hiconsumption.com",
+    "manmadediy.com",
+    "fashionbeans.com",
+    "thetrendspotter.net",
+    "styleandthetailor.com",
+    "kinowear.com",
+    "acontinuouslean.com",
+    "afinetoothcomb.co.uk"
+  ],
+  "search_queries": [
+    {
+      "query": "fashion rules for men",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "style rules every man should know",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "menswear dos and donts",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "fashion dos and donts men",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "style mistakes to avoid",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "what not to wear men",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "how to dress better men",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "style tips for men",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "how to wear a suit",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "suit rules men",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "dress shirt rules",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "tie dos and donts",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "jeans fit guide",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "how to match colors men",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "shoe matching rules",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "belt matching rules",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "business casual dos and donts",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "smart casual rules",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "formal wear rules men",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "date night outfit rules",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "wedding guest attire men",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "job interview outfit rules",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "how should a suit fit",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "pants fit guide men",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "shirt fit rules",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "jacket fit guide",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "proper fit menswear",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "color matching rules men",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "what colors go together menswear",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "color combinations men",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "navy suit what to wear",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "gray suit combinations",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "biggest style mistakes men",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "fashion mistakes to avoid",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "common menswear errors",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "what not to do style",
+      "type": "rule_search",
+      "focus": "dos_and_donts"
+    },
+    {
+      "query": "site:putthison.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "putthison.com"
+    },
+    {
+      "query": "site:putthison.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "putthison.com"
+    },
+    {
+      "query": "site:putthison.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "putthison.com"
+    },
+    {
+      "query": "site:ivy-style.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "ivy-style.com"
+    },
+    {
+      "query": "site:ivy-style.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "ivy-style.com"
+    },
+    {
+      "query": "site:ivy-style.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "ivy-style.com"
+    },
+    {
+      "query": "site:dappered.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "dappered.com"
+    },
+    {
+      "query": "site:dappered.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "dappered.com"
+    },
+    {
+      "query": "site:dappered.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "dappered.com"
+    },
+    {
+      "query": "site:stitchdown.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "stitchdown.com"
+    },
+    {
+      "query": "site:stitchdown.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "stitchdown.com"
+    },
+    {
+      "query": "site:stitchdown.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "stitchdown.com"
+    },
+    {
+      "query": "site:primermagazine.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "primermagazine.com"
+    },
+    {
+      "query": "site:primermagazine.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "primermagazine.com"
+    },
+    {
+      "query": "site:primermagazine.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "primermagazine.com"
+    },
+    {
+      "query": "site:hespokestyle.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "hespokestyle.com"
+    },
+    {
+      "query": "site:hespokestyle.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "hespokestyle.com"
+    },
+    {
+      "query": "site:hespokestyle.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "hespokestyle.com"
+    },
+    {
+      "query": "site:permanentstyle.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "permanentstyle.com"
+    },
+    {
+      "query": "site:permanentstyle.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "permanentstyle.com"
+    },
+    {
+      "query": "site:permanentstyle.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "permanentstyle.com"
+    },
+    {
+      "query": "site:effortlessgent.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "effortlessgent.com"
+    },
+    {
+      "query": "site:effortlessgent.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "effortlessgent.com"
+    },
+    {
+      "query": "site:effortlessgent.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "effortlessgent.com"
+    },
+    {
+      "query": "site:gentlemansgazette.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "gentlemansgazette.com"
+    },
+    {
+      "query": "site:gentlemansgazette.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "gentlemansgazette.com"
+    },
+    {
+      "query": "site:gentlemansgazette.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "gentlemansgazette.com"
+    },
+    {
+      "query": "site:denimhunters.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "denimhunters.com"
+    },
+    {
+      "query": "site:denimhunters.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "denimhunters.com"
+    },
+    {
+      "query": "site:denimhunters.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "denimhunters.com"
+    },
+    {
+      "query": "site:heddels.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "heddels.com"
+    },
+    {
+      "query": "site:heddels.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "heddels.com"
+    },
+    {
+      "query": "site:heddels.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "heddels.com"
+    },
+    {
+      "query": "site:highsnobiety.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "highsnobiety.com"
+    },
+    {
+      "query": "site:highsnobiety.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "highsnobiety.com"
+    },
+    {
+      "query": "site:highsnobiety.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "highsnobiety.com"
+    },
+    {
+      "query": "site:valetmag.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "valetmag.com"
+    },
+    {
+      "query": "site:valetmag.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "valetmag.com"
+    },
+    {
+      "query": "site:valetmag.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "valetmag.com"
+    },
+    {
+      "query": "site:artofmanliness.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "artofmanliness.com"
+    },
+    {
+      "query": "site:artofmanliness.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "artofmanliness.com"
+    },
+    {
+      "query": "site:artofmanliness.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "artofmanliness.com"
+    },
+    {
+      "query": "site:realmenrealstyle.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "realmenrealstyle.com"
+    },
+    {
+      "query": "site:realmenrealstyle.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "realmenrealstyle.com"
+    },
+    {
+      "query": "site:realmenrealstyle.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "realmenrealstyle.com"
+    },
+    {
+      "query": "site:fashionbeans.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "fashionbeans.com"
+    },
+    {
+      "query": "site:fashionbeans.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "fashionbeans.com"
+    },
+    {
+      "query": "site:fashionbeans.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "fashionbeans.com"
+    },
+    {
+      "query": "site:thetrendspotter.net \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "thetrendspotter.net"
+    },
+    {
+      "query": "site:thetrendspotter.net \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "thetrendspotter.net"
+    },
+    {
+      "query": "site:thetrendspotter.net \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "thetrendspotter.net"
+    },
+    {
+      "query": "site:themodestman.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "themodestman.com"
+    },
+    {
+      "query": "site:themodestman.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "themodestman.com"
+    },
+    {
+      "query": "site:themodestman.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "themodestman.com"
+    },
+    {
+      "query": "site:mensfashioner.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "mensfashioner.com"
+    },
+    {
+      "query": "site:mensfashioner.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "mensfashioner.com"
+    },
+    {
+      "query": "site:mensfashioner.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "mensfashioner.com"
+    },
+    {
+      "query": "site:thedarkknot.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "thedarkknot.com"
+    },
+    {
+      "query": "site:thedarkknot.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "thedarkknot.com"
+    },
+    {
+      "query": "site:thedarkknot.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "thedarkknot.com"
+    },
+    {
+      "query": "site:blacklapel.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "blacklapel.com"
+    },
+    {
+      "query": "site:blacklapel.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "blacklapel.com"
+    },
+    {
+      "query": "site:blacklapel.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "blacklapel.com"
+    },
+    {
+      "query": "site:propercloth.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "propercloth.com"
+    },
+    {
+      "query": "site:propercloth.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "propercloth.com"
+    },
+    {
+      "query": "site:propercloth.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "propercloth.com"
+    },
+    {
+      "query": "site:bespokeedge.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "bespokeedge.com"
+    },
+    {
+      "query": "site:bespokeedge.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "bespokeedge.com"
+    },
+    {
+      "query": "site:bespokeedge.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "bespokeedge.com"
+    },
+    {
+      "query": "site:manofmany.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "manofmany.com"
+    },
+    {
+      "query": "site:manofmany.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "manofmany.com"
+    },
+    {
+      "query": "site:manofmany.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "manofmany.com"
+    },
+    {
+      "query": "site:dmarge.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "dmarge.com"
+    },
+    {
+      "query": "site:dmarge.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "dmarge.com"
+    },
+    {
+      "query": "site:dmarge.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "dmarge.com"
+    },
+    {
+      "query": "site:gq.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "gq.com"
+    },
+    {
+      "query": "site:gq.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "gq.com"
+    },
+    {
+      "query": "site:gq.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "gq.com"
+    },
+    {
+      "query": "site:esquire.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "esquire.com"
+    },
+    {
+      "query": "site:esquire.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "esquire.com"
+    },
+    {
+      "query": "site:esquire.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "esquire.com"
+    },
+    {
+      "query": "site:menshealth.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "menshealth.com"
+    },
+    {
+      "query": "site:menshealth.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "menshealth.com"
+    },
+    {
+      "query": "site:menshealth.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "menshealth.com"
+    },
+    {
+      "query": "site:askmen.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "askmen.com"
+    },
+    {
+      "query": "site:askmen.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "askmen.com"
+    },
+    {
+      "query": "site:askmen.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "askmen.com"
+    },
+    {
+      "query": "site:complex.com \"dos and donts\" OR \"rules\" OR \"guide\"",
+      "type": "site_rules",
+      "site": "complex.com"
+    },
+    {
+      "query": "site:complex.com \"how to\" OR \"style tips\"",
+      "type": "site_howto",
+      "site": "complex.com"
+    },
+    {
+      "query": "site:complex.com \"fit guide\" OR \"should fit\"",
+      "type": "site_fit",
+      "site": "complex.com"
+    },
+    {
+      "query": "suit dos and donts men",
+      "type": "topic_rules",
+      "topic": "suit"
+    },
+    {
+      "query": "suit rules men",
+      "type": "topic_rules",
+      "topic": "suit"
+    },
+    {
+      "query": "suit style guide men",
+      "type": "topic_guide",
+      "topic": "suit"
+    },
+    {
+      "query": "how to wear suit",
+      "type": "topic_howto",
+      "topic": "suit"
+    },
+    {
+      "query": "jacket dos and donts men",
+      "type": "topic_rules",
+      "topic": "jacket"
+    },
+    {
+      "query": "jacket rules men",
+      "type": "topic_rules",
+      "topic": "jacket"
+    },
+    {
+      "query": "jacket style guide men",
+      "type": "topic_guide",
+      "topic": "jacket"
+    },
+    {
+      "query": "how to wear jacket",
+      "type": "topic_howto",
+      "topic": "jacket"
+    },
+    {
+      "query": "blazer dos and donts men",
+      "type": "topic_rules",
+      "topic": "blazer"
+    },
+    {
+      "query": "blazer rules men",
+      "type": "topic_rules",
+      "topic": "blazer"
+    },
+    {
+      "query": "blazer style guide men",
+      "type": "topic_guide",
+      "topic": "blazer"
+    },
+    {
+      "query": "how to wear blazer",
+      "type": "topic_howto",
+      "topic": "blazer"
+    },
+    {
+      "query": "shirt dos and donts men",
+      "type": "topic_rules",
+      "topic": "shirt"
+    },
+    {
+      "query": "shirt rules men",
+      "type": "topic_rules",
+      "topic": "shirt"
+    },
+    {
+      "query": "shirt style guide men",
+      "type": "topic_guide",
+      "topic": "shirt"
+    },
+    {
+      "query": "how to wear shirt",
+      "type": "topic_howto",
+      "topic": "shirt"
+    },
+    {
+      "query": "tie dos and donts men",
+      "type": "topic_rules",
+      "topic": "tie"
+    },
+    {
+      "query": "tie rules men",
+      "type": "topic_rules",
+      "topic": "tie"
+    },
+    {
+      "query": "tie style guide men",
+      "type": "topic_guide",
+      "topic": "tie"
+    },
+    {
+      "query": "how to wear tie",
+      "type": "topic_howto",
+      "topic": "tie"
+    },
+    {
+      "query": "pants dos and donts men",
+      "type": "topic_rules",
+      "topic": "pants"
+    },
+    {
+      "query": "pants rules men",
+      "type": "topic_rules",
+      "topic": "pants"
+    },
+    {
+      "query": "pants style guide men",
+      "type": "topic_guide",
+      "topic": "pants"
+    },
+    {
+      "query": "how to wear pants",
+      "type": "topic_howto",
+      "topic": "pants"
+    },
+    {
+      "query": "jeans dos and donts men",
+      "type": "topic_rules",
+      "topic": "jeans"
+    },
+    {
+      "query": "jeans rules men",
+      "type": "topic_rules",
+      "topic": "jeans"
+    },
+    {
+      "query": "jeans style guide men",
+      "type": "topic_guide",
+      "topic": "jeans"
+    },
+    {
+      "query": "how to wear jeans",
+      "type": "topic_howto",
+      "topic": "jeans"
+    },
+    {
+      "query": "shoes dos and donts men",
+      "type": "topic_rules",
+      "topic": "shoes"
+    },
+    {
+      "query": "shoes rules men",
+      "type": "topic_rules",
+      "topic": "shoes"
+    },
+    {
+      "query": "shoes style guide men",
+      "type": "topic_guide",
+      "topic": "shoes"
+    },
+    {
+      "query": "how to wear shoes",
+      "type": "topic_howto",
+      "topic": "shoes"
+    },
+    {
+      "query": "boots dos and donts men",
+      "type": "topic_rules",
+      "topic": "boots"
+    },
+    {
+      "query": "boots rules men",
+      "type": "topic_rules",
+      "topic": "boots"
+    },
+    {
+      "query": "boots style guide men",
+      "type": "topic_guide",
+      "topic": "boots"
+    },
+    {
+      "query": "how to wear boots",
+      "type": "topic_howto",
+      "topic": "boots"
+    },
+    {
+      "query": "sneakers dos and donts men",
+      "type": "topic_rules",
+      "topic": "sneakers"
+    },
+    {
+      "query": "sneakers rules men",
+      "type": "topic_rules",
+      "topic": "sneakers"
+    },
+    {
+      "query": "sneakers style guide men",
+      "type": "topic_guide",
+      "topic": "sneakers"
+    },
+    {
+      "query": "how to wear sneakers",
+      "type": "topic_howto",
+      "topic": "sneakers"
+    },
+    {
+      "query": "dress shoes dos and donts men",
+      "type": "topic_rules",
+      "topic": "dress shoes"
+    },
+    {
+      "query": "dress shoes rules men",
+      "type": "topic_rules",
+      "topic": "dress shoes"
+    },
+    {
+      "query": "dress shoes style guide men",
+      "type": "topic_guide",
+      "topic": "dress shoes"
+    },
+    {
+      "query": "how to wear dress shoes",
+      "type": "topic_howto",
+      "topic": "dress shoes"
+    },
+    {
+      "query": "loafers dos and donts men",
+      "type": "topic_rules",
+      "topic": "loafers"
+    },
+    {
+      "query": "loafers rules men",
+      "type": "topic_rules",
+      "topic": "loafers"
+    },
+    {
+      "query": "loafers style guide men",
+      "type": "topic_guide",
+      "topic": "loafers"
+    },
+    {
+      "query": "how to wear loafers",
+      "type": "topic_howto",
+      "topic": "loafers"
+    }
+  ]
+}

@@ -15,6 +15,12 @@ python3 tools/discover_urls.py
   -> Saves to data/url_discovery_config.json
   -> 34 queries, 12 topics, 25 sites
 
+3b. MASSIVE URL DISCOVERY (rules-focused)
+python3 tools/massive_discovery.py
+  -> Saves to data/massive_url_discovery.json
+  -> 174 queries focused on FASHION RULES AND DOS AND DONTS
+  -> 42 fashion sites, 7 query types
+
 4. CHECK URL RULES
 python3 tools/url_rules_manager.py
   -> Shows 18 configured sites
