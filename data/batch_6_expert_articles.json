@@ -1,0 +1,85 @@
+{
+  "summary": {
+    "total_urls": 43,
+    "discovery_method": "site_specific_searches_batch_6",
+    "discovery_date": "2025-11-07",
+    "focus": "expert menswear guides - suits, denim, minimalism, shoes, dress codes",
+    "quality": "expert-level - comprehensive guides and detailed advice",
+    "bias": "independent - curated expert sources"
+  },
+  "topics": [
+    {
+      "topic": "He Spoke Style - Suits & Color Coordination",
+      "description": "Comprehensive suit guides, pattern mixing, color combinations",
+      "urls": [
+        "https://hespokestyle.com/gray-suit-power-suit/",
+        "https://hespokestyle.com/most-versatile-suit-color/",
+        "https://hespokestyle.com/dark-brown-suit-shirt-tie-combinations/",
+        "https://hespokestyle.com/pattern-mixing-rules/",
+        "https://hespokestyle.com/mens-three-piece-suit-guide/",
+        "https://hespokestyle.com/1-piece-6-ways-black-three-piece-suit/",
+        "https://hespokestyle.com/brown-double-breasted-suit-flannel-ways-to-wear/",
+        "https://hespokestyle.com/blue-suit-what-color-tie/",
+        "https://hespokestyle.com/grey-suit-burgundy-combination/",
+        "https://hespokestyle.com/flannel-suit-in-black-flannel/"
+      ]
+    },
+    {
+      "topic": "Gentleman's Gazette - Dress Codes & Formality",
+      "description": "Definitive dress code guides from casual to white tie",
+      "urls": [
+        "https://www.gentlemansgazette.com/the-dress-code-primer/",
+        "https://www.gentlemansgazette.com/the-formality-scale-how/",
+        "https://www.gentlemansgazette.com/semi-formal-dress-code/",
+        "https://www.gentlemansgazette.com/dress-code-business-attire/",
+        "https://www.gentlemansgazette.com/business-casual-men-attire/",
+        "https://www.gentlemansgazette.com/menswear-rules-to-break/",
+        "https://www.gentlemansgazette.com/tuxedo-black-tie-guide/",
+        "https://www.gentlemansgazette.com/smart-casual-dress-code/",
+        "https://www.gentlemansgazette.com/tuxedo-black-tie-guide/etiquette/why-black-tie-matters/"
+      ]
+    },
+    {
+      "topic": "Denimhunters - Selvedge & Raw Denim Mastery",
+      "description": "Ultimate denim guides, fit recommendations, styling advice",
+      "urls": [
+        "https://denimhunters.com/denim-wiki/denim-explained/selvedge/",
+        "https://denimhunters.com/mens-selvedge-jeans-guide/",
+        "https://denimhunters.com/best-nudie-jeans/",
+        "https://denimhunters.com/buying-guides-well-made-essentials/raw-selvedge-jeans/",
+        "https://denimhunters.com/denim-style-faq/",
+        "https://denimhunters.com/white-shirt-raw-denim/",
+        "https://denimhunters.com/slim-fit-selvedge-jeans-guide/",
+        "https://denimhunters.com/high-rise-jeans-guide/",
+        "https://denimhunters.com/buying-raw-denim-beginners-guide/",
+        "https://denimhunters.com/samurai-jeans-fit-guide/"
+      ]
+    },
+    {
+      "topic": "Effortless Gent - Minimalist Wardrobe Building",
+      "description": "Lean wardrobe philosophy, essentials, versatile style",
+      "urls": [
+        "https://effortlessgent.com/lean-wardrobe-minimalist-wardrobe-men/",
+        "https://effortlessgent.com/mens-wardrobe-essentials/",
+        "https://effortlessgent.com/lean-wardrobe-pyramid/",
+        "https://effortlessgent.com/college-wardrobe-essentials/",
+        "https://effortlessgent.com/mens-winter-fashion/",
+        "https://effortlessgent.com/how-to-find-your-style/"
+      ]
+    },
+    {
+      "topic": "Put This On - Shoes, Tailoring & Essentials",
+      "description": "Definitive shoe guides, alterations, wardrobe building",
+      "urls": [
+        "https://putthison.com/finding-the-perfect-loafer/",
+        "https://putthison.com/the-seven-shoe-wardrobe/",
+        "https://www.putthison.com/the-shoes-i-wear-most-and-you-may-find-useful/",
+        "https://putthison.com/actual-menswear-essentials/",
+        "https://putthison.com/suggested-essentials-for-a-starting-wardrobe/",
+        "https://putthison.com/a-basic-guide-on-alterations/",
+        "https://putthison.com/real-people-keeping-the-basics-interesting/",
+        "https://putthison.com/real-people-building-a-holistic-wardrobe/"
+      ]
+    }
+  ]
+}

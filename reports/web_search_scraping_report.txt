@@ -2,49 +2,51 @@
 WEB SEARCH SCRAPING REPORT
 Independent Fashion Advice Articles (No Reddit Bias)
 ================================================================================
-Date: 2025-11-07 04:05:21
+Date: 2025-11-07 04:09:56
 
 SUMMARY
 --------------------------------------------------------------------------------
-Total URLs attempted: 24
-Successful scrapes: 17
-Failed scrapes: 7
-Success rate: 70.8%
+Total URLs attempted: 43
+Successful scrapes: 28
+Failed scrapes: 15
+Success rate: 65.1%
 
 BY TOPIC
 ================================================================================
 Topic                                         Success    Failed     Rate
 --------------------------------------------------------------------------------
-Permanent Style - Tailoring & Casual          4          2          66.7%
-Ivy Style - Preppy OCBD & Outfits             8          0          100.0%
-Heddels - Raw Denim & Selvedge                5          5          50.0%
+He Spoke Style - Suits & Color Coordination   8          2          80.0%
+Gentleman's Gazette - Dress Codes & Formality 5          4          55.6%
+Denimhunters - Selvedge & Raw Denim Mastery   4          6          40.0%
+Effortless Gent - Minimalist Wardrobe Buildin 3          3          50.0%
+Put This On - Shoes, Tailoring & Essentials   8          0          100.0%
 
 ================================================================================
 
 DATABASE STATISTICS
 --------------------------------------------------------------------------------
-Total articles in database: 108
-Average article length: 11,053 characters
+Total articles in database: 135
+Average article length: 11,313 characters
 
 Top 10 sources:
   blog_realmenrealstyle.com: 10
+  blog_putthison.com: 10
   blog_ivy-style.com: 9
+  blog_hespokestyle.com: 9
+  blog_gentlemansgazette.com: 7
+  blog_denimhunters.com: 6
   blog_permanentstyle.com: 5
   blog_hockerty.com: 5
   blog_heddels.com: 5
-  blog_thevou.com: 3
-  blog_putthison.com: 3
-  blog_askandyaboutclothes.com: 3
-  blog_thetrendspotter.net: 2
-  blog_themodestman.com: 2
+  blog_effortlessgent.com: 4
 
 ================================================================================
 
 CONCLUSION
 --------------------------------------------------------------------------------
-✓ Scraped 17 independent fashion advice articles
+✓ Scraped 28 independent fashion advice articles
 ✓ No Reddit bias - discovered via web search
 ✓ Diverse topics covered: fashion guides, suits, wardrobe, shoes, colors
-✓ Average 11,053 characters per article
+✓ Average 11,313 characters per article
 
 ================================================================================
