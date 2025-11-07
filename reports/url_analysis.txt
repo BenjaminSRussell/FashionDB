@@ -1,0 +1,154 @@
+================================================================================
+URL EXTRACTION AND ANALYSIS REPORT
+Finding External Fashion Content Sources (The 'Beans'!)
+================================================================================
+
+SUMMARY
+--------------------------------------------------------------------------------
+Total unique URLs found: 41810
+Total URL mentions: 49638
+Avg mentions per URL: 1.2
+
+URL CATEGORIES
+--------------------------------------------------------------------------------
+website               4394 domains
+other                  777 domains
+blog                   162 domains
+social_media            66 domains
+reddit                  17 domains
+image_host               9 domains
+forum                    8 domains
+video                    3 domains
+
+TOP 50 DOMAINS BY MENTIONS
+--------------------------------------------------------------------------------
+Rank   Mentions   Avg Score    Category        Domain
+--------------------------------------------------------------------------------
+1      9840       114.5        image_host      i.imgur.com
+2      9206       115.9        image_host      imgur.com
+3      7386       131.5        reddit          reddit.com
+4      2075       80.8         reddit          preview.redd.it
+5      1830       72.4         social_media    instagram.com
+6      342        708.9        reddit          redd.it
+7      374        217.3        website         jcrew.com
+8      463        155.7        website         amazon.com
+9      430        118.1        video           youtube.com
+10     242        285.9        website         uniqlo.com
+11     609        51.7         other           cdn.dressed.so
+12     531        32.0         reddit          old.reddit.com
+13     304        103.8        website         en.wikipedia.org
+14     134        216.5        website         ebay.com
+15     220        84.6         video           youtu.be
+16     39         789.0        other           bit.ly
+17     135        156.1        website         endclothing.com
+18     239        34.8         other           drsd.so
+19     214        49.1         other           redact.dev
+20     241        29.1         other           redact.dev)*
+21     236        30.7         social_media    twitter.com
+22     39         680.8        website         us.carhartt-wip.com
+23     46         529.3        website         ssense.com
+24     73         289.0        website         putthison.com
+25     77         254.8        other           blueowl.us
+26     94         180.4        website         llbean.com
+27     73         243.9        website         hm.com
+28     151        64.5         image_host      m.imgur.com
+29     138        78.2         website         reddit.honestbleeps.com
+30     83         195.0        website         google.com
+31     191        22.6         website         play.google.com
+32     41         467.7        website         docs.google.com
+33     82         183.5        website         s-media-cache-ak0.pinimg.com
+34     97         138.9        website         mrporter.com
+35     51         347.5        website         adidas.com
+36     4          5193.8       website         images.solecollector.com
+37     64         227.5        reddit          i.redd.it
+38     28         601.1        website         redwingheritage.com
+39     65         201.3        website         cdn.shopify.com
+40     44         335.6        website         levi.com
+41     60         217.2        website         i.pinimg.com
+42     125        46.5         website         reddit.zendesk.com
+43     90         94.3         website         brooksbrothers.com
+44     61         181.3        website         nordstromrack.com
+45     67         146.0        website         allenedmonds.com
+46     69         135.6        website         target.com
+47     50         216.5        website         ralphlauren.com
+48     26         507.8        website         redwingshoes.com
+49     72         107.3        website         etsy.com
+50     46         221.6        website         bonobos.com
+
+HIGH-VALUE SCRAPING TARGETS (Excluding Reddit/Images/Social)
+--------------------------------------------------------------------------------
+Rank   Mentions   Category        Domain
+--------------------------------------------------------------------------------
+1      374        website         jcrew.com
+2      463        website         amazon.com
+3      430        video           youtube.com
+4      242        website         uniqlo.com
+5      609        other           cdn.dressed.so
+6      304        website         en.wikipedia.org
+7      134        website         ebay.com
+8      220        video           youtu.be
+9      39         other           bit.ly
+10     135        website         endclothing.com
+11     239        other           drsd.so
+12     214        other           redact.dev
+13     241        other           redact.dev)*
+14     39         website         us.carhartt-wip.com
+15     46         website         ssense.com
+16     73         website         putthison.com
+17     77         other           blueowl.us
+18     94         website         llbean.com
+19     73         website         hm.com
+20     138        website         reddit.honestbleeps.com
+21     83         website         google.com
+22     191        website         play.google.com
+23     41         website         docs.google.com
+24     82         website         s-media-cache-ak0.pinimg.com
+25     97         website         mrporter.com
+26     51         website         adidas.com
+27     28         website         redwingheritage.com
+28     65         website         cdn.shopify.com
+29     44         website         levi.com
+30     60         website         i.pinimg.com
+
+RECOMMENDED SCRAPING PRIORITIES BY CATEGORY
+--------------------------------------------------------------------------------
+
+FORUMS (High Priority):
+  - styleforum.net (53 mentions)
+  - cdn.styleforum.net (18 mentions)
+
+BLOGS:
+  - 3.bp.blogspot.com (27 mentions)
+  - 1.bp.blogspot.com (22 mentions)
+  - streetxsprezza.wordpress.com (24 mentions)
+  - nstarleather.wordpress.com (7 mentions)
+  - 2.bp.blogspot.com (14 mentions)
+  - theshoesnobblog.com (6 mentions)
+  - blog.commavintage.com (7 mentions)
+  - medium.com (8 mentions)
+  - 4.bp.blogspot.com (12 mentions)
+  - thedesignersmust.files.wordpress.com (6 mentions)
+
+WEBSITES:
+  - jcrew.com (374 mentions)
+  - amazon.com (463 mentions)
+  - uniqlo.com (242 mentions)
+  - en.wikipedia.org (304 mentions)
+  - ebay.com (134 mentions)
+  - endclothing.com (135 mentions)
+  - us.carhartt-wip.com (39 mentions)
+  - ssense.com (46 mentions)
+  - putthison.com (73 mentions)
+  - llbean.com (94 mentions)
+  - hm.com (73 mentions)
+  - reddit.honestbleeps.com (138 mentions)
+  - google.com (83 mentions)
+  - play.google.com (191 mentions)
+  - docs.google.com (41 mentions)
+
+VIDEO SOURCES:
+  - youtube.com (430 mentions)
+  - youtu.be (220 mentions)
+  - m.youtube.com (35 mentions)
+
+================================================================================
