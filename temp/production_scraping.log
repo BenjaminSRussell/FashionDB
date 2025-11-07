@@ -108,3 +108,50 @@ URLs to scrape: 20
     Scraping StyleForum: https://www.styleforum.net/threads/the-what-are-you-wearing-today-waywt-discussion-thread-part-ii.394687/page-3331
     ✓ Extracted: 79 chars, 14 replies
     ✗ Insufficient content
+
+[19/20] https://www.styleforum.net/threads/the-official-rick-owens-t...
+    Scraping StyleForum: https://www.styleforum.net/threads/the-official-rick-owens-thread.404533/
+    ✓ Extracted: 1271 chars, 9 replies
+    ✓ ***The Official Rick Owens Thread***... (1271 chars)
+
+[20/20] http://www.styleforum.net/t/354137/leather-quality-and-prope...
+    Scraping StyleForum: http://www.styleforum.net/t/354137/leather-quality-and-properties).
+    ✓ Extracted: 1160 chars, 13 replies
+    ✓ Leather Quality and Properties... (1153 chars)
+
+[2/10] Processing putthison.com...
+
+======================================================================
+Scraping: putthison.com
+URLs to scrape: 17
+======================================================================
+
+[1/17] https://putthison.com/five-starting-places-for-building-a-ca...
+    Scraping PutThisOn: https://putthison.com/five-starting-places-for-building-a-casual-wardrobe/
+    ✓ Extracted: 10372 chars
+    ✓ Five Starting Places For Building A Casual Wardrobe, Part On... (10372 chars)
+
+[2/17] http://putthison.com/post/441812762/cleaningshirts)....
+    Scraping PutThisOn: http://putthison.com/post/441812762/cleaningshirts).
+    ✓ Extracted: 2105 chars
+    ✓ How To Really Clean A Shirt... (2081 chars)
+
+[3/17] https://putthison.com/the-springboard-wardrobe/...
+    Scraping PutThisOn: https://putthison.com/the-springboard-wardrobe/
+    ✓ Extracted: 20417 chars
+    ✓ The Springboard Wardrobe... (20417 chars)
+
+[4/17] http://putthison.com/post/53763514327/why-pay-...
+    Scraping PutThisOn: http://putthison.com/post/53763514327/why-pay-
+    ✓ Extracted: 3625 chars
+    ✓ Why Pay For Canvas?... (3625 chars)
+
+[5/17] https://putthison.com/how-to-understand-silhouettes-pt-two/)...
+    Scraping PutThisOn: https://putthison.com/how-to-understand-silhouettes-pt-two/).
+    ✓ Extracted: 15560 chars
+    ✓ How To Understand Silhouettes (Pt. Two)... (15560 chars)
+
+[6/17] http://putthison.com/post/712103418/the-essential-mans-wardr...
+    Scraping PutThisOn: http://putthison.com/post/712103418/the-essential-mans-wardrobe-perhaps-the-most).
+    ✓ Extracted: 2815 chars
+    ✓ The Essential Man’s Wardrobe... (2803 chars)
