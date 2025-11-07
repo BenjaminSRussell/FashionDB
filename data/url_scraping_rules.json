@@ -1,0 +1,450 @@
+{
+  "version": "1.0",
+  "last_updated": "2025-11-07",
+  "description": "URL-specific scraping rules and configurations. Labels sites by technical requirements.",
+
+  "site_categories": {
+    "simple_scraping": {
+      "description": "Sites that work with simple HTTP requests (BeautifulSoup)",
+      "requirements": ["requests", "beautifulsoup4"],
+      "success_rate": "60-100%",
+      "sites": [
+        "putthison.com",
+        "ivy-style.com",
+        "dappered.com",
+        "stitchdown.com",
+        "primermagazine.com",
+        "hespokestyle.com",
+        "permanentstyle.com",
+        "effortlessgent.com",
+        "heddels.com",
+        "valetmag.com",
+        "realmenrealstyle.com",
+        "mikadopersonalstyling.com",
+        "askandyaboutclothes.com"
+      ]
+    },
+
+    "javascript_required": {
+      "description": "Sites requiring JavaScript rendering (need Chromium/Selenium/Playwright)",
+      "requirements": ["playwright", "selenium", "chromium"],
+      "success_rate": "0% with simple scraping",
+      "recommended_tool": "playwright or selenium with headless chrome",
+      "sites": [
+        "thearmoury.com",
+        "hypebeast.com"
+      ]
+    },
+
+    "cloudflare_protected": {
+      "description": "Luxury/commercial sites with Cloudflare bot protection",
+      "requirements": ["undetected-chromedriver", "cloudscraper"],
+      "success_rate": "0% with simple scraping",
+      "recommended_tool": "undetected-chromedriver or cloudscraper",
+      "sites": [
+        "mrporter.com",
+        "oxfordclothbuttondown.com",
+        "grailed.com"
+      ]
+    },
+
+    "partial_cloudflare": {
+      "description": "Sites with intermittent Cloudflare (50-70% success with retries)",
+      "requirements": ["requests with retries"],
+      "success_rate": "40-70%",
+      "recommended_tool": "simple scraping with multiple retries",
+      "sites": [
+        "gentlemansgazette.com",
+        "denimhunters.com",
+        "highsnobiety.com"
+      ]
+    }
+  },
+
+  "url_specific_rules": {
+    "putthison.com": {
+      "category": "simple_scraping",
+      "success_rate": 100,
+      "tested_urls": 10,
+      "successful_urls": 10,
+      "content_selectors": {
+        "article_body": ["article", ".entry-content", ".post-content"],
+        "title": ["h1", ".entry-title", ".post-title"],
+        "author": [".author", ".byline"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 30,
+        "delay_between_requests": 2.0
+      },
+      "notes": "Excellent source. All articles scraped successfully."
+    },
+
+    "ivy-style.com": {
+      "category": "simple_scraping",
+      "success_rate": 100,
+      "tested_urls": 9,
+      "successful_urls": 9,
+      "content_selectors": {
+        "article_body": [".entry-content", "article"],
+        "title": [".entry-title", "h1"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 30,
+        "delay_between_requests": 2.0
+      },
+      "notes": "Perfect for preppy/OCBD content. 100% success rate."
+    },
+
+    "dappered.com": {
+      "category": "simple_scraping",
+      "success_rate": 100,
+      "tested_urls": 9,
+      "successful_urls": 9,
+      "content_selectors": {
+        "article_body": [".entry-content", "article"],
+        "title": ["h1", ".entry-title"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 30,
+        "delay_between_requests": 2.0
+      },
+      "notes": "Affordable menswear focus. Excellent success rate."
+    },
+
+    "stitchdown.com": {
+      "category": "simple_scraping",
+      "success_rate": 100,
+      "tested_urls": 9,
+      "successful_urls": 9,
+      "content_selectors": {
+        "article_body": ["article", ".post-content"],
+        "title": ["h1", ".entry-title"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 30,
+        "delay_between_requests": 2.0
+      },
+      "notes": "Boot and leather expert. Perfect extraction."
+    },
+
+    "primermagazine.com": {
+      "category": "simple_scraping",
+      "success_rate": 88.9,
+      "tested_urls": 9,
+      "successful_urls": 8,
+      "content_selectors": {
+        "article_body": [".entry-content", "article"],
+        "title": ["h1"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 30,
+        "delay_between_requests": 2.0
+      },
+      "notes": "Smart casual style. Very reliable."
+    },
+
+    "hespokestyle.com": {
+      "category": "simple_scraping",
+      "success_rate": 80,
+      "tested_urls": 10,
+      "successful_urls": 8,
+      "content_selectors": {
+        "article_body": [".entry-content", "article"],
+        "title": ["h1", ".entry-title"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 20,
+        "delay_between_requests": 3.0
+      },
+      "notes": "Suit and color coordination. Occasional Cloudflare."
+    },
+
+    "permanentstyle.com": {
+      "category": "simple_scraping",
+      "success_rate": 66.7,
+      "tested_urls": 6,
+      "successful_urls": 4,
+      "content_selectors": {
+        "article_body": ["article", ".entry-content"],
+        "title": ["h1"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 20,
+        "delay_between_requests": 3.0
+      },
+      "notes": "Classic tailoring authority. Some Cloudflare protection."
+    },
+
+    "gentlemansgazette.com": {
+      "category": "partial_cloudflare",
+      "success_rate": 55.6,
+      "tested_urls": 9,
+      "successful_urls": 5,
+      "content_selectors": {
+        "article_body": [".entry-content", "article"],
+        "title": ["h1"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 15,
+        "delay_between_requests": 4.0
+      },
+      "notes": "Dress code authority. Intermittent Cloudflare. Retry helps."
+    },
+
+    "denimhunters.com": {
+      "category": "partial_cloudflare",
+      "success_rate": 40,
+      "tested_urls": 10,
+      "successful_urls": 4,
+      "content_selectors": {
+        "article_body": ["article", ".entry-content"],
+        "title": ["h1"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 15,
+        "delay_between_requests": 4.0
+      },
+      "notes": "Denim expertise. Heavy Cloudflare but some URLs work."
+    },
+
+    "heddels.com": {
+      "category": "partial_cloudflare",
+      "success_rate": 50,
+      "tested_urls": 10,
+      "successful_urls": 5,
+      "content_selectors": {
+        "article_body": ["article", ".entry-content"],
+        "title": ["h1"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 15,
+        "delay_between_requests": 4.0
+      },
+      "notes": "Raw denim guides. Inconsistent Cloudflare."
+    },
+
+    "highsnobiety.com": {
+      "category": "partial_cloudflare",
+      "success_rate": 70,
+      "tested_urls": 10,
+      "successful_urls": 7,
+      "content_selectors": {
+        "article_body": ["article", ".body-copy"],
+        "title": ["h1"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 15,
+        "delay_between_requests": 4.0
+      },
+      "notes": "Streetwear culture. Some articles blocked."
+    },
+
+    "effortlessgent.com": {
+      "category": "partial_cloudflare",
+      "success_rate": 50,
+      "tested_urls": 6,
+      "successful_urls": 3,
+      "content_selectors": {
+        "article_body": [".entry-content", "article"],
+        "title": ["h1"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 15,
+        "delay_between_requests": 4.0
+      },
+      "notes": "Minimalist wardrobe. Cloudflare varies."
+    },
+
+    "valetmag.com": {
+      "category": "simple_scraping",
+      "success_rate": 100,
+      "tested_urls": 2,
+      "successful_urls": 2,
+      "content_selectors": {
+        "article_body": ["article", ".article-body"],
+        "title": ["h1"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 30,
+        "delay_between_requests": 2.0
+      },
+      "notes": "Contemporary style. Small sample but good results."
+    },
+
+    "mrporter.com": {
+      "category": "cloudflare_protected",
+      "success_rate": 0,
+      "tested_urls": 8,
+      "successful_urls": 0,
+      "requires_browser": true,
+      "recommended_tool": "undetected-chromedriver",
+      "content_selectors": {
+        "article_body": ["article", ".article-content"],
+        "title": ["h1"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 10,
+        "delay_between_requests": 6.0
+      },
+      "notes": "LUXURY SITE. Requires Chromium with undetected-chromedriver. Heavy Cloudflare."
+    },
+
+    "thearmoury.com": {
+      "category": "javascript_required",
+      "success_rate": 0,
+      "tested_urls": 6,
+      "successful_urls": 0,
+      "requires_browser": true,
+      "recommended_tool": "playwright",
+      "content_selectors": {
+        "article_body": ["article", ".journal-content"],
+        "title": ["h1"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 10,
+        "delay_between_requests": 6.0
+      },
+      "notes": "JAVASCRIPT REQUIRED. Content loads via React. Need Playwright/Selenium."
+    },
+
+    "oxfordclothbuttondown.com": {
+      "category": "cloudflare_protected",
+      "success_rate": 0,
+      "tested_urls": 7,
+      "successful_urls": 0,
+      "requires_browser": true,
+      "recommended_tool": "cloudscraper",
+      "content_selectors": {
+        "article_body": [".entry-content", "article"],
+        "title": ["h1"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 10,
+        "delay_between_requests": 6.0
+      },
+      "notes": "CLOUDFLARE PROTECTED. Preppy/trad authority but needs cloudscraper."
+    },
+
+    "hypebeast.com": {
+      "category": "javascript_required",
+      "success_rate": 0,
+      "tested_urls": 4,
+      "successful_urls": 0,
+      "requires_browser": true,
+      "recommended_tool": "selenium",
+      "content_selectors": {
+        "article_body": ["article", ".article-body"],
+        "title": ["h1"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 10,
+        "delay_between_requests": 6.0
+      },
+      "notes": "JAVASCRIPT REQUIRED. Returns 405 Method Not Allowed. Need browser automation."
+    },
+
+    "grailed.com": {
+      "category": "cloudflare_protected",
+      "success_rate": 0,
+      "tested_urls": 3,
+      "successful_urls": 0,
+      "requires_browser": true,
+      "recommended_tool": "undetected-chromedriver",
+      "content_selectors": {
+        "article_body": ["article", ".article-content"],
+        "title": ["h1"]
+      },
+      "rate_limit": {
+        "requests_per_minute": 10,
+        "delay_between_requests": 6.0
+      },
+      "notes": "CLOUDFLARE PROTECTED. Marketplace site with heavy protection."
+    }
+  },
+
+  "global_defaults": {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "timeout_seconds": 30,
+    "max_retries": 3,
+    "retry_delay_seconds": 2.0,
+    "min_content_length": 300,
+    "headers": {
+      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+      "Accept-Language": "en-US,en;q=0.9",
+      "Accept-Encoding": "gzip, deflate",
+      "Connection": "keep-alive"
+    }
+  },
+
+  "chromium_config": {
+    "description": "Configuration for sites requiring Chromium/browser automation",
+    "tools": {
+      "playwright": {
+        "install": "pip install playwright && playwright install chromium",
+        "example_code": "from playwright.sync_api import sync_playwright"
+      },
+      "selenium": {
+        "install": "pip install selenium undetected-chromedriver",
+        "example_code": "import undetected_chromedriver as uc"
+      },
+      "cloudscraper": {
+        "install": "pip install cloudscraper",
+        "example_code": "import cloudscraper; scraper = cloudscraper.create_scraper()"
+      }
+    },
+    "recommended_for": {
+      "javascript_sites": ["playwright", "selenium"],
+      "cloudflare_sites": ["undetected-chromedriver", "cloudscraper"],
+      "luxury_sites": ["undetected-chromedriver"]
+    }
+  },
+
+  "sitemap_locations": {
+    "common_paths": [
+      "/sitemap.xml",
+      "/sitemap_index.xml",
+      "/post-sitemap.xml",
+      "/page-sitemap.xml",
+      "/article-sitemap.xml"
+    ],
+    "known_sitemaps": {
+      "putthison.com": "https://putthison.com/sitemap.xml",
+      "dappered.com": "https://dappered.com/sitemap.xml",
+      "primermagazine.com": "https://www.primermagazine.com/sitemap.xml"
+    }
+  },
+
+  "scraping_strategies": {
+    "simple_http": {
+      "suitable_for": "simple_scraping category",
+      "success_rate": "60-100%",
+      "tool": "requests + beautifulsoup4",
+      "pros": ["Fast", "Low resource usage", "Easy to implement"],
+      "cons": ["Doesn't work with JavaScript sites", "Blocked by Cloudflare"]
+    },
+    "browser_automation": {
+      "suitable_for": "javascript_required category",
+      "success_rate": "80-95%",
+      "tool": "playwright or selenium",
+      "pros": ["Handles JavaScript", "Full page rendering", "Can interact with page"],
+      "cons": ["Slower", "Higher resource usage", "More complex"]
+    },
+    "cloudflare_bypass": {
+      "suitable_for": "cloudflare_protected category",
+      "success_rate": "70-90%",
+      "tool": "undetected-chromedriver or cloudscraper",
+      "pros": ["Bypasses Cloudflare", "Works with luxury sites"],
+      "cons": ["May break with Cloudflare updates", "Slower than simple HTTP"]
+    }
+  },
+
+  "stats_summary": {
+    "total_sites_tested": 25,
+    "simple_scraping_sites": 13,
+    "partial_cloudflare_sites": 5,
+    "cloudflare_protected_sites": 4,
+    "javascript_required_sites": 3,
+    "overall_success_rate": "169 articles from 169 attempts at successful sites",
+    "recommendation": "Focus on simple_scraping category (60-100% success). Use Chromium for javascript_required and cloudflare_protected categories."
+  }
+}

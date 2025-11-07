@@ -1,0 +1,41 @@
+{
+  "chromium_required_sites": {
+    "mrporter.com": {
+      "category": "cloudflare_protected",
+      "recommended_tool": "undetected-chromedriver",
+      "success_rate": 0,
+      "notes": "LUXURY SITE. Requires Chromium with undetected-chromedriver. Heavy Cloudflare."
+    },
+    "thearmoury.com": {
+      "category": "javascript_required",
+      "recommended_tool": "playwright",
+      "success_rate": 0,
+      "notes": "JAVASCRIPT REQUIRED. Content loads via React. Need Playwright/Selenium."
+    },
+    "oxfordclothbuttondown.com": {
+      "category": "cloudflare_protected",
+      "recommended_tool": "cloudscraper",
+      "success_rate": 0,
+      "notes": "CLOUDFLARE PROTECTED. Preppy/trad authority but needs cloudscraper."
+    },
+    "hypebeast.com": {
+      "category": "javascript_required",
+      "recommended_tool": "selenium",
+      "success_rate": 0,
+      "notes": "JAVASCRIPT REQUIRED. Returns 405 Method Not Allowed. Need browser automation."
+    },
+    "grailed.com": {
+      "category": "cloudflare_protected",
+      "recommended_tool": "undetected-chromedriver",
+      "success_rate": 0,
+      "notes": "CLOUDFLARE PROTECTED. Marketplace site with heavy protection."
+    }
+  },
+  "total_sites": 5,
+  "tools_needed": [
+    "playwright",
+    "undetected-chromedriver",
+    "selenium",
+    "cloudscraper"
+  ]
+}
