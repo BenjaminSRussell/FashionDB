@@ -1,0 +1,468 @@
+================================================================================
+WEB SEARCH SCRAPING - Independent Fashion Advice URLs
+================================================================================
+Input: /home/user/FashionDB/data/batch_3_sophisticated_urls.json
+Database: /home/user/FashionDB/data/independent_content.db
+================================================================================
+Loaded 75 URLs from 8 topics
+
+
+======================================================================
+[1/8] Date Night Outfits
+URLs: 9
+======================================================================
+
+[1/9] https://www.nimble-made.com/blogs/news/mens-date-night-outfi...
+      Scraping: https://www.nimble-made.com/blogs/news/mens-date-night-outfit
+        ✓ Extracted: 8425 chars
+    ✓ Untitled Post... (8425 chars)
+
+[2/9] https://southerntide.com/blogs/the-southern-edit/mens-date-n...
+      Scraping: https://southerntide.com/blogs/the-southern-edit/mens-date-night-outfits
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://southerntide.com/blogs/the-southern-edit/mens-date-night-outfits
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://southerntide.com/blogs/the-southern-edit/mens-date-night-outfits
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://southerntide.com/blogs/the-southern-edit/mens-date-night-outfits
+    ✗ Insufficient content
+
+[3/9] https://www.stitchfix.com/men/blog/style-guides/six-mens-dat...
+      Scraping: https://www.stitchfix.com/men/blog/style-guides/six-mens-date-night-outfits/
+        ✓ Extracted: 6229 chars
+    ✓ 6 Date-Night Outfits for Men... (6229 chars)
+
+[4/9] https://www.beigebrown.com/blogs/bb-insights/mens-date-night...
+      Scraping: https://www.beigebrown.com/blogs/bb-insights/mens-date-night-outfits
+        [!] No content found
+    ✗ Insufficient content
+
+[5/9] https://www.theknot.com/content/mens-date-night-outfit...
+      Scraping: https://www.theknot.com/content/mens-date-night-outfit
+        ✓ Extracted: 8168 chars
+    ✓ Men's Date Night Outfits That Put Your Best Foot Forward... (8167 chars)
+
+[6/9] https://www.gentlemansflair.com/date-night-outfits/...
+      Scraping: https://www.gentlemansflair.com/date-night-outfits/
+        ✓ Extracted: 16966 chars
+    ✓ 25 Date Night Outfits for Men (All Year-Round)... (16966 chars)
+
+[7/9] https://aklasu.co/blogs/journal/date-night-outfits-for-men...
+      Scraping: https://aklasu.co/blogs/journal/date-night-outfits-for-men
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://aklasu.co/blogs/journal/date-night-outfits-for-men
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://aklasu.co/blogs/journal/date-night-outfits-for-men
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://aklasu.co/blogs/journal/date-night-outfits-for-men
+    ✗ Insufficient content
+
+[8/9] https://www.stitchfix.com/men/blog/what-to-wear-on-a-casual-...
+      Scraping: https://www.stitchfix.com/men/blog/what-to-wear-on-a-casual-date/
+        ✓ Extracted: 4684 chars
+    ✓ What to Wear on a Casual Date... (4683 chars)
+
+[9/9] https://www.thefashionisto.com/date-night-outfit-men/...
+      Scraping: https://www.thefashionisto.com/date-night-outfit-men/
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.thefashionisto.com/date-night-outfit-men/
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://www.thefashionisto.com/date-night-outfit-men/
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://www.thefashionisto.com/date-night-outfit-men/
+    ✗ Insufficient content
+
+======================================================================
+[2/8] Preppy Style - Vineyard Vines, Nautical, Country Club
+URLs: 7
+======================================================================
+
+[1/7] https://www.fashionbeans.com/article/preppy-style...
+      Scraping: https://www.fashionbeans.com/article/preppy-style
+  [!] Fetch failed (attempt 1/3): 403 Client Error: Forbidden for url: https://www.fashionbeans.com/article/preppy-style
+  [!] Fetch failed (attempt 2/3): 403 Client Error: Forbidden for url: https://www.fashionbeans.com/article/preppy-style
+  [!] Fetch failed (attempt 3/3): 403 Client Error: Forbidden for url: https://www.fashionbeans.com/article/preppy-style
+    ✗ Insufficient content
+
+[2/7] https://thevou.com/blog/east-coast-yacht-club-style-guide-na...
+      Scraping: https://thevou.com/blog/east-coast-yacht-club-style-guide-nautical-preppy-men/
+        ✓ Extracted: 28814 chars
+    ✓ East Coast Yacht Club Style – A Powerful Nautical Preppy Loo... (28814 chars)
+
+[3/7] https://www.apetogentleman.com/preppy-clothes-brands/...
+      Scraping: https://www.apetogentleman.com/preppy-clothes-brands/
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.apetogentleman.com/preppy-clothes-brands/
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://www.apetogentleman.com/preppy-clothes-brands/
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://www.apetogentleman.com/preppy-clothes-brands/
+    ✗ Insufficient content
+
+[4/7] https://temufinds.com/brands-like-vineyard-vines/...
+      Scraping: https://temufinds.com/brands-like-vineyard-vines/
+        ✓ Extracted: 9127 chars
+    ✓ 13 top Brands like Vineyard Vines: Preppy Style Alternatives... (9126 chars)
+
+[5/7] https://thevou.com/blog/preppy-style-clothing-brands-men/...
+      Scraping: https://thevou.com/blog/preppy-style-clothing-brands-men/
+        ✓ Extracted: 12623 chars
+    ✓ Preppy Style Clothing Brands for A Classic-Modern Blend... (12621 chars)
+
+[6/7] https://www.aviandco.com/preppy-watches-to-wear-to-the-count...
+      Scraping: https://www.aviandco.com/preppy-watches-to-wear-to-the-country-club
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.aviandco.com/preppy-watches-to-wear-to-the-country-club
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://www.aviandco.com/preppy-watches-to-wear-to-the-country-club
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://www.aviandco.com/preppy-watches-to-wear-to-the-country-club
+    ✗ Insufficient content
+
+[7/7] https://www.thefashionisto.com/preppy-aesthetic-style-men/...
+      Scraping: https://www.thefashionisto.com/preppy-aesthetic-style-men/
+        ✓ Extracted: 11488 chars
+    ✓ Preppy Aesthetic Style for Men: Master the Look... (11488 chars)
+
+======================================================================
+[3/8] Regional Fancy Styles - NYC, Boston, Chicago
+URLs: 2
+======================================================================
+
+[1/2] https://hespokestyle.com/chicago-travel-guide-for-stylish-me...
+      Scraping: https://hespokestyle.com/chicago-travel-guide-for-stylish-men/
+        ✓ Extracted: 28567 chars
+    ✓ The Ultimate Guide to Chicago For The Man Of Style... (28560 chars)
+
+[2/2] https://www.sheenmagazine.com/lets-take-a-look-into-the-regi...
+      Scraping: https://www.sheenmagazine.com/lets-take-a-look-into-the-regional-and-cultural-variation-of-the-american-fashion/
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.sheenmagazine.com/lets-take-a-look-into-the-regional-and-cultural-variation-of-the-american-fashion/
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://www.sheenmagazine.com/lets-take-a-look-into-the-regional-and-cultural-variation-of-the-american-fashion/
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://www.sheenmagazine.com/lets-take-a-look-into-the-regional-and-cultural-variation-of-the-american-fashion/
+    ✗ Insufficient content
+
+======================================================================
+[4/8] Christmas and Holiday Fancy
+URLs: 8
+======================================================================
+
+[1/8] https://www.hockerty.com/en-us/blog/christmas-party-outfit...
+      Scraping: https://www.hockerty.com/en-us/blog/christmas-party-outfit
+        ✓ Extracted: 16349 chars
+    ✓ The Ultimate Christmas Party Outfit Guide 2025... (16340 chars)
+
+[2/8] https://www.pivotimage.com/blog/what-men-should-wear-to-a-ch...
+      Scraping: https://www.pivotimage.com/blog/what-men-should-wear-to-a-christmas-party
+        ✓ Extracted: 5718 chars
+    ✓ What Men Should Wear to a Christmas Party... (5715 chars)
+
+[3/8] https://frenchcrown.com/blogs/news/christmas-party-outfit-fo...
+      Scraping: https://frenchcrown.com/blogs/news/christmas-party-outfit-for-men
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://frenchcrown.com/blogs/news/christmas-party-outfit-for-men
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://frenchcrown.com/blogs/news/christmas-party-outfit-for-men
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://frenchcrown.com/blogs/news/christmas-party-outfit-for-men
+    ✗ Insufficient content
+
+[4/8] https://www.thetiebar.com/blogs/news/mens-guide-on-what-to-w...
+      Scraping: https://www.thetiebar.com/blogs/news/mens-guide-on-what-to-wear-to-an-office-christmas-or-holiday-party
+        [!] No content found
+    ✗ Insufficient content
+
+[5/8] https://www.themodestman.com/what-to-wear-to-a-christmas-par...
+      Scraping: https://www.themodestman.com/what-to-wear-to-a-christmas-party/
+        ✓ Extracted: 13809 chars
+    ✓ What To Wear to a Christmas Party for Men: Festive Fashion... (13809 chars)
+
+[6/8] https://digibuddha.com/blogs/news/holiday-party-outfits-men-...
+      Scraping: https://digibuddha.com/blogs/news/holiday-party-outfits-men-confident-christmas-style
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://digibuddha.com/blogs/news/holiday-party-outfits-men-confident-christmas-style
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://digibuddha.com/blogs/news/holiday-party-outfits-men-confident-christmas-style
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://digibuddha.com/blogs/news/holiday-party-outfits-men-confident-christmas-style
+    ✗ Insufficient content
+
+[7/8] https://www.weenosocial.com/fashion/mens-christmas-party-out...
+      Scraping: https://www.weenosocial.com/fashion/mens-christmas-party-outfit-style-guide
+        ✓ Extracted: 10848 chars
+    ✓ Men's Christmas Party Outfit Style Guide... (10847 chars)
+
+[8/8] https://www.fashionbeans.com/article/what-to-wear-christmas-...
+      Scraping: https://www.fashionbeans.com/article/what-to-wear-christmas-party/
+  [!] Fetch failed (attempt 1/3): 403 Client Error: Forbidden for url: https://www.fashionbeans.com/article/what-to-wear-christmas-party/
+  [!] Fetch failed (attempt 2/3): 403 Client Error: Forbidden for url: https://www.fashionbeans.com/article/what-to-wear-christmas-party/
+  [!] Fetch failed (attempt 3/3): 403 Client Error: Forbidden for url: https://www.fashionbeans.com/article/what-to-wear-christmas-party/
+    ✗ Insufficient content
+
+======================================================================
+[5/8] Fall Fashion - Preppy, Casual, Layering
+URLs: 9
+======================================================================
+
+[1/9] https://www.moderngentlemanmagazine.com/35-cool-preppy-men-f...
+      Scraping: https://www.moderngentlemanmagazine.com/35-cool-preppy-men-fashion-casual-outfits/
+        ✓ Extracted: 14943 chars
+    ✓ 35 Cool Preppy Men Fashion Casual Outfits... (14943 chars)
+
+[2/9] https://theaubreycraig.com/a-new-englanders-guide-to-mens-fa...
+      Scraping: https://theaubreycraig.com/a-new-englanders-guide-to-mens-fall-preppy-looks/
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://theaubreycraig.com/a-new-englanders-guide-to-mens-fall-preppy-looks/
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://theaubreycraig.com/a-new-englanders-guide-to-mens-fall-preppy-looks/
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://theaubreycraig.com/a-new-englanders-guide-to-mens-fall-preppy-looks/
+    ✗ Insufficient content
+
+[3/9] https://stylegirlfriend.com/mens-fall-outfits/...
+      Scraping: https://stylegirlfriend.com/mens-fall-outfits/
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://stylegirlfriend.com/mens-fall-outfits/
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://stylegirlfriend.com/mens-fall-outfits/
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://stylegirlfriend.com/mens-fall-outfits/
+    ✗ Insufficient content
+
+[4/9] https://www.hockerty.com/en/blog/mens-fall-outfits...
+      Scraping: https://www.hockerty.com/en/blog/mens-fall-outfits
+        ✓ Extracted: 13516 chars
+    ✓ Men's Fall Fashion Guide: Trending Autumn Outfits & Styles... (13515 chars)
+
+[5/9] https://westernrise.com/blogs/journal/mens-fall-outfit-ideas...
+      Scraping: https://westernrise.com/blogs/journal/mens-fall-outfit-ideas
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://westernrise.com/blogs/journal/mens-fall-outfit-ideas
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://westernrise.com/blogs/journal/mens-fall-outfit-ideas
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://westernrise.com/blogs/journal/mens-fall-outfit-ideas
+    ✗ Insufficient content
+
+[6/9] https://www.brightbazaarblog.com/2017/09/preppy-style-mens-f...
+      Scraping: https://www.brightbazaarblog.com/2017/09/preppy-style-mens-fall-fashion-ideas.html
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.brightbazaarblog.com/2017/09/preppy-style-mens-fall-fashion-ideas.html
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://www.brightbazaarblog.com/2017/09/preppy-style-mens-fall-fashion-ideas.html
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://www.brightbazaarblog.com/2017/09/preppy-style-mens-fall-fashion-ideas.html
+    ✗ Insufficient content
+
+[7/9] https://www.realmenrealstyle.com/clothing-essentials-fall/...
+      Scraping: https://www.realmenrealstyle.com/clothing-essentials-fall/
+        ✓ Extracted: 7643 chars
+    ✓ What To Wear In Autumn For Men | 7 Men’s Clothing Tips This ... (7635 chars)
+
+[8/9] https://www.townandcountrymag.com/style/mens-fashion/g847/pr...
+      Scraping: https://www.townandcountrymag.com/style/mens-fashion/g847/preppy-fall-mens-fashion/
+        [!] No content found
+    ✗ Insufficient content
+
+[9/9] https://www.ernest.ca/en/blogs/blogue-ernest/mode-masculine-...
+      Scraping: https://www.ernest.ca/en/blogs/blogue-ernest/mode-masculine-9-tendances-a-adopter-pour-lautomne
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.ernest.ca/en/blogs/blogue-ernest/mode-masculine-9-tendances-a-adopter-pour-lautomne
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://www.ernest.ca/en/blogs/blogue-ernest/mode-masculine-9-tendances-a-adopter-pour-lautomne
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://www.ernest.ca/en/blogs/blogue-ernest/mode-masculine-9-tendances-a-adopter-pour-lautomne
+    ✗ Insufficient content
+
+======================================================================
+[6/8] Advanced Color Coordination
+URLs: 8
+======================================================================
+
+[1/8] https://www.realmenrealstyle.com/color-wheel-menswear/...
+      Scraping: https://www.realmenrealstyle.com/color-wheel-menswear/
+        ✓ Extracted: 6929 chars
+    ✓ How to Match Clothes In Your Wardrobe Using the Color Wheel... (6928 chars)
+
+[2/8] https://www.askandyaboutclothes.com/threads/advanced-color-c...
+      Scraping: https://www.askandyaboutclothes.com/threads/advanced-color-coordination-for-men-2020.244581/
+        ✓ Extracted: 11791 chars
+    ✓ Advanced Color Coordination for Men (2020)... (11789 chars)
+
+[3/8] https://pmc.ncbi.nlm.nih.gov/articles/PMC4102554/...
+      Scraping: https://pmc.ncbi.nlm.nih.gov/articles/PMC4102554/
+        ✓ Extracted: 13464 chars
+    ✓ The Science of Style: In Fashion, Colors Should Match Only M... (13463 chars)
+
+[4/8] https://www.askandyaboutclothes.com/threads/color-coordinati...
+      Scraping: https://www.askandyaboutclothes.com/threads/color-coordination-for-men-the-basics.244558/
+        ✓ Extracted: 9884 chars
+    ✓ Color Coordination for Men: The Basics... (9880 chars)
+
+[5/8] https://thedarkknot.com/blogs/suitupdressup/how-to-match-clo...
+      Scraping: https://thedarkknot.com/blogs/suitupdressup/how-to-match-clothing-colors-for-men
+        ✓ Extracted: 31710 chars
+    ✓ How To Match Clothing Colors For Men... (31709 chars)
+
+[6/8] https://www.powerlook.in/blog/style-mens-clothing-perfectly...
+      Scraping: https://www.powerlook.in/blog/style-mens-clothing-perfectly
+        ✓ Extracted: 32680 chars
+    ✓ Master Color Theory: Style Men’s Clothing Perfectly... (32620 chars)
+
+[7/8] https://thevou.com/blog/three-colour-rule-style-guide-men/...
+      Scraping: https://thevou.com/blog/three-colour-rule-style-guide-men/
+        ✓ Extracted: 13774 chars
+    ✓ The 3 Colour Rule in Menswear – What is It and How to Apply ... (13774 chars)
+
+[8/8] https://urbangents.co/the-role-of-color-theory-in-mens-fashi...
+      Scraping: https://urbangents.co/the-role-of-color-theory-in-mens-fashion/
+        [!] No content found
+    ✗ Insufficient content
+
+======================================================================
+[7/8] Context-Appropriate Dressing
+URLs: 10
+======================================================================
+
+[1/10] https://westwoodhart.com/blogs/westwood-hart/dressing-differ...
+      Scraping: https://westwoodhart.com/blogs/westwood-hart/dressing-different-occasions-mens-clothing-guide
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://westwoodhart.com/blogs/westwood-hart/dressing-different-occasions-mens-clothing-guide
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://westwoodhart.com/blogs/westwood-hart/dressing-different-occasions-mens-clothing-guide
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://westwoodhart.com/blogs/westwood-hart/dressing-different-occasions-mens-clothing-guide
+    ✗ Insufficient content
+
+[2/10] https://www.nimble-made.com/blogs/news/sunday-best-attire...
+      Scraping: https://www.nimble-made.com/blogs/news/sunday-best-attire
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.nimble-made.com/blogs/news/sunday-best-attire
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://www.nimble-made.com/blogs/news/sunday-best-attire
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://www.nimble-made.com/blogs/news/sunday-best-attire
+    ✗ Insufficient content
+
+[3/10] https://www.hockerty.com/en-us/blog/semi-formal-mens-attire...
+      Scraping: https://www.hockerty.com/en-us/blog/semi-formal-mens-attire
+        ✓ Extracted: 22630 chars
+    ✓ The Ultimate Guide to Semi-Formal Attire... (22625 chars)
+
+[4/10] https://themensgazette.com/blog/dress-code-mastery/...
+      Scraping: https://themensgazette.com/blog/dress-code-mastery/
+        ✓ Extracted: 12591 chars
+    ✓ The Modern Man's Guide to Dress Codes: From Casual to White ... (12591 chars)
+
+[5/10] https://thedarkknot.com/blogs/suitupdressup/how-men-dress-ev...
+      Scraping: https://thedarkknot.com/blogs/suitupdressup/how-men-dress-every-occasion-a-complete-gentlemans-guide
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://thedarkknot.com/blogs/suitupdressup/how-men-dress-every-occasion-a-complete-gentlemans-guide
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://thedarkknot.com/blogs/suitupdressup/how-men-dress-every-occasion-a-complete-gentlemans-guide
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://thedarkknot.com/blogs/suitupdressup/how-men-dress-every-occasion-a-complete-gentlemans-guide
+    ✗ Insufficient content
+
+[6/10] https://www.thetrendspotter.net/mens-dress-codes/...
+      Scraping: https://www.thetrendspotter.net/mens-dress-codes/
+        ✓ Extracted: 8729 chars
+    ✓ A Guide to Men’s Dress Codes for All Occasions... (8729 chars)
+
+[7/10] https://closetcachete.com/style-guide/dress-code-types-and-h...
+      Scraping: https://closetcachete.com/style-guide/dress-code-types-and-hierarchy
+        ✓ Extracted: 29000 chars
+    ✓ Dress Code Guide: Types of Dress Codes & Hierarchy From Casu... (29000 chars)
+
+[8/10] https://www.lifehack.org/367501/the-ultimate-guide-dress-cod...
+      Scraping: https://www.lifehack.org/367501/the-ultimate-guide-dress-codes-what-wear-for-every-occasion
+        ✓ Extracted: 9134 chars
+    ✓ The Ultimate Guide To Dress Codes: What To Wear For Every Oc... (9134 chars)
+
+[9/10] https://www.studiosuits.com/blogs/articles/mens-attire-for-d...
+      Scraping: https://www.studiosuits.com/blogs/articles/mens-attire-for-different-occasions
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.studiosuits.com/blogs/articles/mens-attire-for-different-occasions
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://www.studiosuits.com/blogs/articles/mens-attire-for-different-occasions
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://www.studiosuits.com/blogs/articles/mens-attire-for-different-occasions
+    ✗ Insufficient content
+
+[10/10] https://www.michaelandrews.com/journal/dressing-for-the-occa...
+      Scraping: https://www.michaelandrews.com/journal/dressing-for-the-occasion
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.michaelandrews.com/journal/dressing-for-the-occasion
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://www.michaelandrews.com/journal/dressing-for-the-occasion
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://www.michaelandrews.com/journal/dressing-for-the-occasion
+    ✗ Insufficient content
+
+======================================================================
+[8/8] Personal Style Development
+URLs: 9
+======================================================================
+
+[1/9] https://www.primermagazine.com/2023/learn/develop-a-personal...
+      Scraping: https://www.primermagazine.com/2023/learn/develop-a-personal-style
+        ✓ Extracted: 9004 chars
+    ✓ How Does a Man Develop a Personal Style?... (9004 chars)
+
+[2/9] https://madvikingbeard.com/blogs/the-viking-blog/how-to-deve...
+      Scraping: https://madvikingbeard.com/blogs/the-viking-blog/how-to-develop-a-style-men
+        ✓ Extracted: 11360 chars
+    ✓ How To Develop Your Personal Style: 9 Tips For Men... (11359 chars)
+
+[3/9] https://www.putthison.com/six-suggestions-for-developing-per...
+      Scraping: https://www.putthison.com/six-suggestions-for-developing-personal-style/
+        ✓ Extracted: 11484 chars
+    ✓ Six Suggestions For Developing Personal Style... (11483 chars)
+
+[4/9] https://westwoodhart.com/blogs/westwood-hart/mens-style-jour...
+      Scraping: https://westwoodhart.com/blogs/westwood-hart/mens-style-journey-8-levels-from-beginner-to-style-icon
+        [!] No content found
+    ✗ Insufficient content
+
+[5/9] https://westwoodhart.com/blogs/westwood-hart/how-find-person...
+      Scraping: https://westwoodhart.com/blogs/westwood-hart/how-find-personal-style-men-guide
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://westwoodhart.com/blogs/westwood-hart/how-find-personal-style-men-guide
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://westwoodhart.com/blogs/westwood-hart/how-find-personal-style-men-guide
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://westwoodhart.com/blogs/westwood-hart/how-find-personal-style-men-guide
+    ✗ Insufficient content
+
+[6/9] https://www.edsfineimports.com/blogs/blog/4-tips-for-develop...
+      Scraping: https://www.edsfineimports.com/blogs/blog/4-tips-for-developing-personal-mens-clothing-style
+        ✓ Extracted: 2442 chars
+    ✓ 4 Tips to Develop Your Personal Men’s Clothing Style... (2442 chars)
+
+[7/9] https://www.mrporter.com/en-us/journal/fashion/personal-styl...
+      Scraping: https://www.mrporter.com/en-us/journal/fashion/personal-style-25002900
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.mrporter.com/en-us/journal/fashion/personal-style-25002900
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://www.mrporter.com/en-us/journal/fashion/personal-style-25002900
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://www.mrporter.com/en-us/journal/fashion/personal-style-25002900
+    ✗ Insufficient content
+
+[8/9] https://mikadopersonalstyling.com/style-tips-men/...
+      Scraping: https://mikadopersonalstyling.com/style-tips-men/
+        ✓ Extracted: 64156 chars
+    ✓ The Top 50 Best Style Tips for Men... (64155 chars)
+
+[9/9] https://sterlingstyleacademy.com/blog/how-to-dress-well-men-...
+      Scraping: https://sterlingstyleacademy.com/blog/how-to-dress-well-men-47-simple-fashion-tips-for-guys/
+        ✓ Extracted: 26054 chars
+    ✓ How to Dress Well Men: 47 Simple Fashion Tips For Guys... (26046 chars)
+
+================================================================================
+Generating report...
+
+================================================================================
+WEB SEARCH SCRAPING REPORT
+Independent Fashion Advice Articles (No Reddit Bias)
+================================================================================
+Date: 2025-11-07 03:49:01
+
+SUMMARY
+--------------------------------------------------------------------------------
+Total URLs attempted: 62
+Successful scrapes: 35
+Failed scrapes: 27
+Success rate: 56.5%
+
+BY TOPIC
+================================================================================
+Topic                                         Success    Failed     Rate
+--------------------------------------------------------------------------------
+Date Night Outfits                            5          4          55.6%
+Preppy Style - Vineyard Vines, Nautical, Coun 4          3          57.1%
+Regional Fancy Styles - NYC, Boston, Chicago  1          1          50.0%
+Christmas and Holiday Fancy                   4          4          50.0%
+Fall Fashion - Preppy, Casual, Layering       3          6          33.3%
+Advanced Color Coordination                   7          1          87.5%
+Context-Appropriate Dressing                  5          5          50.0%
+Personal Style Development                    6          3          66.7%
+
+================================================================================
+
+DATABASE STATISTICS
+--------------------------------------------------------------------------------
+Total articles in database: 79
+Average article length: 13,137 characters
+
+Top 10 sources:
+  blog_realmenrealstyle.com: 8
+  blog_hockerty.com: 5
+  blog_thevou.com: 3
+  blog_askandyaboutclothes.com: 3
+  blog_thetrendspotter.net: 2
+  blog_themodestman.com: 2
+  blog_thedarkknot.com: 2
+  blog_stitchfix.com: 2
+  blog_putthison.com: 2
+  blog_oliverwicks.com: 2
+
+================================================================================
+
+CONCLUSION
+--------------------------------------------------------------------------------
+✓ Scraped 35 independent fashion advice articles
+✓ No Reddit bias - discovered via web search
+✓ Diverse topics covered: fashion guides, suits, wardrobe, shoes, colors
+✓ Average 13,137 characters per article
+
+================================================================================
+
+Report saved to: /home/user/FashionDB/reports/web_search_scraping_report.txt
+
+✓ Scraping complete!
+  Articles scraped: 35
+  Database: /home/user/FashionDB/data/independent_content.db
+  Report: /home/user/FashionDB/reports/web_search_scraping_report.txt
