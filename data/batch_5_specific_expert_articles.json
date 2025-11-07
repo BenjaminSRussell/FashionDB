@@ -1,0 +1,54 @@
+{
+  "summary": {
+    "total_urls": 30,
+    "discovery_method": "site_specific_searches_batch_5",
+    "discovery_date": "2025-11-07",
+    "focus": "specific expert articles - actual content, not homepages",
+    "quality": "expert-level - definitive articles",
+    "bias": "independent - no Reddit source"
+  },
+  "topics": [
+    {
+      "topic": "Permanent Style - Tailoring & Casual",
+      "description": "Sophisticated tailoring, paradigms, city vs country",
+      "urls": [
+        "https://www.permanentstyle.com/2018/02/five-paradigms-of-casual-clothing-which-do-you-wear.html",
+        "https://www.permanentstyle.com/2022/08/tailoring-for-travelling-tough-comfortable-plain.html",
+        "https://www.permanentstyle.com/2024/10/natalino-cheaper-well-styled-tailoring.html",
+        "https://www.permanentstyle.com/2025/10/outfits-from-the-new-york-launch.html",
+        "https://www.permanentstyle.com/2023/12/the-breadth-and-style-of-korean-tailoring.html",
+        "https://www.permanentstyle.com/2023/04/the-history-of-new-york-bespoke-tailoring-an-introduction-with-bruce-and-alan.html"
+      ]
+    },
+    {
+      "topic": "Ivy Style - Preppy OCBD & Outfits",
+      "description": "OCBD mastery, preppy outfits, trad style",
+      "urls": [
+        "https://www.ivy-style.com/the-oxford-cloth-button-down-is-back.html",
+        "https://www.ivy-style.com/preppy-undershirt-polo-vs-turtleneck.html",
+        "https://www.ivy-style.com/turtleneck-and-oxford-the-preppy-way-and-the-other-way.html",
+        "https://www.ivy-style.com/the-underappreciated-yellow-oxford.html",
+        "http://www.ivy-style.com/tee-sympathy-the-white-crew-under-a-buttondown.html",
+        "https://www.ivy-style.com/member-review-the-maybe-not-so-new-brooks-ocbd.html",
+        "https://www.ivy-style.com/the-button-down-mind-set.html",
+        "https://www.ivy-style.com/the-j-press-white-oxford-dress-shirt-the-fundamental-staple.html"
+      ]
+    },
+    {
+      "topic": "Heddels - Raw Denim & Selvedge",
+      "description": "Denim care, raw denim guides, styling",
+      "urls": [
+        "https://www.heddels.com/2011/03/how-to-wash-and-clean-your-raw-denim-tips-instructions-video/",
+        "https://www.heddels.com/buying-your-first-pair-of-raw-denim-the-beginners-guide/",
+        "https://www.heddels.com/2014/11/7-ways-to-make-your-denim-last-longer/",
+        "https://www.heddels.com/2015/05/how-to-spot-clean-your-raw-denim-jeans/",
+        "https://www.heddels.com/2011/09/the-essential-raw-denim-breakdown-our-100th-article/",
+        "https://www.heddels.com/2012/09/the-samurai-jeans-co-guide-to-washing-raw-jeans/",
+        "https://www.heddels.com/2012/01/when-should-i-wash-my-jeans-a-rough-guide/",
+        "https://www.heddels.com/2014/11/minimize-fading-raw-denim/",
+        "https://www.heddels.com/2011/04/how-to-store-your-raw-denim-properly-and-easily/",
+        "https://www.heddels.com/2012/04/how-to-repair-selvedge-after-denim-alteration/"
+      ]
+    }
+  ]
+}
