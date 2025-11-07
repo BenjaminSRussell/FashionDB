@@ -2,26 +2,22 @@
 WEB SEARCH SCRAPING REPORT
 Independent Fashion Advice Articles (No Reddit Bias)
 ================================================================================
-Date: 2025-11-07 04:15:07
+Date: 2025-11-07 04:18:37
 
 SUMMARY
 --------------------------------------------------------------------------------
-Total URLs attempted: 46
-Successful scrapes: 35
-Failed scrapes: 11
-Success rate: 76.1%
+Total URLs attempted: 21
+Successful scrapes: 0
+Failed scrapes: 21
+Success rate: 0.0%
 
 BY TOPIC
 ================================================================================
 Topic                                         Success    Failed     Rate
 --------------------------------------------------------------------------------
-Highsnobiety - Streetwear & Contemporary Fash 7          3          70.0%
-Hypebeast - Streetwear Trends & Style         0          4          0.0%
-Grailed - Summer Style & Fashion Advice       0          3          0.0%
-Valet - Refined Essentials & Contemporary Sty 2          0          100.0%
-Primer Magazine - Affordable Smart Style      8          1          88.9%
-Dappered - Budget-Conscious Classic Style     9          0          100.0%
-Stitchdown - Boots, Leather & Heritage Wear   9          0          100.0%
+Mr Porter - Luxury Fashion Essentials         0          8          0.0%
+The Armoury - Classic Tailoring Authority     0          6          0.0%
+Oxford Cloth Button Down - Trad/Preppy/Ivy Au 0          7          0.0%
 
 ================================================================================
 
@@ -46,7 +42,7 @@ Top 10 sources:
 
 CONCLUSION
 --------------------------------------------------------------------------------
-✓ Scraped 35 independent fashion advice articles
+✓ Scraped 0 independent fashion advice articles
 ✓ No Reddit bias - discovered via web search
 ✓ Diverse topics covered: fashion guides, suits, wardrobe, shoes, colors
 ✓ Average 10,839 characters per article
