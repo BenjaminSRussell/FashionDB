@@ -1,0 +1,347 @@
+================================================================================
+WEB SEARCH SCRAPING - Independent Fashion Advice URLs
+================================================================================
+Input: /home/user/FashionDB/data/web_search_discovered_urls.json
+Database: /home/user/FashionDB/data/independent_content.db
+================================================================================
+Loaded 50 URLs from 5 topics
+
+
+======================================================================
+[1/5] General Fashion Guides 2024-2025
+URLs: 10
+======================================================================
+
+[1/10] https://www.fashionbeans.com/...
+      Scraping: https://www.fashionbeans.com/
+  [!] Fetch failed (attempt 1/3): 403 Client Error: Forbidden for url: https://www.fashionbeans.com/
+  [!] Fetch failed (attempt 2/3): 403 Client Error: Forbidden for url: https://www.fashionbeans.com/
+  [!] Fetch failed (attempt 3/3): 403 Client Error: Forbidden for url: https://www.fashionbeans.com/
+    ✗ Insufficient content
+
+[2/10] https://fashna.com/25-best-mens-fashion-trends-to-know-in-20...
+      Scraping: https://fashna.com/25-best-mens-fashion-trends-to-know-in-2024/
+        ✓ Extracted: 13355 chars
+    ✓ 25 Best men’s fashion trends to know in 2024... (13354 chars)
+
+[3/10] https://westwoodhart.com/blogs/westwood-hart/mens-common-sty...
+      Scraping: https://westwoodhart.com/blogs/westwood-hart/mens-common-style-mistakes-a-guide-to-better-dressing-in-2025
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://westwoodhart.com/blogs/westwood-hart/mens-common-style-mistakes-a-guide-to-better-dressing-in-2025
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://westwoodhart.com/blogs/westwood-hart/mens-common-style-mistakes-a-guide-to-better-dressing-in-2025
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://westwoodhart.com/blogs/westwood-hart/mens-common-style-mistakes-a-guide-to-better-dressing-in-2025
+    ✗ Insufficient content
+
+[4/10] https://www.percivalclo.com/blogs/style-guides/guide-to-2025...
+      Scraping: https://www.percivalclo.com/blogs/style-guides/guide-to-2025-menswear-trends
+        [!] No content found
+    ✗ Insufficient content
+
+[5/10] https://madvikingbeard.com/blogs/the-viking-blog/mens-style-...
+      Scraping: https://madvikingbeard.com/blogs/the-viking-blog/mens-style-guide
+        ✓ Extracted: 20685 chars
+    ✓ The Ultimate Men's Style Guide for 2024... (20685 chars)
+
+[6/10] https://www.menshealth.com/style/...
+      Scraping: https://www.menshealth.com/style/
+        [!] No content found
+    ✗ Insufficient content
+
+[7/10] https://taelor.style/blogs/mens-style/fashion-trends-for-men...
+      Scraping: https://taelor.style/blogs/mens-style/fashion-trends-for-men
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://taelor.style/blogs/mens-style/fashion-trends-for-men
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://taelor.style/blogs/mens-style/fashion-trends-for-men
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://taelor.style/blogs/mens-style/fashion-trends-for-men
+    ✗ Insufficient content
+
+[8/10] https://303magazine.com/2025/01/mens-guide-to-glowing-up-in-...
+      Scraping: https://303magazine.com/2025/01/mens-guide-to-glowing-up-in-2025/
+        ✓ Extracted: 4535 chars
+    ✓ Men’s Guide To Glowing Up In 2025... (4533 chars)
+
+[9/10] https://aklasu.co/blogs/journal/style-tips-for-men...
+      Scraping: https://aklasu.co/blogs/journal/style-tips-for-men
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://aklasu.co/blogs/journal/style-tips-for-men
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://aklasu.co/blogs/journal/style-tips-for-men
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://aklasu.co/blogs/journal/style-tips-for-men
+    ✗ Insufficient content
+
+[10/10] https://www.themodestman.com/mens-style-rules-2025/...
+      Scraping: https://www.themodestman.com/mens-style-rules-2025/
+        ✓ Extracted: 4838 chars
+    ✓ 13 Style Rules for Men Who Want to Dress to Win in 2025... (4838 chars)
+
+======================================================================
+[2/5] Suit Fitting and Measurements
+URLs: 10
+======================================================================
+
+[1/10] https://www.leonardsilver.com/pages/measure-yourself-guide...
+      Scraping: https://www.leonardsilver.com/pages/measure-yourself-guide
+        ✓ Extracted: 430 chars
+    ✓ The Complete Guide On How To Measure For A Suit... (430 chars)
+
+[2/10] https://blog.lanieri.com/en/take-measurements-mens-suit/...
+      Scraping: https://blog.lanieri.com/en/take-measurements-mens-suit/
+        ✓ Extracted: 5992 chars
+    ✓ How to take measurements for a men’s suit... (5992 chars)
+
+[3/10] https://www.hockerty.com/en-us/blog/how-to-measure-for-a-sui...
+      Scraping: https://www.hockerty.com/en-us/blog/how-to-measure-for-a-suit
+        ✓ Extracted: 4412 chars
+    ✓ How to Measure for a Suit [Take Men Body Measurements]... (4411 chars)
+
+[4/10] https://atailoredsuit.com/your-measurements-tailored-suit.ht...
+      Scraping: https://atailoredsuit.com/your-measurements-tailored-suit.html
+        ✓ Extracted: 11129 chars
+    ✓ Your Measurements... (11129 chars)
+
+[5/10] https://www.culwell.com/blogs/how-to-measure-a-suit...
+      Scraping: https://www.culwell.com/blogs/how-to-measure-a-suit
+        [!] No content found
+    ✗ Insufficient content
+
+[6/10] https://www.moderntailor.com/static/mt/men_suit_measureguide...
+      Scraping: https://www.moderntailor.com/static/mt/men_suit_measureguide.pdf
+        [!] No content found
+    ✗ Insufficient content
+
+[7/10] https://www.mysuittailor.com/blogs/grooming-blog/finding-the...
+      Scraping: https://www.mysuittailor.com/blogs/grooming-blog/finding-the-perfect-fit-a-guide-to-mens-suit-measurements
+        ✓ Extracted: 5780 chars
+    ✓ Finding the Perfect Fit: A Guide to Men's Suit Measurements... (5780 chars)
+
+[8/10] https://www.oliverwicks.com/article/how-to-measure-for-suit...
+      Scraping: https://www.oliverwicks.com/article/how-to-measure-for-suit
+        ✓ Extracted: 25361 chars
+    ✓ How to Measure for a Suit the Right Way... (25361 chars)
+
+[9/10] https://kiwisizing.com/blog/how-to-measure-for-a-suit/...
+      Scraping: https://kiwisizing.com/blog/how-to-measure-for-a-suit/
+        [!] No content found
+    ✗ Insufficient content
+
+[10/10] https://www.oliverwicks.com/article/suit-size...
+      Scraping: https://www.oliverwicks.com/article/suit-size
+        ✓ Extracted: 17179 chars
+    ✓ How to Measure and Understand Men’s Suit Sizes Like a Pro... (17179 chars)
+
+======================================================================
+[3/5] Wardrobe Essentials and Basics
+URLs: 10
+======================================================================
+
+[1/10] https://thedarkknot.com/blogs/suitupdressup/wardrobe-essenti...
+      Scraping: https://thedarkknot.com/blogs/suitupdressup/wardrobe-essentials-for-men-the-ultimate-style-guide
+        ✓ Extracted: 16138 chars
+    ✓ Wardrobe Essentials for Men | The Ultimate Style Guide... (16138 chars)
+
+[2/10] https://www.cafecoton.com/en/mens-wardrobe-essentials-put-to...
+      Scraping: https://www.cafecoton.com/en/mens-wardrobe-essentials-put-together-a-basic-wardrobe-9
+        ✓ Extracted: 4484 chars
+    ✓ Men's wardrobe essentials: put together a basic wardrobe... (4484 chars)
+
+[3/10] https://www.themanual.com/fashion/menswear-essentials-you-ne...
+      Scraping: https://www.themanual.com/fashion/menswear-essentials-you-need/
+        ✓ Extracted: 20183 chars
+    ✓ The 25 wardrobe essentials every man needs: Your ultimate me... (20183 chars)
+
+[4/10] https://www.mrporter.com/en-us/journal/fashion/mens-wardrobe...
+      Scraping: https://www.mrporter.com/en-us/journal/fashion/mens-wardrobe-essentials-24856164
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.mrporter.com/en-us/journal/fashion/mens-wardrobe-essentials-24856164
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://www.mrporter.com/en-us/journal/fashion/mens-wardrobe-essentials-24856164
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://www.mrporter.com/en-us/journal/fashion/mens-wardrobe-essentials-24856164
+    ✗ Insufficient content
+
+[5/10] https://www.apetogentleman.com/modern-mens-wardrobe-essentia...
+      Scraping: https://www.apetogentleman.com/modern-mens-wardrobe-essentials/
+        ✓ Extracted: 9984 chars
+    ✓ 20 Modern Wardrobe Essentials Every Man Should Own In 2025... (9984 chars)
+
+[6/10] https://www.realmenrealstyle.com/mens-wardrobe-essentials/...
+      Scraping: https://www.realmenrealstyle.com/mens-wardrobe-essentials/
+        ✓ Extracted: 10290 chars
+    ✓ 7 Minimalist Men’s Wardrobe Essentials & How To Buy... (10283 chars)
+
+[7/10] https://www.menshealth.com/style/g24071749/clothing-essentia...
+      Scraping: https://www.menshealth.com/style/g24071749/clothing-essentials-for-men/
+        [!] No content found
+    ✗ Insufficient content
+
+[8/10] https://putthison.com/suggested-essentials-for-a-starting-wa...
+      Scraping: https://putthison.com/suggested-essentials-for-a-starting-wardrobe/
+        ✓ Extracted: 18621 chars
+    ✓ Suggested “Essentials” For A Starting Wardrobe... (18621 chars)
+
+[9/10] https://www.merricksart.com/mens-wardrobe-essentials/...
+      Scraping: https://www.merricksart.com/mens-wardrobe-essentials/
+        ✓ Extracted: 22363 chars
+    ✓ Men’s Wardrobe Essentials (How to Help Your Husband’s Closet... (22357 chars)
+
+[10/10] https://www.thegentlemansjournal.com/article/essential-mensw...
+      Scraping: https://www.thegentlemansjournal.com/article/essential-menswear-items/
+        ✓ Extracted: 87 chars
+    ✗ Insufficient content
+
+======================================================================
+[4/5] Dress Shoes Guide
+URLs: 7
+======================================================================
+
+[1/7] https://www.nimble-made.com/blogs/news/the-ultimate-mens-dre...
+      Scraping: https://www.nimble-made.com/blogs/news/the-ultimate-mens-dress-shoe-guide
+        ✓ Extracted: 11415 chars
+    ✓ Untitled Post... (11415 chars)
+
+[2/7] https://www.libertyzeno.com/blogs/news/mens-dress-shoe-type-...
+      Scraping: https://www.libertyzeno.com/blogs/news/mens-dress-shoe-type-guide
+        ✓ Extracted: 9661 chars
+    ✓ Types of Men's Dress Shoes: Top Formal Shoe Styles Guide For... (9640 chars)
+
+[3/7] https://shop.normanvilalta.com/en-us/blogs/understand-norman...
+      Scraping: https://shop.normanvilalta.com/en-us/blogs/understand-norman-vilaltas-shoes/the-oxford-vs-the-derby-shoe
+        [!] No content found
+    ✗ Insufficient content
+
+[4/7] https://www.esquire.com/style/mens-fashion/a65107698/oxford-...
+      Scraping: https://www.esquire.com/style/mens-fashion/a65107698/oxford-vs-derby-dress-shoes/
+        [!] No content found
+    ✗ Insufficient content
+
+[5/7] https://www.hockerty.com/en-us/blog/types-of-dress-shoes...
+      Scraping: https://www.hockerty.com/en-us/blog/types-of-dress-shoes
+        ✓ Extracted: 13721 chars
+    ✓ Types of Dress Shoes... (13721 chars)
+
+[6/7] https://www.valentinacalzaturefirenze.com/en/blog/shoes-tips...
+      Scraping: https://www.valentinacalzaturefirenze.com/en/blog/shoes-tips/oxford-vs-derby-shoes-the-4-key-differences-you-need-to-know
+        ✓ Extracted: 4718 chars
+    ✓ Oxford vs Derby Shoes: The 4 Key Differences You Need to Kno... (4635 chars)
+
+[7/7] https://www.oliversweeney.com/pages/whats-the-difference-der...
+      Scraping: https://www.oliversweeney.com/pages/whats-the-difference-derbies-vs-oxfords
+        [!] No content found
+    ✗ Insufficient content
+
+======================================================================
+[5/5] Color Coordination and Matching
+URLs: 10
+======================================================================
+
+[1/10] https://effortlessgent.com/clothing-color-combos/...
+      Scraping: https://effortlessgent.com/clothing-color-combos/
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://effortlessgent.com/clothing-color-combos/
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://effortlessgent.com/clothing-color-combos/
+        ✓ Extracted: 6874 chars
+    ✓ What Color Clothes Go Together? (Color Matching Chart For Me... (6874 chars)
+
+[2/10] https://www.askandyaboutclothes.com/threads/color-coordinati...
+      Scraping: https://www.askandyaboutclothes.com/threads/color-coordination-for-men-the-basics.244558/
+        ✓ Extracted: 9884 chars
+    ✓ Color Coordination for Men: The Basics... (9880 chars)
+
+[3/10] https://thedarkknot.com/blogs/suitupdressup/how-to-match-clo...
+      Scraping: https://thedarkknot.com/blogs/suitupdressup/how-to-match-clothing-colors-for-men
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://thedarkknot.com/blogs/suitupdressup/how-to-match-clothing-colors-for-men
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://thedarkknot.com/blogs/suitupdressup/how-to-match-clothing-colors-for-men
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://thedarkknot.com/blogs/suitupdressup/how-to-match-clothing-colors-for-men
+    ✗ Insufficient content
+
+[4/10] https://www.gentlemanwithin.com/how-to-mix-and-match-clothin...
+      Scraping: https://www.gentlemanwithin.com/how-to-mix-and-match-clothing-colors-for-men/
+        ✓ Extracted: 22658 chars
+    ✓ The Art of Mix and Matching Clothing Colors for Men (A Styli... (22658 chars)
+
+[5/10] https://www.pennersinc.com/blogs/penners-blog/clothes-color-...
+      Scraping: https://www.pennersinc.com/blogs/penners-blog/clothes-color-matching-tips-for-men
+        [!] No content found
+    ✗ Insufficient content
+
+[6/10] https://www.realmenrealstyle.com/color-wheel-menswear/...
+      Scraping: https://www.realmenrealstyle.com/color-wheel-menswear/
+        ✓ Extracted: 6929 chars
+    ✓ How to Match Clothes In Your Wardrobe Using the Color Wheel... (6928 chars)
+
+[7/10] https://www.realmenrealstyle.com/match-colors-style-rules/...
+      Scraping: https://www.realmenrealstyle.com/match-colors-style-rules/
+        ✓ Extracted: 6527 chars
+    ✓ 3 Main Rules To Match Colors In Men’s Clothing... (6527 chars)
+
+[8/10] https://www.askandyaboutclothes.com/threads/advanced-color-c...
+      Scraping: https://www.askandyaboutclothes.com/threads/advanced-color-coordination-for-men-2020.244581/
+        ✓ Extracted: 11791 chars
+    ✓ Advanced Color Coordination for Men (2020)... (11789 chars)
+
+[9/10] https://www.askandyaboutclothes.com/threads/how-to-match-clo...
+      Scraping: https://www.askandyaboutclothes.com/threads/how-to-match-clothes-a-guide-to-mastering-clothing-coordination.244579/
+        ✓ Extracted: 15431 chars
+    ✓ How to Match Clothes - A Guide to Mastering Clothing Coordin... (15431 chars)
+
+[10/10] https://www.atlasformen.co.uk/inspiration/style/advice/colou...
+      Scraping: https://www.atlasformen.co.uk/inspiration/style/advice/colour-matching.aspx
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.atlasformen.co.uk/inspiration/style/advice/colour-matching.aspx
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://www.atlasformen.co.uk/inspiration/style/advice/colour-matching.aspx
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://www.atlasformen.co.uk/inspiration/style/advice/colour-matching.aspx
+    ✗ Insufficient content
+
+================================================================================
+Generating report...
+
+================================================================================
+WEB SEARCH SCRAPING REPORT
+Independent Fashion Advice Articles (No Reddit Bias)
+================================================================================
+Date: 2025-11-07 02:09:58
+
+SUMMARY
+--------------------------------------------------------------------------------
+Total URLs attempted: 47
+Successful scrapes: 29
+Failed scrapes: 18
+Success rate: 61.7%
+
+BY TOPIC
+================================================================================
+Topic                                         Success    Failed     Rate
+--------------------------------------------------------------------------------
+General Fashion Guides 2024-2025              4          6          40.0%
+Suit Fitting and Measurements                 7          3          70.0%
+Wardrobe Essentials and Basics                7          3          70.0%
+Dress Shoes Guide                             4          3          57.1%
+Color Coordination and Matching               7          3          70.0%
+
+================================================================================
+
+DATABASE STATISTICS
+--------------------------------------------------------------------------------
+Total articles in database: 29
+Average article length: 11,560 characters
+
+Top 10 sources:
+  blog_realmenrealstyle.com: 3
+  blog_askandyaboutclothes.com: 3
+  blog_oliverwicks.com: 2
+  blog_hockerty.com: 2
+  blog_valentinacalzaturefirenze.com: 1
+  blog_themodestman.com: 1
+  blog_themanual.com: 1
+  blog_thedarkknot.com: 1
+  blog_putthison.com: 1
+  blog_nimble-made.com: 1
+
+================================================================================
+
+CONCLUSION
+--------------------------------------------------------------------------------
+✓ Scraped 29 independent fashion advice articles
+✓ No Reddit bias - discovered via web search
+✓ Diverse topics covered: fashion guides, suits, wardrobe, shoes, colors
+✓ Average 11,560 characters per article
+
+================================================================================
+
+Report saved to: /home/user/FashionDB/reports/web_search_scraping_report.txt
+
+✓ Scraping complete!
+  Articles scraped: 29
+  Database: /home/user/FashionDB/data/independent_content.db
+  Report: /home/user/FashionDB/reports/web_search_scraping_report.txt

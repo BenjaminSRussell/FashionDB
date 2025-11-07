@@ -1,0 +1,44 @@
+QUICK START
+===========
+
+1. SCRAPE ARTICLES
+python3 tools/scrape_to_json.py data/batch_5_specific_expert_articles.json
+  -> Saves to data/scraped_articles.json
+
+2. DEEP ANALYSIS (extract rules & patterns)
+python3 tools/deep_analyze.py
+  -> Saves to data/deep_analysis.json
+  -> Extracts: rules, garments, materials, colors, outfit combos, prices
+
+3. URL DISCOVERY (generate search queries)
+python3 tools/discover_urls.py
+  -> Saves to data/url_discovery_config.json
+  -> 34 queries, 12 topics, 25 sites
+
+3b. MASSIVE URL DISCOVERY (rules-focused)
+python3 tools/massive_discovery.py
+  -> Saves to data/massive_url_discovery.json
+  -> 174 queries focused on FASHION RULES AND DOS AND DONTS
+  -> 42 fashion sites, 7 query types
+
+4. CHECK URL RULES
+python3 tools/url_rules_manager.py
+  -> Shows 18 configured sites
+  -> Chromium requirements
+
+CURRENT DATA
+============
+91 articles scraped
+543 fashion rules extracted
+9.81 fashion density (mentions/100 words)
+13 high quality articles (70+ score)
+40 articles with 5+ rules
+
+TOP SOURCES
+===========
+gentlemansgazette.com - 20 rules/article
+effortlessgent.com - 20 rules/article
+putthison.com - 20 rules/article
+primermagazine.com - 20 rules/article
+dappered.com - 20 rules/article
+denimhunters.com - 18 rules/article

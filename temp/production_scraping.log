@@ -1,0 +1,157 @@
+================================================================================
+PRODUCTION SCRAPING - Reddit-Discovered Fashion Advice URLs
+================================================================================
+Input: /home/user/FashionDB/data/filtered_scraping_urls.json
+Database: /home/user/FashionDB/data/external_content.db
+================================================================================
+Found 10 fashion advice domains
+Total URLs to scrape: 66
+
+
+[1/10] Processing styleforum.net...
+
+======================================================================
+Scraping: styleforum.net
+URLs to scrape: 20
+======================================================================
+
+[1/20] http://www.styleforum.net/t/303455/the-contentedness-thread/...
+    Scraping StyleForum: http://www.styleforum.net/t/303455/the-contentedness-thread/40_40
+    ✓ Extracted: 619 chars, 13 replies
+    ✓ The Contentedness thread... (612 chars)
+
+[2/20] http://www.styleforum.net/t/38417/official-sales-alert-threa...
+    Scraping StyleForum: http://www.styleforum.net/t/38417/official-sales-alert-thread/51495
+    ✓ Extracted: 262 chars, 14 replies
+    ✗ Insufficient content
+
+[3/20] https://www.styleforum.net/ams/how-to-buy-direct-from-japan....
+    Scraping StyleForum: https://www.styleforum.net/ams/how-to-buy-direct-from-japan.124206/).
+  [!] Fetch failed (attempt 1/3): 404 Client Error: Not Found for url: https://www.styleforum.net/ams/how-to-buy-direct-from-japan.124206/).
+  [!] Fetch failed (attempt 2/3): 404 Client Error: Not Found for url: https://www.styleforum.net/ams/how-to-buy-direct-from-japan.124206/).
+  [!] Fetch failed (attempt 3/3): 404 Client Error: Not Found for url: https://www.styleforum.net/ams/how-to-buy-direct-from-japan.124206/).
+    ✗ Insufficient content
+
+[4/20] http://www.styleforum.net/t/342340/member-kickstarter-and-ot...
+    Scraping StyleForum: http://www.styleforum.net/t/342340/member-kickstarter-and-other-fundraisers/45
+    ✓ Extracted: 321 chars, 14 replies
+    ✓ Member Kickstarter and other fundraisers.... (321 chars)
+
+[5/20] http://www.styleforum.net/t/411166/i-would-love-to-have-50-o...
+    Scraping StyleForum: http://www.styleforum.net/t/411166/i-would-love-to-have-50-of/0_100
+    ✓ Extracted: 350 chars, 14 replies
+    ✓ I Would Love To Have 50 Of...... (350 chars)
+
+[6/20] http://www.styleforum.net/t/219173/custom-whites-boots-thoug...
+    Scraping StyleForum: http://www.styleforum.net/t/219173/custom-whites-boots-thoughts/400_100
+    ✓ Extracted: 335 chars, 14 replies
+    ✓ Custom White's Boots ... Thoughts?... (331 chars)
+
+[7/20] https://www.styleforum.net/threads/leather-quality-and-prope...
+    Scraping StyleForum: https://www.styleforum.net/threads/leather-quality-and-properties.354137/page-74
+    ✓ Extracted: 142 chars, 14 replies
+    ✗ Insufficient content
+
+[8/20] http://www.styleforum.net/t/406218/rogue-territory-supply-se...
+    Scraping StyleForum: http://www.styleforum.net/t/406218/rogue-territory-supply-selvedge-denim-jacket-mens-medium).
+    ✓ Extracted: 754 chars, 0 replies
+    ✓ Rogue Territory Supply Selvedge Denim Jacket - Mens Medium... (751 chars)
+
+[9/20] http://www.styleforum.net/t/8221/is-black-suit-an-acceptable...
+    Scraping StyleForum: http://www.styleforum.net/t/8221/is-black-suit-an-acceptable-business-attire
+    ✓ Extracted: 242 chars, 14 replies
+    ✗ Insufficient content
+
+[10/20] http://www.styleforum.net/t/144358/calling-all-llbean-katahd...
+    Scraping StyleForum: http://www.styleforum.net/t/144358/calling-all-llbean-katahdin-iron-works-boots-owners/1080).
+    ✓ Extracted: 754 chars, 14 replies
+    ✓ Calling all LLBean Katahdin Iron Works Boots owners... (754 chars)
+
+[11/20] http://www.styleforum.net/t/293766/alden-x-lsbh-anniversary-...
+    Scraping StyleForum: http://www.styleforum.net/t/293766/alden-x-lsbh-anniversary-cigar-shell-pitt-boots-9-5d).
+    ✓ Extracted: 676 chars, 3 replies
+    ✓ Alden X LSBH Anniversary Cigar Shell Pitt Boots 9.5D... (672 chars)
+
+[12/20] https://www.styleforum.net/threads/random-fashion-thoughts-p...
+    Scraping StyleForum: https://www.styleforum.net/threads/random-fashion-thoughts-part-3-style-farmer-strikes-back-our-general-discussion-thread.600932/post-11382479
+    ✓ Extracted: 100 chars, 14 replies
+    ✗ Insufficient content
+
+[13/20] https://www.styleforum.net/threads/suit-jacket-shoulder-divo...
+    Scraping StyleForum: https://www.styleforum.net/threads/suit-jacket-shoulder-divots-why-and-how-to-fix.552725/
+    ✓ Extracted: 405 chars, 3 replies
+    ✓ Suit Jacket Shoulder Divots - Why and how to fix?... (405 chars)
+
+[14/20] https://www.styleforum.net/threads/the-official-drakes-knock...
+    Scraping StyleForum: https://www.styleforum.net/threads/the-official-drakes-knock-off-thread-look-alikes-and-the-producers-behind-drakes.711478/
+    ✓ Extracted: 1028 chars, 14 replies
+    ✓ The Official Drakes knock-off thread - look-alikes and the p... (1028 chars)
+
+[15/20] https://www.styleforum.net/threads/the-cape-and-cloak-thread...
+    Scraping StyleForum: https://www.styleforum.net/threads/the-cape-and-cloak-thread.711186/
+    ✓ Extracted: 209 chars, 7 replies
+    ✗ Insufficient content
+
+[16/20] https://www.styleforum.net/threads/vintage-dress-shoe-apprec...
+    Scraping StyleForum: https://www.styleforum.net/threads/vintage-dress-shoe-appreciation-tips-maintenance-and-advice.526196/page-256
+    ✓ Extracted: 234 chars, 14 replies
+    ✗ Insufficient content
+
+[17/20] http://www.styleforum.net/a/what-should-i-ask-my-groomsmen-t...
+    Scraping StyleForum: http://www.styleforum.net/a/what-should-i-ask-my-groomsmen-to-wear
+  [!] Fetch failed (attempt 1/3): 403 Client Error: Forbidden for url: https://www.styleforum.net/ams/what-should-i-ask-my-groomsmen-to-wear.122920/
+  [!] Fetch failed (attempt 2/3): 403 Client Error: Forbidden for url: https://www.styleforum.net/ams/what-should-i-ask-my-groomsmen-to-wear.122920/
+  [!] Fetch failed (attempt 3/3): 403 Client Error: Forbidden for url: https://www.styleforum.net/ams/what-should-i-ask-my-groomsmen-to-wear.122920/
+    ✗ Insufficient content
+
+[18/20] https://www.styleforum.net/threads/the-what-are-you-wearing-...
+    Scraping StyleForum: https://www.styleforum.net/threads/the-what-are-you-wearing-today-waywt-discussion-thread-part-ii.394687/page-3331
+    ✓ Extracted: 79 chars, 14 replies
+    ✗ Insufficient content
+
+[19/20] https://www.styleforum.net/threads/the-official-rick-owens-t...
+    Scraping StyleForum: https://www.styleforum.net/threads/the-official-rick-owens-thread.404533/
+    ✓ Extracted: 1271 chars, 9 replies
+    ✓ ***The Official Rick Owens Thread***... (1271 chars)
+
+[20/20] http://www.styleforum.net/t/354137/leather-quality-and-prope...
+    Scraping StyleForum: http://www.styleforum.net/t/354137/leather-quality-and-properties).
+    ✓ Extracted: 1160 chars, 13 replies
+    ✓ Leather Quality and Properties... (1153 chars)
+
+[2/10] Processing putthison.com...
+
+======================================================================
+Scraping: putthison.com
+URLs to scrape: 17
+======================================================================
+
+[1/17] https://putthison.com/five-starting-places-for-building-a-ca...
+    Scraping PutThisOn: https://putthison.com/five-starting-places-for-building-a-casual-wardrobe/
+    ✓ Extracted: 10372 chars
+    ✓ Five Starting Places For Building A Casual Wardrobe, Part On... (10372 chars)
+
+[2/17] http://putthison.com/post/441812762/cleaningshirts)....
+    Scraping PutThisOn: http://putthison.com/post/441812762/cleaningshirts).
+    ✓ Extracted: 2105 chars
+    ✓ How To Really Clean A Shirt... (2081 chars)
+
+[3/17] https://putthison.com/the-springboard-wardrobe/...
+    Scraping PutThisOn: https://putthison.com/the-springboard-wardrobe/
+    ✓ Extracted: 20417 chars
+    ✓ The Springboard Wardrobe... (20417 chars)
+
+[4/17] http://putthison.com/post/53763514327/why-pay-...
+    Scraping PutThisOn: http://putthison.com/post/53763514327/why-pay-
+    ✓ Extracted: 3625 chars
+    ✓ Why Pay For Canvas?... (3625 chars)
+
+[5/17] https://putthison.com/how-to-understand-silhouettes-pt-two/)...
+    Scraping PutThisOn: https://putthison.com/how-to-understand-silhouettes-pt-two/).
+    ✓ Extracted: 15560 chars
+    ✓ How To Understand Silhouettes (Pt. Two)... (15560 chars)
+
+[6/17] http://putthison.com/post/712103418/the-essential-mans-wardr...
+    Scraping PutThisOn: http://putthison.com/post/712103418/the-essential-mans-wardrobe-perhaps-the-most).
+    ✓ Extracted: 2815 chars
+    ✓ The Essential Man’s Wardrobe... (2803 chars)

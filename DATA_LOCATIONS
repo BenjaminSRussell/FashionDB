@@ -1,0 +1,40 @@
+DATA STORAGE
+============
+
+ARTICLES (91 scraped)
+----------------------
+data/scraped_articles.json
+  - 91 articles from expert sources
+  - Format: {articles: [{id, url, domain, title, body, word_count}, ...]}
+  - Total: 543 rules extracted, 9.81 fashion density
+
+DEEP ANALYSIS
+-------------
+data/deep_analysis.json
+  - Per-article analysis with rules, patterns, mentions
+  - 543 total fashion rules extracted
+  - Garment/material/color/style mentions counted
+  - Outfit combinations extracted
+  - Quality scores 0-100
+
+CONFIGURATION
+-------------
+data/url_scraping_rules.json
+  - 18 sites configured with success rates
+  - Per-URL selectors, rate limits, categories
+
+data/chromium_required_sites.json
+  - 5 sites needing browser automation
+
+data/url_discovery_config.json
+  - 34 search queries across 12 topic categories
+  - 25 fashion sites targeted
+  - URL scoring/filtering rules
+
+TOOLS
+-----
+tools/scrape_to_json.py - Scrape URLs to JSON
+tools/deep_analyze.py - Extract rules, patterns, mentions
+tools/discover_urls.py - Generate URL discovery strategies
+tools/validate_json.py - Basic validation
+tools/url_rules_manager.py - Check URL rules

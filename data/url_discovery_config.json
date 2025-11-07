@@ -1,0 +1,291 @@
+{
+  "discovery_method": "multi_strategy",
+  "strategies": {
+    "topic_keywords": [
+      "suits",
+      "shirts",
+      "pants",
+      "denim",
+      "shoes",
+      "style_guides",
+      "color",
+      "fit",
+      "occasions",
+      "seasonal",
+      "brands",
+      "budget"
+    ],
+    "url_patterns": [
+      "/style[-_]?guide",
+      "/how[-_]to[-_]",
+      "/mens?[-_]fashion",
+      "/mens?[-_]style",
+      "/wardrobe",
+      "/outfit",
+      "/guide",
+      "/tips",
+      "/essentials",
+      "/fit[-_]guide",
+      "/color[-_]",
+      "/suit",
+      "/jacket",
+      "/shoes",
+      "/boots",
+      "/jeans",
+      "/denim"
+    ],
+    "target_sites": [
+      "putthison.com",
+      "ivy-style.com",
+      "dappered.com",
+      "stitchdown.com",
+      "primermagazine.com",
+      "hespokestyle.com",
+      "permanentstyle.com",
+      "effortlessgent.com",
+      "gentlemansgazette.com",
+      "denimhunters.com",
+      "heddels.com",
+      "highsnobiety.com",
+      "valetmag.com",
+      "artofmanliness.com",
+      "bespokeedge.com",
+      "styleandthetailor.com",
+      "manofmany.com",
+      "fashionbeans.com",
+      "dmarge.com",
+      "thetrendspotter.net",
+      "themodestman.com",
+      "mensfashioner.com",
+      "thedarkknot.com",
+      "blacklapel.com",
+      "propercloth.com"
+    ]
+  },
+  "search_queries": [
+    {
+      "topic": "suits",
+      "query": "suit mens fashion guide",
+      "keywords": [
+        "suit"
+      ]
+    },
+    {
+      "topic": "suits",
+      "query": "blazer mens fashion guide",
+      "keywords": [
+        "blazer"
+      ]
+    },
+    {
+      "topic": "shirts",
+      "query": "dress shirt mens fashion guide",
+      "keywords": [
+        "dress shirt"
+      ]
+    },
+    {
+      "topic": "shirts",
+      "query": "oxford mens fashion guide",
+      "keywords": [
+        "oxford"
+      ]
+    },
+    {
+      "topic": "pants",
+      "query": "pants mens fashion guide",
+      "keywords": [
+        "pants"
+      ]
+    },
+    {
+      "topic": "pants",
+      "query": "trousers mens fashion guide",
+      "keywords": [
+        "trousers"
+      ]
+    },
+    {
+      "topic": "denim",
+      "query": "jeans mens fashion guide",
+      "keywords": [
+        "jeans"
+      ]
+    },
+    {
+      "topic": "denim",
+      "query": "denim mens fashion guide",
+      "keywords": [
+        "denim"
+      ]
+    },
+    {
+      "topic": "shoes",
+      "query": "shoes mens fashion guide",
+      "keywords": [
+        "shoes"
+      ]
+    },
+    {
+      "topic": "shoes",
+      "query": "boots mens fashion guide",
+      "keywords": [
+        "boots"
+      ]
+    },
+    {
+      "topic": "style_guides",
+      "query": "style guide mens fashion guide",
+      "keywords": [
+        "style guide"
+      ]
+    },
+    {
+      "topic": "style_guides",
+      "query": "how to dress mens fashion guide",
+      "keywords": [
+        "how to dress"
+      ]
+    },
+    {
+      "topic": "color",
+      "query": "color matching mens fashion guide",
+      "keywords": [
+        "color matching"
+      ]
+    },
+    {
+      "topic": "color",
+      "query": "color theory mens fashion guide",
+      "keywords": [
+        "color theory"
+      ]
+    },
+    {
+      "topic": "fit",
+      "query": "fit guide mens fashion guide",
+      "keywords": [
+        "fit guide"
+      ]
+    },
+    {
+      "topic": "fit",
+      "query": "how to fit mens fashion guide",
+      "keywords": [
+        "how to fit"
+      ]
+    },
+    {
+      "topic": "occasions",
+      "query": "business casual mens fashion guide",
+      "keywords": [
+        "business casual"
+      ]
+    },
+    {
+      "topic": "occasions",
+      "query": "smart casual mens fashion guide",
+      "keywords": [
+        "smart casual"
+      ]
+    },
+    {
+      "topic": "seasonal",
+      "query": "fall fashion mens fashion guide",
+      "keywords": [
+        "fall fashion"
+      ]
+    },
+    {
+      "topic": "seasonal",
+      "query": "winter style mens fashion guide",
+      "keywords": [
+        "winter style"
+      ]
+    },
+    {
+      "topic": "brands",
+      "query": "brand guide mens fashion guide",
+      "keywords": [
+        "brand guide"
+      ]
+    },
+    {
+      "topic": "brands",
+      "query": "brand review mens fashion guide",
+      "keywords": [
+        "brand review"
+      ]
+    },
+    {
+      "topic": "budget",
+      "query": "affordable mens fashion guide",
+      "keywords": [
+        "affordable"
+      ]
+    },
+    {
+      "topic": "budget",
+      "query": "budget style mens fashion guide",
+      "keywords": [
+        "budget style"
+      ]
+    },
+    {
+      "topic": "site_specific",
+      "query": "site:putthison.com style guide OR wardrobe OR outfit",
+      "site": "putthison.com"
+    },
+    {
+      "topic": "site_specific",
+      "query": "site:ivy-style.com style guide OR wardrobe OR outfit",
+      "site": "ivy-style.com"
+    },
+    {
+      "topic": "site_specific",
+      "query": "site:dappered.com style guide OR wardrobe OR outfit",
+      "site": "dappered.com"
+    },
+    {
+      "topic": "site_specific",
+      "query": "site:stitchdown.com style guide OR wardrobe OR outfit",
+      "site": "stitchdown.com"
+    },
+    {
+      "topic": "site_specific",
+      "query": "site:primermagazine.com style guide OR wardrobe OR outfit",
+      "site": "primermagazine.com"
+    },
+    {
+      "topic": "site_specific",
+      "query": "site:hespokestyle.com style guide OR wardrobe OR outfit",
+      "site": "hespokestyle.com"
+    },
+    {
+      "topic": "site_specific",
+      "query": "site:permanentstyle.com style guide OR wardrobe OR outfit",
+      "site": "permanentstyle.com"
+    },
+    {
+      "topic": "site_specific",
+      "query": "site:effortlessgent.com style guide OR wardrobe OR outfit",
+      "site": "effortlessgent.com"
+    },
+    {
+      "topic": "site_specific",
+      "query": "site:gentlemansgazette.com style guide OR wardrobe OR outfit",
+      "site": "gentlemansgazette.com"
+    },
+    {
+      "topic": "site_specific",
+      "query": "site:denimhunters.com style guide OR wardrobe OR outfit",
+      "site": "denimhunters.com"
+    }
+  ],
+  "scoring_criteria": {
+    "pattern_match": "10 points per pattern",
+    "keyword_match": "5 points per keyword",
+    "domain_reputation": "20 points",
+    "url_depth": "10 points if shallow"
+  }
+}

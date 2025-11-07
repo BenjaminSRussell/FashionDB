@@ -1,0 +1,100 @@
+{
+  "summary": {
+    "total_urls": 48,
+    "discovery_method": "site_specific_searches_batch_7",
+    "discovery_date": "2025-11-07",
+    "focus": "streetwear, minimalist style, boots & heritage, affordable fashion",
+    "quality": "expert-level - streetwear culture, wardrobe building, leather care",
+    "bias": "independent - diverse style perspectives"
+  },
+  "topics": [
+    {
+      "topic": "Highsnobiety - Streetwear & Contemporary Fashion",
+      "description": "Streetwear brands, trends, evolution, preppy fusion",
+      "urls": [
+        "https://www.highsnobiety.com/p/streetwear-brands/",
+        "https://www.highsnobiety.com/p/streetwear-preppy-fashion-ivy-league-style/",
+        "https://www.highsnobiety.com/p/streetwear-essentials-adults/",
+        "https://www.highsnobiety.com/p/summer-style-men/",
+        "https://www.highsnobiety.com/p/old-heads-street-style/",
+        "https://www.highsnobiety.com/p/90s-hip-hop-fashion/",
+        "https://www.highsnobiety.com/p/grime-fashion/",
+        "https://www.highsnobiety.com/p/luxury-streetwear-2010s/",
+        "https://www.highsnobiety.com/p/luxury-streetwear-brands/",
+        "https://www.highsnobiety.com/p/high-fashion-streetwear/"
+      ]
+    },
+    {
+      "topic": "Hypebeast - Streetwear Trends & Style",
+      "description": "Street style outfits, emerging trends, shopping guides",
+      "urls": [
+        "https://hypebeast.com/2017/4/best-streetstyle-fashion-outfits",
+        "https://hypebeast.com/2024/6/streetwear-new-era-edited-feature",
+        "https://hypebeast.com/2017/8/25-best-streetwear-shopping-websites",
+        "https://hypebeast.com/2023/12/what-will-be-the-biggest-streetwear-trends-of-2024-edited-feature"
+      ]
+    },
+    {
+      "topic": "Grailed - Summer Style & Fashion Advice",
+      "description": "Seasonal outfit guides, practical styling advice",
+      "urls": [
+        "https://www.grailed.com/drycleanonly/mens-summer-style-guide-grailed",
+        "https://www.grailed.com/drycleanonly/summer-outfits-men",
+        "https://www.grailed.com/drycleanonly/male-fashion-advice-questions"
+      ]
+    },
+    {
+      "topic": "Valet - Refined Essentials & Contemporary Style",
+      "description": "Wardrobe building blocks, modern essentials",
+      "urls": [
+        "https://www.valetmag.com/style/products/2025/mens-wardrobe-building-blocks-mr-porter-012325.php",
+        "https://www.valetmag.com/style/profiles-features/2024/mens-western-wardrobe-essentials-031124.php"
+      ]
+    },
+    {
+      "topic": "Primer Magazine - Affordable Smart Style",
+      "description": "Budget-friendly essentials, personal style development",
+      "urls": [
+        "https://www.primermagazine.com/2019/spend/summer-style-essentials",
+        "https://www.primermagazine.com/2022/learn/men-fashion-tips-summer-style-details",
+        "https://www.primermagazine.com/2014/learn/11-not-so-obvious-mens-style-essentials",
+        "https://www.primermagazine.com/2025/learn/primers-big-mens-spring-style-guide",
+        "https://www.primermagazine.com/2018/learn/mens-minimalist-fashion-outfits",
+        "https://www.primermagazine.com/2024/spend/easy-amazon-outfit-essentials",
+        "https://www.primermagazine.com/2025/spend/types-of-jackets",
+        "https://www.primermagazine.com/2023/learn/develop-a-personal-style",
+        "https://www.primermagazine.com/2022/spend/fall-style-picks"
+      ]
+    },
+    {
+      "topic": "Dappered - Budget-Conscious Classic Style",
+      "description": "Affordable menswear, fit guides, seasonal essentials",
+      "urls": [
+        "https://dappered.com/2025/01/25-irrefutable-mens-style-rules/",
+        "https://dappered.com/2010/09/mens-fal-style-essentials-fall-2010/",
+        "https://dappered.com/2014/06/the-menswear-fit-priority-guide-illustrated/",
+        "https://dappered.com/2017/09/10-mens-fall-style-essentials-for-2017/",
+        "https://dappered.com/2015/10/welcome-to-dappered-start-here/",
+        "https://dappered.com/2025/08/15-little-secrets-of-mens-style/",
+        "https://dappered.com/2018/01/12-later-winter-style-essentials-for-the-well-dressed-guy/",
+        "https://dappered.com/2020/08/how-to-dress-business-casual-with-style-10-tips-for-men/",
+        "https://dappered.com/2021/12/10-mens-style-resolutions-for-the-new-year/"
+      ]
+    },
+    {
+      "topic": "Stitchdown - Boots, Leather & Heritage Wear",
+      "description": "Boot care, leather aging, heritage craftsmanship",
+      "urls": [
+        "https://www.stitchdown.com/leather/roughout-vs-suede-differences-care/",
+        "https://www.stitchdown.com/how-leathers-age/horween-boot-shoe-leathers/",
+        "https://www.stitchdown.com/how-leathers-age/how-teacore-leather-ages-patina/",
+        "https://www.stitchdown.com/how-leathers-age/how-seidel-1964-leather-ages/",
+        "https://www.stitchdown.com/leather/how-c-f-stead-waxy-commander-leather-ages/",
+        "https://www.stitchdown.com/shoe-care/shell-cordovan-care-how-to-polish/",
+        "https://www.stitchdown.com/buying-guides-and-reviews/indonesian-bootmakers-comprehensive-guide/",
+        "https://www.stitchdown.com/leather/how-horween-natural-chromexcel-ages/",
+        "https://www.stitchdown.com/patina-thunderdome/judging-criteria/"
+      ]
+    }
+  ]
+}
