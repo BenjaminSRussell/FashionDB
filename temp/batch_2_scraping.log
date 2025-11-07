@@ -1,0 +1,247 @@
+================================================================================
+WEB SEARCH SCRAPING - Independent Fashion Advice URLs
+================================================================================
+Input: /home/user/FashionDB/data/batch_2_independent_urls.json
+Database: /home/user/FashionDB/data/independent_content.db
+================================================================================
+Loaded 30 URLs from 3 topics
+
+
+======================================================================
+[1/3] Denim and Jeans Guide
+URLs: 10
+======================================================================
+
+[1/10] https://denimhunters.com/jeans-fit-guide-for-men/...
+      Scraping: https://denimhunters.com/jeans-fit-guide-for-men/
+        ✓ Extracted: 355 chars
+    ✓ Men’s Jeans Fit Guide: Find Jeans for Your Body Type... (355 chars)
+
+[2/10] https://mensfashioner.com/articles/ultimate-guide-to-mens-je...
+      Scraping: https://mensfashioner.com/articles/ultimate-guide-to-mens-jeans
+        ✓ Extracted: 31719 chars
+    ✓ Men's Jeans - The Ultimate Guide... (31719 chars)
+
+[3/10] https://www.realmenrealstyle.com/jeans-for-body-type/...
+      Scraping: https://www.realmenrealstyle.com/jeans-for-body-type/
+        ✓ Extracted: 8781 chars
+    ✓ How To Buy The Perfect Pair Of Jeans For Your Body Type... (8781 chars)
+
+[4/10] https://www.mottandbow.com/blogs/mens-style/jeans-fit-guide-...
+      Scraping: https://www.mottandbow.com/blogs/mens-style/jeans-fit-guide-for-men
+        ✓ Extracted: 11634 chars
+    ✓ Jeans Fit Guide for Men... (11633 chars)
+
+[5/10] https://www.esquire.com/style/mens-fashion/advice/g1108/how-...
+      Scraping: https://www.esquire.com/style/mens-fashion/advice/g1108/how-to-buy-jeans/
+        [!] No content found
+    ✗ Insufficient content
+
+[6/10] https://www.johnlewis.com/content/mens-jeans-buying-guide...
+      Scraping: https://www.johnlewis.com/content/mens-jeans-buying-guide
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.johnlewis.com/content/mens-jeans-buying-guide
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://www.johnlewis.com/content/mens-jeans-buying-guide
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://www.johnlewis.com/content/mens-jeans-buying-guide
+    ✗ Insufficient content
+
+[7/10] https://www.guess.com/us/en/men/apparel/jeans-and-denim/fit-...
+      Scraping: https://www.guess.com/us/en/men/apparel/jeans-and-denim/fit-guide/
+        [!] No content found
+    ✗ Insufficient content
+
+[8/10] https://www.levi.com/US/en_US/features/men-jeans...
+      Scraping: https://www.levi.com/US/en_US/features/men-jeans
+        [!] No content found
+    ✗ Insufficient content
+
+[9/10] https://www.joesjeans.com/pages/men-s-denim-fit-guide...
+      Scraping: https://www.joesjeans.com/pages/men-s-denim-fit-guide
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.joesjeans.com/pages/men-s-denim-fit-guide
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://www.joesjeans.com/pages/men-s-denim-fit-guide
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://www.joesjeans.com/pages/men-s-denim-fit-guide
+    ✗ Insufficient content
+
+[10/10] https://www.realmenrealstyle.com/how-to-buy-jeans-chart/...
+      Scraping: https://www.realmenrealstyle.com/how-to-buy-jeans-chart/
+        ✓ Extracted: 874 chars
+    ✓ How Jeans Should Fit Infographic | Guide To Jean Style Optio... (874 chars)
+
+======================================================================
+[2/3] Leather Jacket Style Guide
+URLs: 10
+======================================================================
+
+[1/10] https://buffalojackson.com/blogs/insight/what-to-wear-with-a...
+      Scraping: https://buffalojackson.com/blogs/insight/what-to-wear-with-a-leather-jacket
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://buffalojackson.com/blogs/insight/what-to-wear-with-a-leather-jacket
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://buffalojackson.com/blogs/insight/what-to-wear-with-a-leather-jacket
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://buffalojackson.com/blogs/insight/what-to-wear-with-a-leather-jacket
+    ✗ Insufficient content
+
+[2/10] https://www.realmenrealstyle.com/leather-jacket-middle-aged/...
+      Scraping: https://www.realmenrealstyle.com/leather-jacket-middle-aged/
+        ✓ Extracted: 16833 chars
+    ✓ How To Style Leather Jackets For Men (According To Your Age)... (16833 chars)
+
+[3/10] https://www.esquire.com/style/mens-fashion/a64308588/what-to...
+      Scraping: https://www.esquire.com/style/mens-fashion/a64308588/what-to-wear-with-leather-jacket/
+        [!] No content found
+    ✗ Insufficient content
+
+[4/10] https://vonbaer.com/blogs/blog/mens-leather-jackets...
+      Scraping: https://vonbaer.com/blogs/blog/mens-leather-jackets
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://vonbaer.com/blogs/blog/mens-leather-jackets
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://vonbaer.com/blogs/blog/mens-leather-jackets
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://vonbaer.com/blogs/blog/mens-leather-jackets
+    ✗ Insufficient content
+
+[5/10] https://www.efurs.co/blog-en/how-to-style-a-mens-leather-jac...
+      Scraping: https://www.efurs.co/blog-en/how-to-style-a-mens-leather-jacket-the-ultimate-style-guide
+        [!] No content found
+    ✗ Insufficient content
+
+[6/10] https://nextluxury.com/mens-style-and-fashion/how-to-wear-a-...
+      Scraping: https://nextluxury.com/mens-style-and-fashion/how-to-wear-a-leather-jacket-for-men/
+        ✓ Extracted: 2296 chars
+    ✓ How To Wear a Leather Jacket for Men... (2296 chars)
+
+[7/10] https://www.mrporter.com/en-us/journal/fashion/guide-how-to-...
+      Scraping: https://www.mrporter.com/en-us/journal/fashion/guide-how-to-wear-leather-jacket-biker-1412236
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.mrporter.com/en-us/journal/fashion/guide-how-to-wear-leather-jacket-biker-1412236
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://www.mrporter.com/en-us/journal/fashion/guide-how-to-wear-leather-jacket-biker-1412236
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://www.mrporter.com/en-us/journal/fashion/guide-how-to-wear-leather-jacket-biker-1412236
+    ✗ Insufficient content
+
+[8/10] https://www.fjackets.com/pages/what-to-wear-under-a-leather-...
+      Scraping: https://www.fjackets.com/pages/what-to-wear-under-a-leather-jacket.html
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.fjackets.com/pages/what-to-wear-under-a-leather-jacket.html
+  [!] Fetch failed (attempt 2/3): 503 Server Error: Service Unavailable for url: https://www.fjackets.com/pages/what-to-wear-under-a-leather-jacket.html
+  [!] Fetch failed (attempt 3/3): 503 Server Error: Service Unavailable for url: https://www.fjackets.com/pages/what-to-wear-under-a-leather-jacket.html
+    ✗ Insufficient content
+
+[9/10] https://www.thetrendspotter.net/how-to-wear-a-leather-jacket...
+      Scraping: https://www.thetrendspotter.net/how-to-wear-a-leather-jacket/
+        ✓ Extracted: 9775 chars
+    ✓ How to Wear a Leather Jacket: Outfit Ideas for Men... (9775 chars)
+
+[10/10] https://www.stylesofman.com/leather-jacket-outfits-for-men/...
+      Scraping: https://www.stylesofman.com/leather-jacket-outfits-for-men/
+        ✓ Extracted: 7397 chars
+    ✓ Leather Jackets for Men: Style Guide, Outfits, & Inspiration... (7397 chars)
+
+======================================================================
+[3/3] Watch Style Guide
+URLs: 10
+======================================================================
+
+[1/10] https://www.artofmanliness.com/style/accessories/mans-guide-...
+      Scraping: https://www.artofmanliness.com/style/accessories/mans-guide-wristwatches-choose-watch/
+        ✓ Extracted: 27397 chars
+    ✓ A Man’s Guide to Wristwatches: How to Choose a Watch... (27397 chars)
+
+[2/10] https://www.houseofsilva.com/blog/a-guide-to-choosing-the-pe...
+      Scraping: https://www.houseofsilva.com/blog/a-guide-to-choosing-the-perfect-mens-watch
+        [!] No content found
+    ✗ Insufficient content
+
+[3/10] https://www.trendhim.com/articles/283/how-to-wear-a-men-s-wa...
+      Scraping: https://www.trendhim.com/articles/283/how-to-wear-a-men-s-watch-with-style
+        [!] No content found
+    ✗ Insufficient content
+
+[4/10] https://www.realmenrealstyle.com/wear-watch-with-style/...
+      Scraping: https://www.realmenrealstyle.com/wear-watch-with-style/
+        ✓ Extracted: 7667 chars
+    ✓ Dress & Casual Watches For Men | How To Style A Watch... (7667 chars)
+
+[5/10] https://timex.com/blogs/the-timex-blog/mens-guide-choosing-t...
+      Scraping: https://timex.com/blogs/the-timex-blog/mens-guide-choosing-the-right-watch-style
+        ✓ Extracted: 8438 chars
+    ✓ A men’s guide to choosing the right watch style... (8438 chars)
+
+[6/10] https://www.danielwellington.com/blogs/user-guides/the-diffe...
+      Scraping: https://www.danielwellington.com/blogs/user-guides/the-different-types-of-watches-for-men
+        ✓ Extracted: 3151 chars
+    ✓ Untitled Post... (3151 chars)
+
+[7/10] https://mensfashioner.com/articles/how-to-wear-mens-watches...
+      Scraping: https://mensfashioner.com/articles/how-to-wear-mens-watches
+        ✓ Extracted: 9419 chars
+    ✓ How To Wear Men's Watches... (9419 chars)
+
+[8/10] https://www.suitsexpert.com/blog/watch-types-for-men/...
+      Scraping: https://www.suitsexpert.com/blog/watch-types-for-men/
+  [!] Fetch failed (attempt 1/3): 503 Server Error: Service Unavailable for url: https://www.suitsexpert.com/blog/watch-types-for-men/
+        ✓ Extracted: 17548 chars
+    ✓ Different Watch Types for Men... (17548 chars)
+
+[9/10] https://www.gentlemansgazette.com/11-rules-of-the-watch/...
+      Scraping: https://www.gentlemansgazette.com/11-rules-of-the-watch/
+        ✓ Extracted: 10840 chars
+    ✓ 8 Rules of the Watch – How, When, & Why to Wear Watches... (10840 chars)
+
+[10/10] https://swankybadger.com/blogs/lifestyle/best-types-mens-wat...
+      Scraping: https://swankybadger.com/blogs/lifestyle/best-types-mens-watches
+        [!] No content found
+    ✗ Insufficient content
+
+================================================================================
+Generating report...
+
+================================================================================
+WEB SEARCH SCRAPING REPORT
+Independent Fashion Advice Articles (No Reddit Bias)
+================================================================================
+Date: 2025-11-07 03:13:59
+
+SUMMARY
+--------------------------------------------------------------------------------
+Total URLs attempted: 30
+Successful scrapes: 16
+Failed scrapes: 14
+Success rate: 53.3%
+
+BY TOPIC
+================================================================================
+Topic                                         Success    Failed     Rate
+--------------------------------------------------------------------------------
+Denim and Jeans Guide                         5          5          50.0%
+Leather Jacket Style Guide                    4          6          40.0%
+Watch Style Guide                             7          3          70.0%
+
+================================================================================
+
+DATABASE STATISTICS
+--------------------------------------------------------------------------------
+Total articles in database: 47
+Average article length: 11,103 characters
+
+Top 10 sources:
+  blog_realmenrealstyle.com: 7
+  blog_askandyaboutclothes.com: 3
+  blog_oliverwicks.com: 2
+  blog_mensfashioner.com: 2
+  blog_hockerty.com: 2
+  blog_valentinacalzaturefirenze.com: 1
+  blog_timex.com: 1
+  blog_thetrendspotter.net: 1
+  blog_themodestman.com: 1
+  blog_themanual.com: 1
+
+================================================================================
+
+CONCLUSION
+--------------------------------------------------------------------------------
+✓ Scraped 16 independent fashion advice articles
+✓ No Reddit bias - discovered via web search
+✓ Diverse topics covered: fashion guides, suits, wardrobe, shoes, colors
+✓ Average 11,103 characters per article
+
+================================================================================
+
+Report saved to: /home/user/FashionDB/reports/web_search_scraping_report.txt
+
+✓ Scraping complete!
+  Articles scraped: 16
+  Database: /home/user/FashionDB/data/independent_content.db
+  Report: /home/user/FashionDB/reports/web_search_scraping_report.txt

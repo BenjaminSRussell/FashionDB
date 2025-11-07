@@ -276,7 +276,12 @@ def main():
     """Main execution."""
     base_dir = Path(__file__).parent.parent
 
-    urls_path = base_dir / "data" / "web_search_discovered_urls.json"
+    # Check for command-line argument
+    if len(sys.argv) > 1 and sys.argv[1] == '--input':
+        urls_path = Path(sys.argv[2])
+    else:
+        urls_path = base_dir / "data" / "web_search_discovered_urls.json"
+
     db_path = base_dir / "data" / "independent_content.db"
     report_path = base_dir / "reports" / "web_search_scraping_report.txt"
 
