@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .DS_Store
 __pycache__/
 *.pyc
@@ -34,3 +35,7 @@ config/*.secret.ini
 # IDE project files
 .idea/
 .vscode/
+=======
+__pycache__/
+temp/
+>>>>>>> refs/remotes/origin/main
