@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .DS_Store
 __pycache__/
 *.pyc
@@ -19,14 +18,17 @@ venv/
 *.txt.patch
 *_patch.txt
 
+# Temporary files
+temp/
+
 # Generated data and backups
 data/*.backup
 data/emergency_save_*.json
 
-# Large data files (>50MB)
-Data Analysis/data/fashion_rules.json
-Data Analysis/data/reddit_fashion_*.json
-data/reddit_fashion_data.json
+# Large data files (>50MB) - All JSON files in data directories
+Data Analysis/data/*.json
+data/*.json
+RedditDB/*.json
 
 # Local configuration containing credentials
 config/config.ini
@@ -35,7 +37,3 @@ config/*.secret.ini
 # IDE project files
 .idea/
 .vscode/
-=======
-__pycache__/
-temp/
->>>>>>> refs/remotes/origin/main
