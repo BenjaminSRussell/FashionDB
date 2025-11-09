@@ -57,8 +57,11 @@ def filter_rules(db_file: str, output: str):
     from validate import Validator
     validator = Validator()
     db = validator.filter_invalid(db_file, output)
-    print(f"Filtered to {db['statistics']['total_rules']} valid rules")
-    print(f"Removed {db['statistics'].get('filtered', 0)} invalid rules")
+    stats = db.get('statistics', {})
+    total = stats.get('total_rules', len(db.get('rules', [])))
+    filtered = stats.get('filtered', 0)
+    print(f"Filtered to {total} valid rules")
+    print(f"Removed {filtered} invalid rules")
     return db
 
 def full_pipeline(urls_file: str):

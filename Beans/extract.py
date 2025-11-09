@@ -19,7 +19,9 @@ class Extractor:
 
         self.skip_patterns = [
             r'\$\d+', r'shop\s+', r'buy\s+now', r'click\s+here',
-            r'subscribe', r'newsletter', r'discount', r'sale'
+            r'subscribe', r'newsletter', r'discount', r'sale',
+            r'skip to', r'also read:', r'related:', r'source:',
+            r'\|', r'…', r'\[.*?\]', r'\bfooter\b', r'\bmenu\b'
         ]
 
     def extract(self, text: str) -> List[Dict]:
