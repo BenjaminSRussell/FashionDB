@@ -4,10 +4,14 @@ from pathlib import Path
 
 class Validator:
     def __init__(self):
-        self.min_w, self.max_w = 5, 45
-        self.advice = {'always', 'never', 'should', 'must', 'avoid', 'best', 'recommend'}
-        self.fashion = {'suit', 'jacket', 'pants', 'shirt', 'shoes', 'tie', 'belt', 'fit', 'style'}
-        self.skip = [r'\$\d+', r'shop\s+', r'buy\s+', r'click', r'subscribe']
+        self.min_w, self.max_w = 5, 30
+        self.advice = {'always', 'never', 'should', 'must', 'avoid', 'best', 'recommend', 'ensure', 'make sure'}
+        self.fashion = {'suit', 'jacket', 'pants', 'shirt', 'shoes', 'tie', 'belt', 'fit', 'style', 'wear', 'dress', 'color', 'collar', 'sleeve'}
+        self.skip = [
+            r'\$\d+', r'shop\s+', r'buy\s+', r'click', r'subscribe',
+            r'question #\d+:', r'how to', r"i've", r"i'm", r'in this article',
+            r'article title', r'\?$', r'what should you', r'which style'
+        ]
 
     def validate(self, db_path: str) -> dict:
         data = json.loads(Path(db_path).read_text())
@@ -42,6 +46,9 @@ class Validator:
         if not text[-1] in '.!':
             return False, 'No punctuation'
 
+        if '?' in text:
+            return False, 'Contains question'
+
         wc = rule.get('word_count', len(text.split()))
         if wc < self.min_w:
             return False, f'Too short ({wc} words)'
@@ -56,6 +63,10 @@ class Validator:
             return False, 'No advice indicator'
         if not any(f in low for f in self.fashion):
             return False, 'No fashion terms'
+
+        capital_words = sum(1 for word in text.split() if word and word[0].isupper())
+        if capital_words > wc * 0.4:
+            return False, 'Too many capitals (article title)'
 
         return True, None
 
