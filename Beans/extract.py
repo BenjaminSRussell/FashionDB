@@ -20,8 +20,9 @@ class Extractor:
         self.skip_patterns = [
             r'\$\d+', r'shop\s+', r'buy\s+now', r'click\s+here',
             r'subscribe', r'newsletter', r'discount', r'sale',
-            r'skip to', r'also read:', r'related:', r'source:',
-            r'\|', r'…', r'\[.*?\]', r'\bfooter\b', r'\bmenu\b'
+            r'skip to', r'also read:', r'related:', r'source:', r'question:',
+            r'\|', r'…', r'\[.*?\]', r'\bfooter\b', r'\bmenu\b',
+            r'\bi\.e\.$', r'\be\.g\.$', r'^for example,?\s*$'
         ]
 
     def extract(self, text: str) -> List[Dict]:
@@ -65,8 +66,12 @@ class Extractor:
         return True
 
     def _create_rule(self, sentence: str) -> Dict:
-        cleaned = sentence.strip()
+        import re
+        cleaned = re.sub(r'\s+', ' ', sentence.strip())
         if not cleaned:
+            return None
+
+        if cleaned.endswith(('i.e', 'e.g', 'etc', 'i.e.', 'e.g.', 'etc.')):
             return None
 
         if not cleaned[0].isupper():
