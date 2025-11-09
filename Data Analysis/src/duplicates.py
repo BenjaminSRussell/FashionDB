@@ -1,17 +1,12 @@
+from utils import load_json, save_json, DATA_DIR
 
-import json
-import os
+INPUT_FILE = DATA_DIR / "reddit_fashion_deletions.json"
+OUTPUT_FILE = DATA_DIR / "reddit_fashion_data_unique.json"
 
-# Define file paths
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
-DATA_DIR = os.path.join(PROJECT_ROOT, "data")
-INPUT_FILE = os.path.join(DATA_DIR, "reddit_fashion_deletions.json")
-OUTPUT_FILE = os.path.join(DATA_DIR, "reddit_fashion_data_unique.json")
-
-
-with open(INPUT_FILE, 'r') as f:
-    data = json.load(f)
+data = load_json(INPUT_FILE)
+if not data:
+    print(f"Error: Could not load {INPUT_FILE}")
+    exit(1)
 
 print("Finding and removing duplicate posts...")
 unique_data = {}
@@ -58,7 +53,5 @@ print(f"Duplicate comments removed: {duplicate_comment_count}")
 print(f"Posts remaining: {total_post_count - duplicate_post_count}")
 
 print(f"Writing unique data to {OUTPUT_FILE}...")
-with open(OUTPUT_FILE, 'w') as f:
-    json.dump(unique_data, f, indent=2)
-
+save_json(unique_data, OUTPUT_FILE)
 print(f"Successfully created {OUTPUT_FILE}")
