@@ -29,6 +29,16 @@ data/emergency_save_*.json
 Data Analysis/data/*.json
 data/*.json
 RedditDB/*.json
+Beans/data/*.json
+
+# Exclude example files from gitignore (keep these)
+!*.json.example
+
+# Actual URLs and configuration (not examples)
+Beans/urls.txt
+RedditDB/target_subreddits.json
+RedditDB/search_queries.json
+config/extraction_rules.json
 
 # Local configuration containing credentials
 config/config.ini

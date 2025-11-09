@@ -1,8 +1,11 @@
 import json
 import re
+import logging
 from pathlib import Path
 from collections import defaultdict
 from difflib import SequenceMatcher
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class Distiller:
     def __init__(self, results_dir: str, output: str, similarity=0.85):
@@ -25,8 +28,10 @@ class Distiller:
             try:
                 data = json.loads(f.read_text())
                 rules.extend(data.get('rules', []))
-            except:
-                pass
+            except json.JSONDecodeError as e:
+                logging.error(f"Failed to parse JSON in {f}: {e}")
+            except Exception as e:
+                logging.error(f"Error loading {f}: {e}")
         return rules
 
     def _deduplicate(self, rules: list) -> list:

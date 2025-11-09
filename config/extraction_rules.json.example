@@ -1,0 +1,17 @@
+{
+  "sites": {
+    "default": {
+      "selectors": {
+        "content": ["article", "main", ".post-content"],
+        "exclude": ["nav", "footer", "aside", ".comments", ".ad"]
+      },
+      "min_text_length": 100,
+      "max_rules_per_page": 50
+    }
+  },
+  "quality_thresholds": {
+    "min_quality_score": 0.5,
+    "min_word_count": 5,
+    "max_word_count": 45
+  }
+}

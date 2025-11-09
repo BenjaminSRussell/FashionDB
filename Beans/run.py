@@ -1,3 +1,26 @@
+"""Beans - Fashion Rule Extraction Pipeline
+
+Usage:
+    python run.py scrape <urls_file> <output_file>
+        Scrape fashion rules from URLs listed in urls_file
+
+    python run.py distill <results_dir> <output_file>
+        Distill and deduplicate scraped rules
+
+    python run.py validate <db_file>
+        Validate rules in the database file
+
+    python run.py filter <db_file> <output_file>
+        Filter out invalid rules and save to output
+
+    python run.py full <urls_file>
+        Run the complete pipeline: scrape -> distill -> filter -> validate
+
+Examples:
+    python run.py scrape urls.txt data/raw_rules.json
+    python run.py full urls.txt
+"""
+
 import sys
 from pathlib import Path
 

@@ -1,0 +1,35 @@
+{
+  "basic_advice": [
+    "how to wear",
+    "what to wear",
+    "guide",
+    "basics",
+    "beginner"
+  ],
+  "style_rules": [
+    "rule",
+    "always",
+    "never",
+    "should",
+    "avoid"
+  ],
+  "fit_advice": [
+    "fit",
+    "sizing",
+    "tailoring",
+    "measurements"
+  ],
+  "color_matching": [
+    "color",
+    "matching",
+    "combinations",
+    "palette"
+  ],
+  "occasion_specific": [
+    "formal",
+    "casual",
+    "business",
+    "wedding",
+    "interview"
+  ]
+}
