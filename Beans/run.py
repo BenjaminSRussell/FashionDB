@@ -1,24 +1,16 @@
-"""Beans - Fashion Rule Extraction Pipeline
+"""
+Beans - Fashion Rule Extraction Pipeline
 
-Usage:
-    python run.py scrape <urls_file> <output_file>
-        Scrape fashion rules from URLs listed in urls_file
-
-    python run.py distill <results_dir> <output_file>
-        Distill and deduplicate scraped rules
-
-    python run.py validate <db_file>
-        Validate rules in the database file
-
-    python run.py filter <db_file> <output_file>
-        Filter out invalid rules and save to output
-
-    python run.py full <urls_file>
-        Run the complete pipeline: scrape -> distill -> filter -> validate
+Commands:
+  scrape <urls_file> <output>       Scrape URLs and extract rules
+  distill <results_dir> <output>    Deduplicate and merge rules
+  validate <db_file>                Validate rule quality
+  filter <db_file> <output>         Filter out invalid rules
+  full <urls_file>                  Run full pipeline
 
 Examples:
-    python run.py scrape urls.txt data/raw_rules.json
-    python run.py full urls.txt
+  python run.py scrape test_urls.txt data/rules.json
+  python run.py full test_urls.txt
 """
 
 import sys
@@ -57,11 +49,8 @@ def filter_rules(db_file: str, output: str):
     from validate import Validator
     validator = Validator()
     db = validator.filter_invalid(db_file, output)
-    stats = db.get('statistics', {})
-    total = stats.get('total_rules', len(db.get('rules', [])))
-    filtered = stats.get('filtered', 0)
-    print(f"Filtered to {total} valid rules")
-    print(f"Removed {filtered} invalid rules")
+    print(f"Filtered to {db['statistics']['total_rules']} valid rules")
+    print(f"Removed {db['statistics'].get('filtered', 0)} invalid rules")
     return db
 
 def full_pipeline(urls_file: str):

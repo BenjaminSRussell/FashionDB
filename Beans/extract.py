@@ -1,129 +1,118 @@
+"""Extract fashion rules from text using MLX-LM."""
+
 import re
-from typing import List, Dict
+import json
+from typing import List, Optional
+
+try:
+    from mlx_lm import load, generate
+except ImportError:
+    load = None
+    generate = None
+
+
+SYSTEM_PROMPT = """You are a fashion expert analyzing text for specific fashion rules and advice.
+
+Extract specific fashion rules, guidelines, or advice mentioned in the text.
+
+Return your response as a JSON object with this EXACT structure:
+{
+  "has_fashion_rule": true,
+  "rules": [
+    {"rule_text": "Clear statement of the fashion rule", "rule_type": "fit", "quality_score": 7, "word_count": 8}
+  ]
+}
+
+Rule types: fit, color, style, formality, accessories, general
+Quality score: 1-10 (10 = highly specific and actionable)
+
+Examples:
+Input: "Never button the bottom button of a suit jacket"
+Output: {"has_fashion_rule": true, "rules": [{"rule_text": "Never button the bottom button of a suit jacket", "rule_type": "formality", "quality_score": 9, "word_count": 9}]}
+
+Input: "Black shoes don't go with brown belts"
+Output: {"has_fashion_rule": true, "rules": [{"rule_text": "Black shoes don't go with brown belts", "rule_type": "color", "quality_score": 8, "word_count": 7}]}
+
+Input: "Where can I buy cheap jeans?"
+Output: {"has_fashion_rule": false, "rules": []}
+
+Return ONLY valid JSON, no other text."""
+
 
 class Extractor:
-    """Extracts fashion rules from web page text."""
+    def __init__(self, model_name: str = "mlx-community/Mistral-7B-Instruct-v0.2-4bit"):
+        self.model_name = model_name
+        self.model = None
+        self.tokenizer = None
+        self._load_model()
 
-    def __init__(self):
-        self.advice_indicators = [
-            r'\b(should|must|always|never|avoid|best|recommended?|essential|important)\b',
-            r'\b(don\'t|do not|make sure|ensure|consider)\b',
-            r'\b(wear|pair|match|combine|choose|select)\b'
-        ]
+    def _load_model(self):
+        """Load the MLX model for extraction."""
+        if load is None or generate is None:
+            raise RuntimeError("Missing mlx_lm package. Install: pip install mlx-lm")
 
-        self.fashion_keywords = [
-            'suit', 'jacket', 'blazer', 'pants', 'trousers', 'shirt', 'tie',
-            'shoes', 'belt', 'color', 'fit', 'style', 'pattern', 'fabric',
-            'dress', 'casual', 'formal', 'outfit', 'wardrobe', 'wear', 'clothing'
-        ]
+        print(f"Loading model: {self.model_name}...")
+        self.model, self.tokenizer = load(self.model_name)
+        print("Model loaded!")
 
-        self.skip_patterns = [
-            r'\$\d+', r'shop\s+', r'buy\s+now', r'click\s+here',
-            r'subscribe', r'newsletter', r'discount', r'sale',
-            r'skip to', r'also read:', r'related:', r'source:', r'question:',
-            r'\|', r'…', r'\[.*?\]', r'\bfooter\b', r'\bmenu\b',
-            r'\bi\.e\.$', r'\be\.g\.$', r'^for example,?\s*$'
-        ]
-
-    def extract(self, text: str) -> List[Dict]:
-        if not text or len(text.strip()) < 50:
+    def extract(self, text: str) -> List[dict]:
+        """Extract fashion rules from text."""
+        if not text or len(text.strip()) < 20:
             return []
 
-        sentences = self._split_sentences(text)
+        # Truncate long text
+        if len(text) > 2000:
+            text = text[:2000] + "..."
 
-        rules = []
-        for sentence in sentences:
-            if self._is_fashion_rule(sentence):
-                rule = self._create_rule(sentence)
-                if rule:
-                    rules.append(rule)
+        prompt = self._create_prompt(text)
 
-        rules.sort(key=lambda r: r['quality_score'], reverse=True)
-        return rules[:50]
+        try:
+            response_text = generate(
+                self.model,
+                self.tokenizer,
+                prompt=prompt,
+                max_tokens=512,
+                verbose=False,
+            )
 
-    def _split_sentences(self, text: str) -> List[str]:
-        sentences = re.split(r'[.!?]\s+', text)
-        return [s.strip() for s in sentences if len(s.strip()) > 20]
+            result = self._extract_json(response_text)
 
-    def _is_fashion_rule(self, sentence: str) -> bool:
-        lower_sent = sentence.lower()
+            if result and result.get("has_fashion_rule"):
+                return result.get("rules", [])
 
-        if any(re.search(pattern, sentence, re.I) for pattern in self.skip_patterns):
-            return False
+            return []
 
-        has_advice = any(re.search(pattern, lower_sent, re.I) for pattern in self.advice_indicators)
-        if not has_advice:
-            return False
+        except Exception as e:
+            print(f"Extraction error: {e}")
+            return []
 
-        has_fashion = any(keyword in lower_sent for keyword in self.fashion_keywords)
-        if not has_fashion:
-            return False
+    def _create_prompt(self, text: str) -> str:
+        """Create extraction prompt in Mistral format."""
+        return f"""<s>[INST] {SYSTEM_PROMPT}
 
-        word_count = len(sentence.split())
-        if word_count < 5 or word_count > 45:
-            return False
+Analyze this text and extract any fashion rules or advice:
 
-        return True
+{text}
 
-    def _create_rule(self, sentence: str) -> Dict:
-        import re
-        cleaned = re.sub(r'\s+', ' ', sentence.strip())
-        if not cleaned:
-            return None
+Return only valid JSON. [/INST]"""
 
-        if cleaned.endswith(('i.e', 'e.g', 'etc', 'i.e.', 'e.g.', 'etc.')):
-            return None
+    def _extract_json(self, text: str) -> Optional[dict]:
+        """Extract JSON from model response."""
+        text = text.strip()
+        text = re.sub(r',\s*([}\]])', r'\1', text)
 
-        if not cleaned[0].isupper():
-            cleaned = cleaned[0].upper() + cleaned[1:]
+        json_match = re.search(r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}', text, re.DOTALL)
+        if json_match:
+            cleaned = json_match.group()
+            cleaned = re.sub(r',\s*([}\]])', r'\1', cleaned)
+            try:
+                return json.loads(cleaned)
+            except json.JSONDecodeError:
+                pass
 
-        if not cleaned[-1] in '.!?':
-            cleaned += '.'
+        try:
+            return json.loads(text)
+        except json.JSONDecodeError:
+            pass
 
-        quality = self._calculate_quality(cleaned)
-        rule_type = self._classify_rule(cleaned)
-
-        return {
-            'rule_text': cleaned,
-            'rule_type': rule_type,
-            'word_count': len(cleaned.split()),
-            'quality_score': quality
-        }
-
-    def _calculate_quality(self, text: str) -> float:
-        score = 0.5
-        lower_text = text.lower()
-
-        strong_advice = ['always', 'never', 'must', 'essential', 'best']
-        if any(word in lower_text for word in strong_advice):
-            score += 0.2
-
-        fashion_count = sum(1 for kw in self.fashion_keywords if kw in lower_text)
-        score += min(fashion_count * 0.05, 0.2)
-
-        word_count = len(text.split())
-        if word_count < 8:
-            score -= 0.1
-        elif word_count > 35:
-            score -= 0.1
-        elif 10 <= word_count <= 25:
-            score += 0.1
-
-        return max(0.0, min(1.0, score))
-
-    def _classify_rule(self, text: str) -> str:
-        lower_text = text.lower()
-
-        if any(word in lower_text for word in ['color', 'colour', 'match', 'contrast']):
-            return 'color_matching'
-
-        if any(word in lower_text for word in ['fit', 'size', 'tailored', 'slim', 'tight', 'loose']):
-            return 'fit_guidelines'
-
-        if any(word in lower_text for word in ['formal', 'casual', 'business', 'occasion', 'event']):
-            return 'occasion_specific'
-
-        if any(word in lower_text for word in ['pair', 'combine', 'together', 'with']):
-            return 'combination_advice'
-
-        return 'general_styling'
+        return None
