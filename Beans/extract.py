@@ -78,7 +78,12 @@ class Extractor:
             result = self._extract_json(response_text)
 
             if result and result.get("has_fashion_rule"):
-                return result.get("rules", [])
+                rules = result.get("rules", [])
+                # Add word_count if missing
+                for rule in rules:
+                    if "word_count" not in rule:
+                        rule["word_count"] = len(rule.get("rule_text", "").split())
+                return rules
 
             return []
 

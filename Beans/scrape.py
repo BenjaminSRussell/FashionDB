@@ -3,39 +3,46 @@ import json
 import logging
 from pathlib import Path
 from bs4 import BeautifulSoup
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from extract import Extractor
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class Scraper:
-    def __init__(self, config_path='config/extraction_rules.json', workers=4):
+    def __init__(self, config_path='config/extraction_rules.json', workers=1):
         self.cfg = json.loads(Path(config_path).read_text()) if Path(config_path).exists() else {'sites': {}}
-        self.ext = Extractor()
+        self.ext = None  # Lazy load to avoid memory issues
         self.workers = workers
         self.session = requests.Session()
 
     def scrape_urls(self, urls: list, output: str) -> dict:
         results = {'rules': [], 'stats': {'success': 0, 'fail': 0}}
 
-        with ThreadPoolExecutor(max_workers=self.workers) as pool:
-            futures = {pool.submit(self._scrape_url, url): url for url in urls}
-            for future in as_completed(futures):
-                try:
-                    rules = future.result()
-                    if rules:
-                        results['rules'].extend(rules)
-                        results['stats']['success'] += 1
-                    else:
-                        results['stats']['fail'] += 1
-                except Exception as e:
-                    url = futures[future]
-                    logging.error(f"Failed to process {url}: {e}")
+        # Load model once for all URLs
+        if self.ext is None:
+            logging.info("Initializing extractor...")
+            self.ext = Extractor()
+
+        # Single-threaded to avoid memory issues with MLX model
+        for i, url in enumerate(urls, 1):
+            logging.info(f"Processing {i}/{len(urls)}: {url}")
+            try:
+                rules = self._scrape_url(url)
+                if rules:
+                    results['rules'].extend(rules)
+                    results['stats']['success'] += 1
+                    logging.info(f"  ✓ Extracted {len(rules)} rules")
+                else:
                     results['stats']['fail'] += 1
+                    logging.info(f"  ✗ No rules extracted")
+            except Exception as e:
+                logging.error(f"Failed to process {url}: {e}")
+                results['stats']['fail'] += 1
 
         results['stats']['total_rules'] = len(results['rules'])
         Path(output).parent.mkdir(parents=True, exist_ok=True)
         Path(output).write_text(json.dumps(results, indent=2))
+        logging.info(f"\nResults saved to {output}")
+        logging.info(f"Total: {len(urls)} URLs, {results['stats']['success']} success, {results['stats']['total_rules']} rules")
         return results
 
     def _scrape_url(self, url: str) -> list:
