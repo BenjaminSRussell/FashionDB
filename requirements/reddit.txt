@@ -1,0 +1,4 @@
+# Reddit-specific dependencies
+-r base.txt
+praw>=7.7.0
+prawcore>=2.3.0

@@ -63,9 +63,44 @@ class Scraper:
 
     def _extract_text(self, html: str) -> str:
         soup = BeautifulSoup(html, 'html.parser')
-        for tag in soup(['script', 'style', 'nav', 'footer', 'aside', 'header']):
+        
+        # First remove all unwanted elements
+        for tag in soup(['script', 'style', 'nav', 'footer', 'aside', 'header', 'form', 'iframe']):
             tag.decompose()
-        return ' '.join(soup.stripped_strings)
+            
+        # Try to find the main article content
+        article = None
+        for selector in [
+            'article',
+            'div[class*="article"]',
+            'div[class*="post"]',
+            'div[class*="content"]',
+            'div[class*="main"]',
+            '.article',
+            '.post',
+            '.post-content',
+            '.entry-content',
+            'main'
+        ]:
+            article = soup.select_one(selector)
+            if article:
+                break
+                
+        # If we found an article section, use that, otherwise use the whole body
+        content = article if article else soup
+        
+        # Remove any remaining promotional elements
+        for promo in content.select('[class*="promo"], [class*="sidebar"], [class*="widget"], [class*="banner"], [class*="ad"], [class*="newsletter"]'):
+            promo.decompose()
+            
+        # Get text content
+        lines = []
+        for p in content.find_all(['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'li']):
+            text = ' '.join(p.stripped_strings)
+            if len(text) > 30:  # Only keep substantial lines
+                lines.append(text)
+                
+        return ' '.join(lines)
 
     def _domain(self, url: str) -> str:
         return url.split('/')[2] if len(url.split('/')) > 2 else 'unknown'

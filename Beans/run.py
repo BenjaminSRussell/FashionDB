@@ -54,17 +54,43 @@ def filter_rules(db_file: str, output: str):
     return db
 
 def full_pipeline(urls_file: str):
+    """New full pipeline flow:
+    - If `urls_file` is a path to a file, read URLs from it and scrape them.
+    - If `urls_file` looks like a domain (not an existing file), run discovery on the domain to find candidate pages.
+    - Extract candidate rules, distill, clean, filter, validate.
+    """
     print("=== FULL PIPELINE ===")
-    print("\n1. SCRAPING")
-    scrape(urls_file, 'data/raw_rules.json')
+
+    # Determine whether input is a file or a seed domain/URL
+    from pathlib import Path
+    seed = urls_file
+    if Path(seed).exists():
+        # Read list of URLs from file and use the existing scraper
+        print("\n1. SCRAPING (from URL list)")
+        scrape(seed, 'data/raw_rules.json')
+    else:
+        # Treat as domain/seed and run discovery + extraction
+        print("\n1. DISCOVERY & EXTRACTION (from domain)")
+        from discover_and_extract import DiscoverExtract
+        de = DiscoverExtract()
+        de.run_domain(seed, out_file='data/raw_rules.json')
 
     print("\n2. DISTILLING")
     distill('data', 'data/rules_raw.json')
 
-    print("\n3. FILTERING")
-    filter_rules('data/rules_raw.json', 'data/rules.json')
+    print("\n3. CLEANING")
+    from clean import RuleCleaner, RuleValidationConfig
+    cleaner = RuleCleaner(RuleValidationConfig(
+        min_word_count=5,
+        max_word_count=7,
+        min_quality_score=6
+    ))
+    cleaner.clean_rules('data/rules_raw.json', 'data/rules_cleaned.json')
 
-    print("\n4. VALIDATING")
+    print("\n4. FILTERING")
+    filter_rules('data/rules_cleaned.json', 'data/rules.json')
+
+    print("\n5. VALIDATING")
     validate('data/rules.json')
 
     print("\n=== COMPLETE ===")

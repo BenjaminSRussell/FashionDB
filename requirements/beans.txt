@@ -1,0 +1,5 @@
+# Beans-specific dependencies
+-r base.txt
+mlx-lm>=0.1.0; platform_system == "Darwin"  # macOS only
+ollama>=0.1.0
+sentence-transformers>=2.2.0  # For fallback when MLX not available
