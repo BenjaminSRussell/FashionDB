@@ -98,3 +98,15 @@ python -m fashiondb export --rules rules.json --format parquet --out rules.parqu
 ```
 
 Reddit scrape resume: checkpoints in `data/reddit_checkpoints.sqlite` (pass `--full` to ignore).
+
+
+## Reddit OAuth bootstrap
+
+Password auth is rejected. Use a **script** app + refresh token:
+
+1. Create an app at https://www.reddit.com/prefs/apps (type: script).
+2. Copy `client_id` / `client_secret` into `config/config.ini`.
+3. Generate a refresh token once (e.g. [praw refresh token script](https://praw.readthedocs.io/en/stable/tutorials/refresh_token.html)) and set `refresh_token=...`.
+4. Set a descriptive `user_agent` (not the placeholder).
+
+`create_reddit_client()` fails fast if only `username`/`password` are present.
