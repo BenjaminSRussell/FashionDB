@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "Data Analysis" / "src"))
+sys.path.insert(0, str(ROOT / "data_analysis" / "src"))
 
 from reddit_unique_records import DATA_DIR as UNIQUE_DIR
 from fashion_rule_extractor import DATA_DIR as EXTRACT_DIR, load_posts

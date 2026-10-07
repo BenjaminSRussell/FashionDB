@@ -4,8 +4,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SCRIPT = ROOT / "Data Analysis" / "src" / "zsc_test.py"
-FIXTURE = ROOT / "Data Analysis" / "tests" / "fixtures" / "reddit_comments_sample.json"
+SCRIPT = ROOT / "data_analysis" / "src" / "zsc_test.py"
+FIXTURE = ROOT / "data_analysis" / "tests" / "fixtures" / "reddit_comments_sample.json"
 
 
 def test_stub_deterministic(tmp_path):

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fashiondb"
+version = "0.2.0"
+description = "Fashion rules scrape, extract, embed, and explore"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "praw>=7.7",
+]
+
+[project.optional-dependencies]
+ui = ["gradio>=4.0"]
+mlx = ["mlx", "mlx-lm"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+fashiondb = "fashiondb.__main__:main"
+fashiondb-reddit = "reddit_db.scrape_malefashion:main"
+fashiondb-unique = "data_analysis.src.reddit_unique_records:main"
+fashiondb-extract = "data_analysis.src.fashion_rule_extractor:main"
+
+[tool.setuptools.packages.find]
+include = ["fashiondb*", "reddit_db*", "beans*", "data_analysis*"]

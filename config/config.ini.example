@@ -1,16 +1,16 @@
 [DEFAULT]
-# Reddit script OAuth (refresh token) — preferred.
-# Create an app at https://www.reddit.com/prefs/apps (type: script),
-# then generate a refresh token once (see README "Reddit OAuth bootstrap").
+# Reddit API credentials (script app + refresh token — #18)
+# Create an app at https://www.reddit.com/prefs/apps (type: script)
+# One-time bootstrap: obtain a refresh_token, then paste it here. Do NOT store password.
 client_id = YOUR_CLIENT_ID
 client_secret = YOUR_CLIENT_SECRET
 refresh_token = YOUR_REFRESH_TOKEN
 user_agent = FashionDB/1.0 by YOUR_USERNAME
 
-# Deprecated password grant — if present without refresh_token, client fails fast.
+# Deprecated (ignored; password grant fails fast):
 # username =
 # password =
 
-# Politeness / budget (enforced by RedditDB/scrape_malefashion.py)
+# Politeness / budget (enforced by reddit_db/scrape_malefashion.py)
 requests_per_minute = 30
 daily_max = 2000
