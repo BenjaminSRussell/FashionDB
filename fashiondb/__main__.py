@@ -6,7 +6,7 @@ import sys
 
 def main() -> int:
     if len(sys.argv) < 2 or sys.argv[1] in {"-h", "--help"}:
-        print("Usage: python -m fashiondb check|export|…")
+        print("Usage: python -m fashiondb check|export|migrate-json|…")
         return 2
     cmd = sys.argv[1]
     rest = sys.argv[2:]
@@ -18,6 +18,10 @@ def main() -> int:
         from fashiondb.export_parquet import main as export_main
 
         return export_main(rest)
+    if cmd in {"migrate-json", "migrate_json"}:
+        from fashiondb.migrate_json import main as migrate_main
+
+        return migrate_main(rest)
     print(f"unknown command: {cmd}", file=sys.stderr)
     return 2
 
