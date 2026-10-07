@@ -6,9 +6,9 @@ Fashion data collection and analysis system. Scrapes Reddit and web sources for 
 
 ```
 FashionDB/
-├── Beans/              # Web scraping for fashion rules
-├── RedditDB/           # Reddit data collection
-├── Data Analysis/      # NLP processing pipeline
+├── beans/              # Web scraping for fashion rules
+├── reddit_db/           # Reddit data collection
+├── data_analysis/      # NLP processing pipeline
 ├── config/             # Configuration files
 ├── data/               # Processed data
 └── requirements.txt
@@ -29,8 +29,8 @@ cp config/config.ini.example config/config.ini
 # Edit config.ini with credentials from https://www.reddit.com/prefs/apps
 
 # Configure targets
-cp RedditDB/target_subreddits.json.example RedditDB/target_subreddits.json
-cp RedditDB/search_queries.json.example RedditDB/search_queries.json
+cp reddit_db/target_subreddits.json.example reddit_db/target_subreddits.json
+cp reddit_db/search_queries.json.example reddit_db/search_queries.json
 cp config/extraction_rules.json.example config/extraction_rules.json
 ```
 
@@ -59,7 +59,7 @@ python src/duplicates.py
 ## Output
 
 Reddit data: `data/reddit_fashion_data.json`
-Beans rules: `Beans/data/rules.json`
+Beans rules: `beans/data/rules.json`
 
 ## Beans clean thresholds
 
@@ -87,7 +87,7 @@ make -C Beans pipeline URLS=test_urls.txt
 make -C Beans pipeline-offline
 ```
 
-`python Beans/run.py full <urls_or_domain>` writes `Beans/data/run_manifest.json` with stage timings and exits non-zero when validation finds invalid rules.
+`python beans/run.py full <urls_or_domain>` writes `beans/data/run_manifest.json` with stage timings and exits non-zero when validation finds invalid rules.
 
 
 ## fashiondb CLI
@@ -116,9 +116,9 @@ Import-safe packages (no spaces):
 
 | Package | Former path |
 |---------|-------------|
-| `reddit_db/` | `RedditDB/` |
-| `data_analysis/` | `Data Analysis/` |
-| `beans/` | `Beans/` |
+| `reddit_db/` | `reddit_db/` |
+| `data_analysis/` | `data_analysis/` |
+| `beans/` | `beans/` |
 | `fashiondb/` | CLI + SQLite + embeddings + Gradio |
 
 ```bash
