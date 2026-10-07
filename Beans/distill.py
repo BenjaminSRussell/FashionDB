@@ -5,6 +5,8 @@ from pathlib import Path
 from collections import defaultdict
 from difflib import SequenceMatcher
 
+from safe_json_writer import safe_write_json
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 class Distiller:
@@ -12,6 +14,9 @@ class Distiller:
         self.dir = Path(results_dir)
         self.out = output
         self.sim = similarity
+        self._load_errors = 0
+        self._dupes_merged = 0
+        self._rules_seen = 0
 
     def distill(self) -> dict:
         rules = self._load_all()
@@ -19,7 +24,7 @@ class Distiller:
         merged = self._merge_sources(unique)
         db = self._build_database(merged)
         Path(self.out).parent.mkdir(parents=True, exist_ok=True)
-        Path(self.out).write_text(json.dumps(db, indent=2))
+        safe_write_json(self.out, db, indent=2, create_backup=True)
         return db
 
     def _load_all(self) -> list:
@@ -27,10 +32,14 @@ class Distiller:
         for f in self.dir.glob('*.json'):
             try:
                 data = json.loads(f.read_text())
-                rules.extend(data.get('rules', []))
+                batch = data.get('rules', [])
+                self._rules_seen += len(batch)
+                rules.extend(batch)
             except json.JSONDecodeError as e:
+                self._load_errors += 1
                 logging.error(f"Failed to parse JSON in {f}: {e}")
             except Exception as e:
+                self._load_errors += 1
                 logging.error(f"Error loading {f}: {e}")
         return rules
 
@@ -42,6 +51,9 @@ class Distiller:
             if not any(SequenceMatcher(None, text, s).ratio() >= self.sim for s in seen):
                 unique.append(r)
                 seen.append(text)
+            else:
+                self._dupes_merged += 1
+                logging.info("Merged near-duplicate rule during distill")
         return unique
 
     def _normalize(self, text: str) -> str:
@@ -91,6 +103,6 @@ class Distiller:
                 'multi_source_percentage': (multi / total * 100) if total else 0,
                 'avg_quality_score': sum(qualities) / len(qualities) if qualities else 0,
                 'avg_word_count': sum(words) / len(words) if words else 0,
-                'completeness_rate': 100.0
+                'completeness_rate': round(100.0 * total / self._rules_seen, 2) if self._rules_seen else 0.0
             }
         }
