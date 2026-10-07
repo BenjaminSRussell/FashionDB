@@ -24,6 +24,7 @@ class ScraperConfig:
     OUTPUT_FILENAME: Path = OUTPUT_DIR / "reddit_fashion_data.json"
     TARGET_SUBREDDITS_PATH: Path = BASE_DIR / "target_subreddits.json"
     SEARCH_QUERIES_PATH: Path = BASE_DIR / "search_queries.json"
+    CHECKPOINT_PATH: Path = BASE_DIR.parent / "data" / "reddit_checkpoints.sqlite"
 
 _active_scrape_data = {}
 _save_attempts = 0
@@ -189,6 +190,14 @@ def read_existing_data(filepath: Path) -> dict:
     
 def main():
     global _active_scrape_data, _processed_post_count
+    import argparse
+    from scrape_checkpoint import CheckpointStore
+    ap = argparse.ArgumentParser(add_help=False)
+    ap.add_argument("--full", action="store_true")
+    ap.add_argument("--checkpoint", type=str, default=str(ScraperConfig.CHECKPOINT_PATH))
+    args, _unknown = ap.parse_known_args()
+    checkpoint_store = CheckpointStore(Path(args.checkpoint))
+    resume_full = bool(args.full)
 
     signal.signal(signal.SIGINT, handle_emergency_shutdown)
     signal.signal(signal.SIGTERM, handle_emergency_shutdown)
@@ -248,6 +257,10 @@ def main():
                     continue
 
                 for submission in search_results:
+                    fullname = getattr(submission, "fullname", None) or f"t3_{getattr(submission, "id", "")}"
+                    if checkpoint_store.should_skip(subreddit_name, fullname, full=resume_full):
+                        continue
+
                     if budget is not None and not budget.wait_turn():
                         print(
                             f"Daily request budget exhausted "
@@ -291,6 +304,13 @@ def main():
                     known_post_ids.add(submission.id)
 
             print(f"\n--- Finished r/{subreddit_name}: Found {new_posts_count} new posts. Total: {len(saved_posts)} ---")
+            if saved_posts and not resume_full:
+                # best-effort: use last saved id-like field
+                last = saved_posts[-1]
+                fn = last.get("fullname") or last.get("id") or ""
+                if fn:
+                    checkpoint_store.set(subreddit_name, fn if str(fn).startswith("t3_") else f"t3_{fn}")
+
             write_scrape_data(all_scraped_data, ScraperConfig.OUTPUT_FILENAME, save_label="auto")
 
         write_scrape_data(all_scraped_data, ScraperConfig.OUTPUT_FILENAME, save_label="final")
