@@ -2,15 +2,15 @@ name: Schema validate
 on:
   push:
     paths:
-      - "Data Analysis/src/standardization/**"
-      - "Data Analysis/tests/test_schema_validate.py"
-      - "Data Analysis/tests/fixtures/**"
+      - "data_analysis/src/standardization/**"
+      - "data_analysis/tests/test_schema_validate.py"
+      - "data_analysis/tests/fixtures/**"
       - ".github/workflows/schema-validate.yml"
   pull_request:
     paths:
-      - "Data Analysis/src/standardization/**"
-      - "Data Analysis/tests/test_schema_validate.py"
-      - "Data Analysis/tests/fixtures/**"
+      - "data_analysis/src/standardization/**"
+      - "data_analysis/tests/test_schema_validate.py"
+      - "data_analysis/tests/fixtures/**"
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -20,4 +20,4 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install pytest
-      - run: pytest "Data Analysis/tests/test_schema_validate.py" -q
+      - run: pytest "data_analysis/tests/test_schema_validate.py" -q
