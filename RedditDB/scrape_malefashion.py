@@ -152,15 +152,34 @@ def create_reddit_client():
                 "Set a descriptive User-Agent before scraping."
             )
             return None, None
+
+        client_id = (creds.get("client_id") or "").strip()
+        client_secret = (creds.get("client_secret") or "").strip()
+        refresh_token = (creds.get("refresh_token") or "").strip()
+        username = (creds.get("username") or "").strip()
+        password = (creds.get("password") or "").strip()
+
+        if password and not refresh_token:
+            print(
+                "Error: password grant is no longer supported. "
+                "Set refresh_token (script OAuth) in config.ini. "
+                "See README 'Reddit OAuth bootstrap'."
+            )
+            return None, None
+        if not refresh_token or refresh_token.startswith("YOUR_"):
+            print(
+                "Error: config.ini refresh_token is missing or still a placeholder."
+            )
+            return None, None
+
         reddit = praw.Reddit(
-            client_id=creds["client_id"],
-            client_secret=creds["client_secret"],
-            username=creds["username"],
-            password=creds["password"],
+            client_id=client_id,
+            client_secret=client_secret,
+            refresh_token=refresh_token,
             user_agent=ua,
         )
         user = reddit.user.me()
-        print(f"Authenticated as u/{user.name}")
+        print(f"Authenticated as u/{user.name} (refresh_token OAuth)")
         budget = load_request_budget(config_parser)
         print(
             f"Request budget: {budget.requests_per_minute}/min, "
