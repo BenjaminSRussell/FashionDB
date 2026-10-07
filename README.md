@@ -61,6 +61,15 @@ python src/duplicates.py
 Reddit data: `data/reddit_fashion_data.json`
 Beans rules: `Beans/data/rules.json`
 
+## Beans clean thresholds
+
+`python run.py full …` uses the same defaults as `clean.py` CLI:
+- min words: 5
+- max words: 50
+- min quality score: 7
+
+Do not tighten `max_word_count` below ~20 — natural-language fashion advice is longer than 7 words.
+
 ## Troubleshooting
 
 Reddit API: Check credentials in `config/config.ini`

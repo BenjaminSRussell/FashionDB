@@ -80,11 +80,18 @@ def full_pipeline(urls_file: str):
 
     print("\n3. CLEANING")
     from clean import RuleCleaner, RuleValidationConfig
-    cleaner = RuleCleaner(RuleValidationConfig(
+    # Align with Beans/clean.py CLI defaults (5–50 words, quality ≥7).
+    # Hardcoding max_word_count=7 rejected almost every natural-language rule.
+    clean_cfg = RuleValidationConfig(
         min_word_count=5,
-        max_word_count=7,
-        min_quality_score=6
-    ))
+        max_word_count=50,
+        min_quality_score=7,
+    )
+    print(
+        f"  clean thresholds: words={clean_cfg.min_word_count}–"
+        f"{clean_cfg.max_word_count}, min_quality={clean_cfg.min_quality_score}"
+    )
+    cleaner = RuleCleaner(clean_cfg)
     cleaner.clean_rules('data/rules_raw.json', 'data/rules_cleaned.json')
 
     print("\n4. FILTERING")
