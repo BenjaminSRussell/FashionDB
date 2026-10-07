@@ -33,7 +33,7 @@ class Config:
     max_posts: Optional[int] = None  # Set to None to process all posts
     batch_size: int = 50  # Progress update frequency
     max_tokens: int = 512
-    temperature: float = 0.3  # Lower for more consistent outputs
+    temperature: float = 0.3  # Lower for more consistent outputs; passed to mlx_lm.generate when supported
 
 
 SYSTEM_PROMPT = """You are a fashion expert analyzing Reddit posts from fashion communities.
@@ -164,18 +164,65 @@ def extract_json_from_response(text: str) -> Optional[dict]:
     return None
 
 
+
+_TEMP_KWARG_CACHE: dict[str, bool] = {}
+_TEMP_FALLBACK_LOGGED = False
+
+
+def _generate_with_temperature(model, tokenizer, *, prompt: str, max_tokens: int, temperature: float) -> str:
+    """Call mlx_lm.generate, applying Config.temperature when the API allows (#17).
+
+    Installed mlx-lm builds differ: some accept `temperature=`, some `temp=`,
+    some neither. Probe each kwarg once; on TypeError fall back and log once.
+    """
+    global _TEMP_FALLBACK_LOGGED
+    import logging
+    log = logging.getLogger(__name__)
+
+    if generate is None:
+        raise RuntimeError("mlx_lm.generate is not available")
+
+    for key in ("temperature", "temp"):
+        if _TEMP_KWARG_CACHE.get(key) is False:
+            continue
+        try:
+            out = generate(
+                model,
+                tokenizer,
+                prompt=prompt,
+                max_tokens=max_tokens,
+                verbose=False,
+                **{key: temperature},
+            )
+            _TEMP_KWARG_CACHE[key] = True
+            return out
+        except TypeError as exc:
+            _TEMP_KWARG_CACHE[key] = False
+            if not _TEMP_FALLBACK_LOGGED:
+                log.warning(
+                    "mlx_lm.generate rejected %s=; Config.temperature=%s ignored if no alt works: %s",
+                    key, temperature, exc,
+                )
+                _TEMP_FALLBACK_LOGGED = True
+
+    return generate(
+        model, tokenizer, prompt=prompt, max_tokens=max_tokens, verbose=False,
+    )
+
+
+
 def extract_rule_from_post(model, tokenizer, post: dict, config: Config) -> dict:
     """Use the model to extract fashion rules from a single post."""
     prompt = create_extraction_prompt(post)
 
     try:
-        # Generate response using MLX (temperature not supported, uses default sampling)
-        response_text = generate(
+        # Pass Config.temperature when the installed mlx_lm.generate accepts it.
+        response_text = _generate_with_temperature(
             model,
             tokenizer,
             prompt=prompt,
             max_tokens=config.max_tokens,
-            verbose=False,
+            temperature=config.temperature,
         )
 
         # Extract JSON from response
