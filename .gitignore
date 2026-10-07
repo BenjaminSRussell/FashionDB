@@ -47,3 +47,10 @@ config/*.secret.ini
 # IDE project files
 .idea/
 .vscode/
+
+# Harden junk ignores (issues #6 #9)
+**/.DS_Store
+**/.DS_Store?
+**/__pycache__/
+*.py[cod]
+.Python
