@@ -1,0 +1,6 @@
+{
+  "rules": [
+    {"id": "r1", "claim": "Never wear white socks with a business suit", "category": "socks", "polarity": "negative", "confidence": 0.9, "strength": "guideline", "context": {"dress_code_level": "business_formal"}},
+    {"id": "r2", "claim": "Show half inch of shirt cuff with jacket", "category": "fit", "polarity": "positive", "confidence": 0.8, "strength": "guideline", "context": {"dress_code_level": "business_formal"}}
+  ]
+}

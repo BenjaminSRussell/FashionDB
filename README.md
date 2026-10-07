@@ -88,3 +88,13 @@ make -C Beans pipeline-offline
 ```
 
 `python Beans/run.py full <urls_or_domain>` writes `Beans/data/run_manifest.json` with stage timings and exits non-zero when validation finds invalid rules.
+
+
+## fashiondb CLI
+
+```bash
+python -m fashiondb check --wardrobe wardrobe.csv --rules rules.db --json-report report.json
+python -m fashiondb export --rules rules.json --format parquet --out rules.parquet
+```
+
+Reddit scrape resume: checkpoints in `data/reddit_checkpoints.sqlite` (pass `--full` to ignore).
