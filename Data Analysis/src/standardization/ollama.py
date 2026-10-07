@@ -60,7 +60,35 @@ class RuleDigest(BaseModel):
     source_post_id: str = Field(..., description="The unique identifier of the source post")
     source_title: str = Field(..., description="The title of the source post")
     source_url: Optional[str] = Field(None, description="The URL of the source post")
-    rules: List[Rule] = Field(default_factory=list, min_items=1, description="A list of the rules extracted from the post")
+    rules: List[Rule] = Field(default_factory=list, description="A list of the rules extracted from the post")
+
+# Model-facing schemas: omit fields we overwrite in code so small models don't invent them.
+class ModelCitation(BaseModel):
+    source_post_id: Optional[str] = None
+    source_url: Optional[str] = None
+    source_comment_id: Optional[str] = None
+    snippet: str = Field(..., description="A short, representative quote from the source text (max 240 chars)")
+    upvotes: Optional[int] = None
+
+    @field_validator("snippet")
+    def clean_and_trim_snippet(cls, snippet_text: str) -> str:
+        return " ".join(snippet_text.split()).strip()[:240]
+
+class ModelRule(BaseModel):
+    text: str
+    rule_type: RuleType
+    categories: List[Category] = Field(..., min_items=1)
+    context_tags: List[str] = Field(default_factory=list)
+    examples: List[str] = Field(default_factory=list)
+    exceptions: List[str] = Field(default_factory=list)
+    rationale: Optional[str] = None
+    confidence: float = Field(..., ge=0.0, le=1.0)
+    citations: List[ModelCitation] = Field(default_factory=list)
+    safety: Optional[Severity] = None
+
+class ModelRuleDigest(BaseModel):
+    domain_topic: Literal["menswear", "general_style", "streetwear", "classic_menswear", "workwear", "formalwear", "athleisure", "other"] = "menswear"
+    rules: List[ModelRule] = Field(default_factory=list)  # empty allowed — posts may have no rules
 
 # -----------------------------
 # Helpers
@@ -88,35 +116,73 @@ def select_top_comments(comments: List[Dict], max_count: int) -> List[Dict]:
     return clean_comments[:max_count]
 
 def compose_prompt(post_record: Dict) -> str:
-    # Build the model prompt for a single post.
+    """Build a budgeted prompt that keeps newlines and always retains the citation instruction."""
+    max_chars = AppConfig.MAX_CHARS_PER_POST
+    citation_instruction = (
+        "For each rule, include at least one citation snippet (<=240 chars) "
+        "with the comment_id or post_id from the lists above. "
+        "If the post contains no actionable style rule, return an empty rules list."
+    )
+    header = (
+        "You are an expert menswear editor. Extract concrete, atomic style rules "
+        "from this discussion.\n"
+        "Focus on durable rules (fit, proportion, color, formality), not product shilling.\n"
+    )
     title = clean_text_block(post_record.get("title", ""), 300)
     post_id = post_record.get("post_id", "")
     selftext = clean_text_block(post_record.get("selftext", ""), 1200)
+    post_block = f"Post:\n- id: {post_id}\n- title: {title}\n- selftext: {selftext}\n"
 
     top_comments = select_top_comments(post_record.get("comments", []), AppConfig.TOP_K_COMMENTS)
-    comment_summaries = []
+    comment_lines = []
     for comment in top_comments:
         body = clean_text_block(comment.get("body", ""), 600)
         if not body or body.lower() == "[deleted]":
             continue
-        comment_summaries.append(f"- ({comment.get('score')}↑) [{comment.get('comment_id', '')}] {body}")
+        comment_lines.append(f"- ({comment.get('score')}↑) [{comment.get('comment_id', '')}] {body}")
 
-    comment_section = "\n".join(comment_summaries)
+    reserved = len(header) + len(post_block) + len(citation_instruction) + 40
+    budget = max(500, max_chars - reserved)
+    kept = []
+    used = 0
+    for line in comment_lines:
+        extra = len(line) + 1
+        if used + extra > budget:
+            break
+        kept.append(line)
+        used += extra
+    comment_section = "Top comments:\n" + ("\n".join(kept) if kept else "(none)")
+    prompt = f"{header}\n{post_block}\n{comment_section}\n\n{citation_instruction}\n"
+    if len(prompt) > max_chars:
+        # Last resort: shrink selftext further rather than cutting the instruction.
+        overflow = len(prompt) - max_chars
+        selftext = selftext[: max(0, len(selftext) - overflow - 20)]
+        post_block = f"Post:\n- id: {post_id}\n- title: {title}\n- selftext: {selftext}\n"
+        prompt = f"{header}\n{post_block}\n{comment_section}\n\n{citation_instruction}\n"
+    return prompt
 
-    prompt = f"""You are an expert menswear editor. Extract concrete, atomic style rules from this discussion.
-Focus on durable rules (fit, proportion, color, formality), not product shilling.
 
-Post:
-- id: {post_id}
-- title: {title}
-- selftext: {selftext}
+def collect_prompt_ids(post_record: Dict) -> set:
+    """IDs that citations are allowed to reference."""
+    ids = set()
+    if pid := post_record.get("post_id"):
+        ids.add(str(pid))
+    for comment in post_record.get("comments", []) or []:
+        if isinstance(comment, dict) and comment.get("comment_id"):
+            ids.add(str(comment["comment_id"]))
+    return ids
 
-Top comments:
-{comment_section}
 
-For each rule, include at least one citation snippet (<=240 chars) with the comment_id or post_id.
-"""
-    return clean_text_block(prompt, AppConfig.MAX_CHARS_PER_POST)
+def filter_citations(rule: Rule, allowed_ids: set, post_id: str) -> Rule:
+    """Drop hallucinated citation IDs; keep snippets that cite known IDs."""
+    kept = []
+    for cite in rule.citations:
+        ok_post = not cite.source_post_id or cite.source_post_id in allowed_ids or cite.source_post_id == post_id
+        ok_comment = not cite.source_comment_id or cite.source_comment_id in allowed_ids
+        if ok_post and ok_comment and cite.snippet:
+            kept.append(cite)
+    rule.citations = kept
+    return rule
 
 SYSTEM_MSG = {
     "role": "system",
@@ -132,17 +198,17 @@ def call_ollama(model: str, prompt: str) -> str:
     response = ollama.chat(
         model=model,
         messages=[SYSTEM_MSG, {"role": "user", "content": prompt}],
-        format=RuleDigest.model_json_schema(),
+        format=ModelRuleDigest.model_json_schema(),
         options={"temperature": AppConfig.TEMPERATURE},
     )
     return response.message.content
 
-def validate_with_retries(model: str, prompt: str) -> Optional[RuleDigest]:
+def validate_with_retries(model: str, prompt: str) -> Optional[ModelRuleDigest]:
     # Keep asking until the response validates or retries run out.
     for attempt_index in range(1 + AppConfig.RETRY_ATTEMPTS):
         try:
             raw_response = call_ollama(model, prompt)
-            return RuleDigest.model_validate_json(raw_response)
+            return ModelRuleDigest.model_validate_json(raw_response)
         except ValidationError as error:
             print(f"Validation attempt {attempt_index + 1} failed: {error}", file=sys.stderr)
             prompt += "\n\nSTRICT: Your previous output did not validate. Reply with VALID JSON ONLY matching the schema. No explanations."
@@ -154,11 +220,54 @@ def build_rule_id(canonical_text: str, post_id: str) -> str:
     return hash_sha1(f"{(canonical_text or '').strip().lower()}::{post_id}")
 
 def assign_rule_ids(digest: RuleDigest) -> RuleDigest:
-    # Fill in missing rule IDs.
+    # Always use the stable text+post hash — never trust model-invented IDs.
     for rule in digest.rules:
-        if not rule.rule_id or rule.rule_id == "auto":
-            rule.rule_id = build_rule_id(rule.text, digest.source_post_id)
+        rule.rule_id = build_rule_id(rule.text, digest.source_post_id)
     return digest
+
+
+def model_digest_to_stored(model_digest: ModelRuleDigest, post_record: Dict, post_id: str) -> RuleDigest:
+    """Promote model output into the stored RuleDigest with server-owned fields."""
+    allowed = collect_prompt_ids(post_record)
+    rules: List[Rule] = []
+    for mr in model_digest.rules:
+        citations = [
+            Citation(
+                source_post_id=c.source_post_id or post_id,
+                source_url=c.source_url or post_record.get("url"),
+                source_comment_id=c.source_comment_id,
+                snippet=c.snippet,
+                upvotes=c.upvotes,
+            )
+            for c in mr.citations
+        ]
+        rule = Rule(
+            rule_id=build_rule_id(mr.text, post_id),
+            text=mr.text,
+            rule_type=mr.rule_type,
+            categories=mr.categories,
+            context_tags=mr.context_tags,
+            examples=mr.examples,
+            exceptions=mr.exceptions,
+            rationale=mr.rationale,
+            confidence=mr.confidence,
+            citations=citations or [
+                Citation(source_post_id=post_id, source_url=post_record.get("url"), snippet=mr.text[:240])
+            ],
+            safety=mr.safety,
+        )
+        rule = filter_citations(rule, allowed, post_id)
+        if not rule.citations:
+            continue
+        rules.append(rule)
+    return RuleDigest(
+        extracted_at=current_iso_timestamp(),
+        domain_topic=model_digest.domain_topic,
+        source_post_id=post_id,
+        source_title=post_record.get("title", ""),
+        source_url=post_record.get("url"),
+        rules=rules,
+    )
 
 def append_jsonl_record(path: str, obj: dict):
     # Append an object as one JSONL line.
@@ -207,16 +316,13 @@ def process_post_file(input_path: str, out_path: str, model: str):
         post_id = str(post_record.get("post_id", f"post_{post_index}"))
         prompt = compose_prompt(post_record)
 
-        rule_digest = validate_with_retries(model, prompt)
-        if not rule_digest:
+        model_digest = validate_with_retries(model, prompt)
+        if not model_digest:
             print(f"[skip] {post_id}: Failed to get a valid response from the model.", file=sys.stderr)
             processed_post_total += 1
             continue
 
-        rule_digest.source_post_id = post_id
-        rule_digest.source_title = post_record.get("title", "")
-        rule_digest.source_url = post_record.get("url")
-        rule_digest.extracted_at = current_iso_timestamp()
+        rule_digest = model_digest_to_stored(model_digest, post_record, post_id)
         rule_digest = assign_rule_ids(rule_digest)
 
         novel_rules = [rule for rule in rule_digest.rules if rule.rule_id not in existing_rule_ids]
