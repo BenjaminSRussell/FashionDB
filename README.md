@@ -88,3 +88,14 @@ make -C Beans pipeline-offline
 ```
 
 `python Beans/run.py full <urls_or_domain>` writes `Beans/data/run_manifest.json` with stage timings and exits non-zero when validation finds invalid rules.
+
+
+## fashiondb check CLI
+
+CI-friendly wardrobe vs rules checker:
+
+```bash
+python -m fashiondb check --wardrobe path.csv --rules rules.jsonl --json
+```
+
+Exit code `0` when no violations, `1` when violations are found. Report schema: `fashiondb.check.report.v1` (`--schema` prints JSON Schema).
