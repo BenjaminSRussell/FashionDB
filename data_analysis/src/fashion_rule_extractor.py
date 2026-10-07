@@ -20,7 +20,7 @@ except ImportError:
     load = None
     generate = None
 
-# Repo root FashionDB/ — shared with RedditDB scrape + unique export.
+# Repo root FashionDB/ — shared with reddit_db scrape + unique export.
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = REPO_ROOT / "data"
 

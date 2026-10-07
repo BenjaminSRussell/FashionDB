@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Quick test to verify extraction works with Data Analysis proven code."""
+"""Quick test to verify extraction works with data_analysis proven code."""
 
 import sys
-sys.path.insert(0, '../Data Analysis/src')
+sys.path.insert(0, '../data_analysis/src')
 
 from fashion_rule_extractor import extract_rule_from_post, Config
 from mlx_lm import load

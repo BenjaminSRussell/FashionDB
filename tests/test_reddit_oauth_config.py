@@ -15,7 +15,7 @@ sys.modules["prawcore"].exceptions = types.SimpleNamespace(
     Redirect=Exception, Forbidden=Exception, PrawcoreException=Exception
 )
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "RedditDB"))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "reddit_db"))
 import scrape_malefashion as sm
 
 

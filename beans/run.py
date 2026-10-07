@@ -92,7 +92,7 @@ def full_pipeline(urls_file: str):
 
     print("\n3. CLEANING")
     from clean import RuleCleaner, RuleValidationConfig
-    # Align with Beans/clean.py CLI defaults (5–50 words, quality ≥7).
+    # Align with beans/clean.py CLI defaults (5–50 words, quality ≥7).
     # Hardcoding max_word_count=7 rejected almost every natural-language rule.
     clean_cfg = RuleValidationConfig(
         min_word_count=5,

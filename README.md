@@ -151,4 +151,3 @@ fashiondb embed-rules
 fashiondb similar "white socks with a suit"
 fashiondb explore   # Gradio UI (requires pip install -e ".[ui]")
 ```
->>>>>>> a07674b (feat: finish FashionDB — packages, OAuth, pipeline paths, embeddings, Gradio)
