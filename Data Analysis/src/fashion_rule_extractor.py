@@ -20,8 +20,9 @@ except ImportError:
     load = None
     generate = None
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = PROJECT_ROOT / "data"
+# Repo root FashionDB/ — shared with RedditDB scrape + unique export.
+REPO_ROOT = Path(__file__).resolve().parents[2]
+DATA_DIR = REPO_ROOT / "data"
 
 
 @dataclass
@@ -81,18 +82,28 @@ def ensure_mlx_available():
 
 
 def load_posts(path: Path) -> List[dict]:
-    """Load all posts from JSON file."""
+    """Load posts from nested `{subreddit: [posts]}` OR flat unique-export list."""
     with path.open("r", encoding="utf-8") as f:
         data = json.load(f)
 
-    posts = []
-    for category, items in data.items():
-        if isinstance(items, list):
-            for post in items:
-                if isinstance(post, dict):
-                    post["source_category"] = category
-                    posts.append(post)
+    posts: List[dict] = []
+    if isinstance(data, list):
+        for post in data:
+            if isinstance(post, dict):
+                posts.append(post)
+        return posts
 
+    if isinstance(data, dict):
+        # Nested scrape shape OR single digest with "posts" key
+        if "posts" in data and isinstance(data["posts"], list):
+            return [p for p in data["posts"] if isinstance(p, dict)]
+        for category, items in data.items():
+            if isinstance(items, list):
+                for post in items:
+                    if isinstance(post, dict):
+                        post = dict(post)
+                        post.setdefault("source_category", category)
+                        posts.append(post)
     return posts
 
 

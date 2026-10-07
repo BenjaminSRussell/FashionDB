@@ -110,3 +110,17 @@ Password auth is rejected. Use a **script** app + refresh token:
 4. Set a descriptive `user_agent` (not the placeholder).
 
 `create_reddit_client()` fails fast if only `username`/`password` are present.
+
+## Canonical Reddit pipeline paths
+
+All stages share repo-root `data/`:
+
+1. `RedditDB/scrape_malefashion.py` → `data/reddit_fashion_data.json` (nested `{subreddit: [posts]}`)
+2. `Data Analysis/src/reddit_unique_records.py` → `data/reddit_fashion_data_unique.json` (flat JSON array)
+3. `Data Analysis/src/fashion_rule_extractor.py` reads the unique export (also accepts nested scrape JSON)
+
+```bash
+python RedditDB/scrape_malefashion.py
+python "Data Analysis/src/reddit_unique_records.py"
+python "Data Analysis/src/fashion_rule_extractor.py"
+```
