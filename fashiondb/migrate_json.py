@@ -50,15 +50,15 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument(
         "paths",
         nargs="*",
-        help="JSON files (default: fixtures + Beans sample if present)",
+        help="JSON files (default: fixtures + beans sample if present)",
     )
     args = ap.parse_args(argv)
     paths = [Path(p) for p in args.paths]
     if not paths:
         defaults = [
             Path("tests/fixtures/rules_sample.json"),
-            Path("Beans/data/fixtures/sample_rules.json"),
-            Path("Beans/data/rules.json"),
+            Path("beans/data/fixtures/sample_rules.json"),
+            Path("beans/data/rules.json"),
             Path("data/reddit_fashion_data.json"),
         ]
         paths = [p for p in defaults if p.exists()]

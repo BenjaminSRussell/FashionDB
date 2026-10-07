@@ -81,18 +81,27 @@ def ensure_mlx_available():
 
 
 def load_posts(path: Path) -> List[dict]:
-    """Load all posts from JSON file."""
+    """Load posts from nested dict OR unique-export list (#16)."""
     with path.open("r", encoding="utf-8") as f:
         data = json.load(f)
 
-    posts = []
-    for category, items in data.items():
-        if isinstance(items, list):
-            for post in items:
-                if isinstance(post, dict):
-                    post["source_category"] = category
-                    posts.append(post)
-
+    posts: List[dict] = []
+    if isinstance(data, list):
+        for post in data:
+            if isinstance(post, dict):
+                posts.append(post)
+        return posts
+    if isinstance(data, dict):
+        # Unique export sometimes wraps {"records": [...]}
+        if "records" in data and isinstance(data["records"], list):
+            return [p for p in data["records"] if isinstance(p, dict)]
+        for category, items in data.items():
+            if isinstance(items, list):
+                for post in items:
+                    if isinstance(post, dict):
+                        post = dict(post)
+                        post.setdefault("source_category", category)
+                        posts.append(post)
     return posts
 
 

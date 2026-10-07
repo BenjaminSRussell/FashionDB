@@ -110,3 +110,45 @@ Password auth is rejected. Use a **script** app + refresh token:
 4. Set a descriptive `user_agent` (not the placeholder).
 
 `create_reddit_client()` fails fast if only `username`/`password` are present.
+## Package layout (#4)
+
+Import-safe packages (no spaces):
+
+| Package | Former path |
+|---------|-------------|
+| `reddit_db/` | `RedditDB/` |
+| `data_analysis/` | `Data Analysis/` |
+| `beans/` | `Beans/` |
+| `fashiondb/` | CLI + SQLite + embeddings + Gradio |
+
+```bash
+pip install -e ".[dev,ui]"
+fashiondb check
+fashiondb-reddit   # needs config/config.ini with refresh_token
+```
+
+## Reddit OAuth (#18)
+
+`config/config.ini.example` uses **refresh_token** only (password grant rejected).
+Create a script app at https://www.reddit.com/prefs/apps, obtain a refresh token once, paste into `config/config.ini`.
+
+## Scrape → unique → extract (#16)
+
+Canonical files live under repo-root `data/`:
+
+- `data/reddit_fashion_data.json` — nested scrape output
+- `data/reddit_fashion_data_unique.json` — flattened records (list)
+- `data/fashion_rules_extracted.json` — extractor output
+
+`fashion_rule_extractor.load_posts()` accepts both nested dict and unique list shapes.
+Smoke: `python scripts/smoke_scrape_unique_extract.py`
+
+## Embeddings + explorer (#7, #3)
+
+```bash
+fashiondb migrate-json
+fashiondb embed-rules
+fashiondb similar "white socks with a suit"
+fashiondb explore   # Gradio UI (requires pip install -e ".[ui]")
+```
+>>>>>>> 3c3dc21 (feat: finish FashionDB — packages, OAuth, pipeline paths, embeddings, Gradio)

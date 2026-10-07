@@ -25,7 +25,7 @@ def test_migrate_sample_roundtrip(tmp_path):
 def test_beans_fixture_migrates(tmp_path):
     db = tmp_path / "f.db"
     conn = connect(db)
-    sample = Path("Beans/data/fixtures/sample_rules.json")
+    sample = Path("beans/data/fixtures/sample_rules.json")
     n = migrate_file(conn, sample, "beans_sample")
     conn.commit()
     assert n == 2
