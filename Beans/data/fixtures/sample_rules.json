@@ -1,0 +1,14 @@
+{
+  "rules": [
+    {
+      "rule_text": "Always ensure jacket sleeves show a half inch of shirt cuff when tailored.",
+      "domain": "example.com",
+      "source_url": "https://example.com/a"
+    },
+    {
+      "rule_text": "Never wear white socks with a business suit in formal settings.",
+      "domain": "example.com",
+      "source_url": "https://example.com/b"
+    }
+  ]
+}

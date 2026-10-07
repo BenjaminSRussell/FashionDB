@@ -76,3 +76,15 @@ Reddit API: Check credentials in `config/config.ini`
 Import errors: `pip install -r requirements.txt`
 Empty results: Verify URLs and check logs
 Data not saving: Check directory permissions
+
+## Beans pipeline
+
+One-command rule extraction (discover/scrape → distill → clean → filter → validate):
+
+```bash
+make -C Beans pipeline URLS=test_urls.txt
+# offline fixture path (no network):
+make -C Beans pipeline-offline
+```
+
+`python Beans/run.py full <urls_or_domain>` writes `Beans/data/run_manifest.json` with stage timings and exits non-zero when validation finds invalid rules.

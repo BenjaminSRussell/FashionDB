@@ -13,7 +13,10 @@ Examples:
   python run.py full test_urls.txt
 """
 
+import json
 import sys
+import time
+from datetime import datetime, timezone
 from pathlib import Path
 
 def scrape(urls_file: str, output: str):
@@ -53,6 +56,14 @@ def filter_rules(db_file: str, output: str):
     print(f"Removed {db['statistics'].get('filtered', 0)} invalid rules")
     return db
 
+
+def write_run_manifest(manifest: dict, path: str = "data/run_manifest.json") -> Path:
+    out = Path(path)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    print(f"Wrote run manifest: {out}")
+    return out
+
 def full_pipeline(urls_file: str):
     """New full pipeline flow:
     - If `urls_file` is a path to a file, read URLs from it and scrape them.
@@ -60,9 +71,10 @@ def full_pipeline(urls_file: str):
     - Extract candidate rules, distill, clean, filter, validate.
     """
     print("=== FULL PIPELINE ===")
+    started_at = datetime.now(timezone.utc).isoformat()
+    stages: list[dict] = []
 
     # Determine whether input is a file or a seed domain/URL
-    from pathlib import Path
     seed = urls_file
     if Path(seed).exists():
         # Read list of URLs from file and use the existing scraper
@@ -98,7 +110,37 @@ def full_pipeline(urls_file: str):
     filter_rules('data/rules_cleaned.json', 'data/rules.json')
 
     print("\n5. VALIDATING")
-    validate('data/rules.json')
+    t0 = time.monotonic()
+    result = validate('data/rules.json')
+    validate_secs = round(time.monotonic() - t0, 3)
+    invalid = 0
+    if isinstance(result, dict):
+        invalid = int(result.get("invalid") or result.get("invalid_count") or 0)
+        if invalid:
+            write_run_manifest({
+                "started_at": started_at,
+                "finished_at": datetime.now(timezone.utc).isoformat(),
+                "input": seed,
+                "stages": stages,
+                "validate": result,
+                "status": "failed",
+            })
+            raise SystemExit(f"validate failed: {invalid} invalid rules")
+
+    stages.append({"name": "validate", "seconds": validate_secs, "invalid": invalid})
+    write_run_manifest({
+        "started_at": started_at,
+        "finished_at": datetime.now(timezone.utc).isoformat(),
+        "input": seed,
+        "stages": stages,
+        "outputs": {
+            "raw": "data/raw_rules.json",
+            "distilled": "data/rules_raw.json",
+            "cleaned": "data/rules_cleaned.json",
+            "final": "data/rules.json",
+        },
+        "status": "ok",
+    })
 
     print("\n=== COMPLETE ===")
     print("Final database: data/rules.json")
