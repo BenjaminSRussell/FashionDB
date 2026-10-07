@@ -8,8 +8,9 @@ from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-PROJECT_ROOT = SCRIPT_DIR.parent
-DATA_DIR = PROJECT_ROOT / "data"
+# Repo root FashionDB/ (not "Data Analysis/") so paths match RedditDB scrape output.
+REPO_ROOT = SCRIPT_DIR.parents[1]
+DATA_DIR = REPO_ROOT / "data"
 
 
 def parse_args() -> argparse.Namespace:
