@@ -79,3 +79,12 @@ All database manager scripts are idempotent - you can run them multiple times sa
 ## 🗂️ Data Directory
 
 All JSON files are stored in the `data/` directory to keep code and data separate. All scripts automatically reference this directory.
+
+## Rule schema
+
+Extractor output should match `src/standardization/schema.json`.
+Validate locally:
+
+```bash
+pytest "Data Analysis/tests/test_schema_validate.py" -q
+```

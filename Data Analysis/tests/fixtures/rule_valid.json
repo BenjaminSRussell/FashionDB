@@ -1,0 +1,43 @@
+{
+  "id": "11111111-1111-1111-1111-111111111111",
+  "polarity": "positive",
+  "claim": "Show half an inch of shirt cuff with a tailored jacket.",
+  "category": "fit",
+  "strength": "guideline",
+  "context": {
+    "dress_code_level": "business_formal",
+    "setting": ["work"]
+  },
+  "garment_slots": [
+    {"slot": "top", "examples": ["dress shirt"]},
+    {"slot": "outerwear", "examples": ["suit jacket"]}
+  ],
+  "evidence": [
+    {
+      "quote": "A half-inch of cuff is classic.",
+      "stance": "support",
+      "source_ref": "reddit:abc/def",
+      "author_credibility": {"name": "mfa_user"}
+    }
+  ],
+  "confidence": 0.7,
+  "consensus": {
+    "support_count": 3,
+    "oppose_count": 0,
+    "consensus_level": "moderate",
+    "consensus_score": 0.75
+  },
+  "sources": [
+    {
+      "permalink": "https://reddit.com/r/malefashionadvice/comments/abc",
+      "site": "reddit",
+      "source_type": "community"
+    }
+  ],
+  "rationale": "Keeps proportions balanced when sleeves are tailored.",
+  "exceptions": ["Short-sleeve shirts"],
+  "metadata": {
+    "creation_timestamp": "2026-01-01T00:00:00Z",
+    "version_information": "1"
+  }
+}

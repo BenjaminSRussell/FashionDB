@@ -1,0 +1,17 @@
+{
+  "id": "22222222-2222-2222-2222-222222222222",
+  "polarity": "positive",
+  "claim": "Too short",
+  "category": "fit",
+  "strength": "guideline",
+  "context": {"dress_code_level": "casual", "setting": ["everyday"]},
+  "garment_slots": [{"slot": "top", "examples": ["tee"]}],
+  "evidence": [{"quote": "x", "stance": "support", "source_ref": "r:1", "author_credibility": {}}],
+  "confidence": 0.1,
+  "consensus": {},
+  "sources": [{"permalink": "https://example.com/x"}],
+  "rationale": "n/a",
+  "exceptions": [],
+  "metadata": {},
+  "unexpected_field": true
+}
