@@ -6,3 +6,9 @@ client_secret = YOUR_CLIENT_SECRET
 username = YOUR_REDDIT_USERNAME
 password = YOUR_REDDIT_PASSWORD
 user_agent = FashionDB/1.0 by YOUR_USERNAME
+
+# Politeness / budget (enforced by RedditDB/scrape_malefashion.py)
+# user_agent is required — leave blank to fail fast before any requests.
+requests_per_minute = 30
+daily_max = 2000
+

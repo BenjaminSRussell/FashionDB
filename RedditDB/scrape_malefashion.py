@@ -2,6 +2,7 @@ import json
 import praw
 import prawcore
 import configparser
+from request_budget import RequestBudget
 import signal
 import sys
 import atexit
@@ -125,30 +126,49 @@ def handle_emergency_shutdown(signal_number=None, frame=None):
     sys.exit(0)
 
 
+def load_request_budget(config_parser: configparser.ConfigParser) -> RequestBudget:
+    section = config_parser["DEFAULT"]
+    rpm = float(section.get("requests_per_minute", 30))
+    daily = int(float(section.get("daily_max", 2000)))
+    return RequestBudget(requests_per_minute=rpm, daily_max=daily)
+
+
 def create_reddit_client():
     # Create a Reddit client using credentials from config.ini.
     config_parser = configparser.ConfigParser()
     if not ScraperConfig.CONFIG_PATH.exists():
         print(f"Error: Configuration file not found at {ScraperConfig.CONFIG_PATH}.")
-        return None
+        return None, None
 
     config_parser.read(ScraperConfig.CONFIG_PATH)
 
     try:
         creds = config_parser["DEFAULT"]
+        ua = (creds.get("user_agent") or "").strip()
+        if not ua or "YOUR_USERNAME" in ua:
+            print(
+                "Error: config.ini user_agent is missing or still a placeholder. "
+                "Set a descriptive User-Agent before scraping."
+            )
+            return None, None
         reddit = praw.Reddit(
             client_id=creds["client_id"],
             client_secret=creds["client_secret"],
             username=creds["username"],
             password=creds["password"],
-            user_agent=creds["user_agent"],
+            user_agent=ua,
         )
         user = reddit.user.me()
         print(f"Authenticated as u/{user.name}")
-        return reddit
+        budget = load_request_budget(config_parser)
+        print(
+            f"Request budget: {budget.requests_per_minute}/min, "
+            f"daily_max={budget.daily_max}"
+        )
+        return reddit, budget
     except (KeyError, Exception) as e:
         print(f"Authentication failed: {e}")
-        return None
+        return None, None
     
 
 def read_existing_data(filepath: Path) -> dict:
@@ -177,7 +197,7 @@ def main():
     print("Reddit Fashion Scraper")
     print("Press Ctrl+C to save and exit.")
 
-    reddit = create_reddit_client()
+    reddit, budget = create_reddit_client()
     if not reddit:
         return
 
@@ -228,6 +248,14 @@ def main():
                     continue
 
                 for submission in search_results:
+                    if budget is not None and not budget.wait_turn():
+                        print(
+                            f"Daily request budget exhausted "
+                            f"({budget.daily_max}). Stopping scrape."
+                        )
+                        write_scrape_data(all_scraped_data, ScraperConfig.OUTPUT_FILENAME, save_label="budget")
+                        return
+
                     if submission.id in known_post_ids or submission.score < ScraperConfig.MIN_POST_SCORE:
                         continue
 
